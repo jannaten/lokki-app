@@ -33,10 +33,25 @@ router.get("/:id", async (req, res) => {
 
 // Getting data by organization & products
 router.get("/org/:orgId/pro/:proId", async (req, res) => {
+  const defaultOrganizationId = 1;
   const { orgId, proId } = req.params;
-  const localization = await db.localization.findAll({
-    where: { organizationId: orgId, productId: proId },
+  const fromDefault = defaultOrganizationId !== Number(orgId);
+  const defaultLocalization = await db.localization.findAll({
+    where: { organizationId: defaultOrganizationId, productId: proId },
   });
+  let nonDefaultLocalization = [];
+  if (defaultLocalization) {
+    nonDefaultLocalization = await db.localization.findAll({
+      where: { organizationId: orgId, productId: proId },
+    });
+  }
+  const removedLocalization = [...defaultLocalization].filter((el) => {
+    let locale =
+      nonDefaultLocalization.find((locale) => locale.locale) &&
+      nonDefaultLocalization.find((locale) => locale.locale).locale;
+    return el.locale !== locale;
+  });
+  const localization = [...removedLocalization, ...nonDefaultLocalization];
   const locale_keys = await db.locale_key.findAll({
     where: { productId: proId },
     include: [
@@ -45,19 +60,19 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
     limit: 50,
   });
   const modified_value = [...locale_keys];
-  const arr = [];
+  const keyValueArray = [];
   for (let i = 0; i < modified_value.length; i++) {
-    let obj = {};
-    obj.id = modified_value[i].id;
-    obj.key = modified_value[i].key;
-    obj.productId = modified_value[i].productId;
+    let keyValueObject = {};
+    keyValueObject.id = modified_value[i].id;
+    keyValueObject.key = modified_value[i].key;
+    keyValueObject.productId = modified_value[i].productId;
     let locale_values = {};
     for (let j = 0; j < localization.length; j++) {
       locale_values[localization[j].locale] = null;
       for (let k = 0; modified_value[i].locale_values[k]; k++) {
         if (
-          modified_value[i].locale_values[k].localizationId ===
-          localization[j].id
+          modified_value[i].locale_values[k].localization.locale ===
+          localization[j].locale
         ) {
           const { id, value, localeKeyId, localizationId } =
             modified_value[i].locale_values[k];
@@ -65,29 +80,20 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
             id,
             value,
             localeKeyId,
-            localizationId,
+            fromDefault,
           };
+          if (!fromDefault) {
+            locale_values[localization[j].locale].localizationId =
+              localizationId;
+          }
         }
       }
     }
-    obj.locale_values = locale_values;
-    arr.push(obj);
+    keyValueObject.locale_values = locale_values;
+    keyValueArray.push(keyValueObject);
   }
-  return res.status(200).send(arr);
+  return res.status(200).send(keyValueArray);
 });
-
-// Getting data by organization & products
-// router.get("/pro/:proId", async (req, res) => {
-//   const { proId } = req.params;
-//   const locale_keys = await db.locale_key.findAll({
-//     where: { productId: proId },
-//     include: [
-//       { model: db.locale_value, include: [{ model: db.localization }] },
-//     ],
-//     limit: 50,
-//   });
-//   return res.status(200).send(locale_keys);
-// });
 
 // Adding data
 router.post("/", async (req, res) => {
@@ -128,16 +134,38 @@ router.delete("/:id", async (req, res) => {
 
 module.exports = router;
 
-// const express = require("express");
-// const router = express.Router();
-// const db = require("../models");
-// const data = require("../data/localizevalue.json");
+// let toni = [];
+// for (let l = 0; l < modifiedLocalization.length; l++) {
+//   for (let m = 0; m < nonDefaultLocalization.length; m++) {
+//     if (modifiedLocalization[l].locale === nonDefaultLocalization[m].locale) {
+//       toni.push(modifiedLocalization[l]);
+//     }
+//   }
+// }
+// let newArr = [...defaultLocalization].filter((el) => {
+//   let id =
+//     toni.find((val) => val && val.id === el.id) &&
+//     toni.find((val) => val && val.id === el.id).id;
+//   return el.id !== id;
+// });
+// let combinedLocalizations = [
+//   ...defaultLocalization,
+//   ...nonDefaultLocalization,
+// ];
 
-// router.get("/all", async (req, res) => {
-// //   for (let i = 0; i < data.length; i++) {
-// //     await db.locale_value.create(data[i]);
-// //   }
-//   return res.status(200).send(data);
+// const newLocalizations = [];
+// combinedLocalizations.forEach((i) => {
+//   const found = nonDefaultLocalization.find((j) => j.locale === i.locale);
+//   const found2 = defaultLocalization.find((j) => j.locale === i.locale)
+//   if (found) {
+//     newLocalizations.push(found);
+//   } else {
+//     newLocalizations.push(i);
+//   }
 // });
 
-// module.exports = router;
+// const myArrayFiltered = combinedLocalizations.filter((el) => {
+//   return nonDefaultLocalization.some((f) => {
+//     return f.locale !== el.locale;
+//   });
+// });

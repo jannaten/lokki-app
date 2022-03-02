@@ -528,3 +528,215 @@
 {"level":"info","message":"Database is connected"}
 {"level":"info","message":"Database is connected"}
 {"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"org is not defined org is not defined","stack":"ReferenceError: org is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:43:30\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Assignment to constant variable. Assignment to constant variable.","stack":"TypeError: Assignment to constant variable.\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:44:28\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'locale' of undefined Cannot read property 'locale' of undefined","stack":"TypeError: Cannot read property 'locale' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:51:11\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:47:25\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"error","message":"Cannot read property 'locale' of undefined Cannot read property 'locale' of undefined","stack":"TypeError: Cannot read property 'locale' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:51:11\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:47:25\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'locale' of undefined Cannot read property 'locale' of undefined","stack":"TypeError: Cannot read property 'locale' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:52:11\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:48:31\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'locale' of undefined Cannot read property 'locale' of undefined","stack":"TypeError: Cannot read property 'locale' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:53:74\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:50:23\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","message":"Invalid status code: [ [Array] ] Invalid status code: [ [Array] ]","stack":"RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: [ [Array] ]\n    at ServerResponse.writeHead (_http_server.js:259:11)\n    at ServerResponse.writeHead (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\on-headers\\index.js:44:26)\n    at ServerResponse._implicitHeader (_http_server.js:250:8)\n    at write_ (_http_outgoing.js:711:9)\n    at ServerResponse.end (_http_outgoing.js:825:5)\n    at ServerResponse.send (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\express\\lib\\response.js:221:10)\n    at ServerResponse.json (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\express\\lib\\response.js:267:15)\n    at ServerResponse.send (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\express\\lib\\response.js:158:21)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:94:26\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"modifiedLocalization is not defined modifiedLocalization is not defined","stack":"ReferenceError: modifiedLocalization is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:97:31\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"modifiedLocalization is not defined modifiedLocalization is not defined","stack":"ReferenceError: modifiedLocalization is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:98:31\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'locale' of undefined Cannot read property 'locale' of undefined","stack":"TypeError: Cannot read property 'locale' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:97:73\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:94:57\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"combinedLocalizations is not defined combinedLocalizations is not defined","stack":"ReferenceError: combinedLocalizations is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:141:27\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:104:57\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:105:56\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:105:56\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:105:63\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:105:63\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:105:63\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:104:60\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:104:60\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:104:59\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:104:59\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot read property 'id' of undefined Cannot read property 'id' of undefined","stack":"TypeError: Cannot read property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:104:59\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"obj is not defined obj is not defined","stack":"ReferenceError: obj is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:94:24\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"arr is not defined arr is not defined","stack":"ReferenceError: arr is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:96:31\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
