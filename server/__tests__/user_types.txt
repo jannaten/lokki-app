@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "createdAt": "2021-09-30T14:31:41.000Z",
+        "updatedAt": "2021-09-30T14:31:41.000Z",
+        "typeReferenceId": 1
+    },
+    {
+        "id": 2,
+        "createdAt": "2021-09-30T14:31:52.000Z",
+        "updatedAt": "2021-09-30T14:31:52.000Z",
+        "typeReferenceId": 2
+    },
+    {
+        "id": 3,
+        "createdAt": "2021-09-30T14:31:56.000Z",
+        "updatedAt": "2021-09-30T14:31:56.000Z",
+        "typeReferenceId": 3
+    },
+    {
+        "id": 4,
+        "createdAt": "2021-09-30T14:32:02.000Z",
+        "updatedAt": "2021-09-30T14:32:02.000Z",
+        "typeReferenceId": 4
+    },
+    {
+        "id": 5,
+        "createdAt": "2021-09-30T14:32:07.000Z",
+        "updatedAt": "2021-09-30T14:32:07.000Z",
+        "typeReferenceId": 5
+    },
+    {
+        "id": 6,
+        "createdAt": "2021-09-30T14:32:18.000Z",
+        "updatedAt": "2021-09-30T14:32:18.000Z",
+        "typeReferenceId": 6
+    }
+]

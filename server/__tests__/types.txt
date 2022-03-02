@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "value": "root",
+        "createdAt": "2021-09-30T14:22:56.000Z",
+        "updatedAt": "2021-09-30T14:22:56.000Z"
+    },
+    {
+        "id": 2,
+        "value": "schools",
+        "createdAt": "2021-09-30T14:23:02.000Z",
+        "updatedAt": "2021-09-30T14:23:02.000Z"
+    },
+    {
+        "id": 3,
+        "value": "organizations",
+        "createdAt": "2021-09-30T14:23:10.000Z",
+        "updatedAt": "2021-09-30T14:23:10.000Z"
+    },
+    {
+        "id": 4,
+        "value": "companies",
+        "createdAt": "2021-09-30T14:23:19.000Z",
+        "updatedAt": "2021-09-30T14:23:19.000Z"
+    },
+    {
+        "id": 5,
+        "value": "families",
+        "createdAt": "2021-09-30T14:23:29.000Z",
+        "updatedAt": "2021-09-30T14:23:29.000Z"
+    },
+    {
+        "id": 6,
+        "value": "blog_provider",
+        "createdAt": "2021-09-30T14:24:22.000Z",
+        "updatedAt": "2021-09-30T14:24:22.000Z"
+    },
+    {
+        "id": 7,
+        "value": "private",
+        "createdAt": "2021-09-30T14:25:36.000Z",
+        "updatedAt": "2021-09-30T14:25:36.000Z"
+    },
+    {
+        "id": 8,
+        "value": "public",
+        "createdAt": "2021-09-30T14:25:41.000Z",
+        "updatedAt": "2021-09-30T14:25:41.000Z"
+    },
+    {
+        "id": 9,
+        "value": "blogs",
+        "createdAt": "2021-09-30T14:26:53.000Z",
+        "updatedAt": "2021-09-30T14:26:53.000Z"
+    },
+    {
+        "id": 10,
+        "value": "provided_education_service",
+        "createdAt": "2021-09-30T14:27:19.000Z",
+        "updatedAt": "2021-09-30T14:27:19.000Z"
+    },
+    {
+        "id": 11,
+        "value": "target_audiance",
+        "createdAt": "2021-09-30T14:27:58.000Z",
+        "updatedAt": "2021-09-30T14:27:58.000Z"
+    }
+]

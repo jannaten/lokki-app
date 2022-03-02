@@ -1,0 +1,17 @@
+[
+  {
+    "id": "5",
+    "organizationId": "1",
+    "productId": "1"
+  },
+  {
+    "id": "6",
+    "organizationId": "1",
+    "productId": "5"
+  },
+  {
+    "id": "7",
+    "organizationId": "2",
+    "productId": "1"
+  }
+]

@@ -1,0 +1,28 @@
+// developement
+
+JWT_PRIVATE_KEY=jannaten-ultra-secure-and-ultra-long-secret-jwt-key
+EMAIL_SECRET=jannaten-ultra-secure-and-ultra-long-secret-email-key
+JWT_TOKEN_EXPIRE=6h
+EMAIL_TOKEN_EXPIRE=5m
+DATABASE_NAME=edupreneurs
+DATABASE_ROOT_USER=root
+DATABASE_ROOT_PASSWORD=nayem
+DATABASE_HOST=127.0.0.1
+DATABASE_CONTAINER_PORT=3306
+GMAIL_USER=jannaten@eduix.it
+GMAIL_PASS=
+EMAIL_VERIFICATON=false
+
+// test
+JWT_PRIVATE_KEY=jannaten-ultra-secure-and-ultra-long-secret-jwt-key-test
+EMAIL_SECRET=jannaten-ultra-secure-and-ultra-long-secret-email-key-test
+JWT_TOKEN_EXPIRE=6h
+EMAIL_TOKEN_EXPIRE=5m
+DATABASE_NAME=edupreneurs_test
+DATABASE_ROOT_USER=root
+DATABASE_ROOT_PASSWORD=nayem
+DATABASE_HOST=127.0.0.1
+DATABASE_CONTAINER_PORT=3306
+GMAIL_USER=jannaten@eduix.it
+GMAIL_PASS=
+EMAIL_VERIFICATON=false

@@ -1,0 +1,15 @@
+export const initState = {
+  name: "",
+  data: [],
+  status: {},
+  pageSize: 12,
+  products: [],
+  currentPage: 1,
+  searchField: "",
+  companyProduct: [],
+  selectedComs: null,
+  isProductPending: false,
+  isCompanyProductPending: false,
+  showAddOrganizationModal: false,
+  isAddOrganizationPending: false,
+};

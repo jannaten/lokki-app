@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "organizationId": "1",
+    "productId": "1",
+    "locale": "en_EN",
+    "name": "English"
+  },
+  {
+    "id": "2",
+    "organizationId": "1",
+    "productId": "1",
+    "locale": "fi_FI",
+    "name": "Finnish"
+  },
+  {
+    "id": "3",
+    "organizationId": "1",
+    "productId": "1",
+    "locale": "sv_SV",
+    "name": "Swedish"
+  },
+  {
+    "id": "4",
+    "organizationId": "1",
+    "productId": "1",
+    "locale": "fr_FR",
+    "name": "French"
+  },
+  {
+    "id": "20",
+    "organizationId": "2",
+    "productId": "1",
+    "locale": "en_EN",
+    "name": "English"
+  },
+  {
+    "id": "35",
+    "organizationId": "1",
+    "productId": "5",
+    "locale": "en_EN",
+    "name": "English"
+  }
+]

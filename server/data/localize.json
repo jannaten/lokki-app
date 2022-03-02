@@ -1,0 +1,5637 @@
+[
+  {
+    "id": "8",
+    "productId": "1",
+    "key": "welcome",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "9",
+    "productId": "1",
+    "key": "good",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "10",
+    "productId": "1",
+    "key": "city",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "13",
+    "productId": "5",
+    "key": "shop",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "14",
+    "productId": "5",
+    "key": "student",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "17",
+    "productId": "1",
+    "key": "table",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "18",
+    "productId": "1",
+    "key": "computer",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "19",
+    "productId": "1",
+    "key": "school",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "22",
+    "productId": "1",
+    "key": "car",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "23",
+    "productId": "5",
+    "key": "notebook",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "26",
+    "productId": "1",
+    "key": "Nkey",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "28",
+    "productId": "5",
+    "key": "NewLocale",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "29",
+    "productId": "5",
+    "key": "NewKey",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "30",
+    "productId": "5",
+    "key": "sfdsf",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "31",
+    "productId": "5",
+    "key": "New Value",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "33",
+    "productId": "1",
+    "key": "test.key",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "34",
+    "productId": "1",
+    "key": "test.key.2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "35",
+    "productId": "1",
+    "key": "advisor.index.messages",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "36",
+    "productId": "1",
+    "key": "activitytypeid80",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "37",
+    "productId": "1",
+    "key": "next.deadline",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "38",
+    "productId": "1",
+    "key": "project.deleted",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "39",
+    "productId": "1",
+    "key": "advisor._declineThesisOfferModal.lbl1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "40",
+    "productId": "1",
+    "key": "topic.proposal.accept.modal.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "41",
+    "productId": "1",
+    "key": "configuration.evaluation.thesis.type.available",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "42",
+    "productId": "1",
+    "key": "portfolio",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "43",
+    "productId": "1",
+    "key": "thesisName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "44",
+    "productId": "1",
+    "key": "_ajaxpager.results.per.page",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "45",
+    "productId": "1",
+    "key": "isAvailable",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "46",
+    "productId": "1",
+    "key": "edit",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "47",
+    "productId": "1",
+    "key": "confidential.attachments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "48",
+    "productId": "1",
+    "key": "weekday.tuesday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "49",
+    "productId": "1",
+    "key": "fineupload.choosefile",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "50",
+    "productId": "1",
+    "key": "all",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "51",
+    "productId": "1",
+    "key": "activitytypeid70",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "52",
+    "productId": "1",
+    "key": "form.field.activitytypeselect",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "53",
+    "productId": "1",
+    "key": "picked.emails",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "54",
+    "productId": "1",
+    "key": "degreeProgramme",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "55",
+    "productId": "1",
+    "key": "configuration.evaluation.delete.row.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "56",
+    "productId": "1",
+    "key": "addAttachment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "57",
+    "productId": "1",
+    "key": "comments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "58",
+    "productId": "1",
+    "key": "commentate.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "59",
+    "productId": "1",
+    "key": "modal.initialize_plagiarism_check_modal.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "60",
+    "productId": "1",
+    "key": "archiveDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "61",
+    "productId": "1",
+    "key": "degree.type.none",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "62",
+    "productId": "1",
+    "key": "projectview.thesis.details.evaluator.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "63",
+    "productId": "1",
+    "key": "phase2Of3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "64",
+    "productId": "1",
+    "key": "commentate.outer.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "65",
+    "productId": "1",
+    "key": "declineTopic",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "66",
+    "productId": "1",
+    "key": "send.for.commentate.success",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "67",
+    "productId": "1",
+    "key": "coordinator.viewProposal.recreate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "68",
+    "productId": "1",
+    "key": "error.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "69",
+    "productId": "1",
+    "key": "weekday.saturday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "70",
+    "productId": "1",
+    "key": "gradeDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "71",
+    "productId": "1",
+    "key": "form.field.tkiCredits",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "72",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.msg3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "73",
+    "productId": "1",
+    "key": "code",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "74",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "75",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "76",
+    "productId": "1",
+    "key": "advisor.approvePhase.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "77",
+    "productId": "1",
+    "key": "students",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "78",
+    "productId": "1",
+    "key": "error.sso.user.not.found",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "79",
+    "productId": "1",
+    "key": "status",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "80",
+    "productId": "1",
+    "key": "noAdvisorSelected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "81",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.delete.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "82",
+    "productId": "1",
+    "key": "form.error.saving",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "83",
+    "productId": "1",
+    "key": "send.for.commentate.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "84",
+    "productId": "1",
+    "key": "localization.missing",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "85",
+    "productId": "1",
+    "key": "modal.add_comment_modal.lbl1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "86",
+    "productId": "1",
+    "key": "plagiarism.checking.error.unsupported.media.type",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "87",
+    "productId": "1",
+    "key": "include.drafts",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "88",
+    "productId": "1",
+    "key": "coordinator.topicproposals.addAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "89",
+    "productId": "1",
+    "key": "projectview.attachment.no.confidential.attachments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "90",
+    "productId": "1",
+    "key": "student.thesisWorkspace.choose.file",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "91",
+    "productId": "1",
+    "key": "plagiarism.checking.approve",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "92",
+    "productId": "1",
+    "key": "modal.partials.studentList.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "93",
+    "productId": "1",
+    "key": "plagiarism.checking",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "94",
+    "productId": "1",
+    "key": "student.thesisWorkspace.deadline.placeholder",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "95",
+    "productId": "1",
+    "key": "form.field.evaluation[19]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "96",
+    "productId": "1",
+    "key": "plagiarism.checking.status.in.analyze",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "97",
+    "productId": "1",
+    "key": "send.for.commentate.email",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "98",
+    "productId": "1",
+    "key": "personalId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "99",
+    "productId": "1",
+    "key": "deletefile",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "100",
+    "productId": "1",
+    "key": "advisors",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "101",
+    "productId": "1",
+    "key": "activitytypeid40",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "102",
+    "productId": "1",
+    "key": "date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "103",
+    "productId": "1",
+    "key": "button.update",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "104",
+    "productId": "1",
+    "key": "modal.evaluationForm.ln_sv",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "105",
+    "productId": "1",
+    "key": "thesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "106",
+    "productId": "1",
+    "key": "plagiarism.analysis.accepted",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "107",
+    "productId": "1",
+    "key": "noProgramme",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "108",
+    "productId": "1",
+    "key": "approval.date.not.found",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "109",
+    "productId": "1",
+    "key": "form.field.evaluation[18]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "110",
+    "productId": "1",
+    "key": "student2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "111",
+    "productId": "1",
+    "key": "clear",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "112",
+    "productId": "1",
+    "key": "projectview.task.label.status",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "113",
+    "productId": "1",
+    "key": "student1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "114",
+    "productId": "1",
+    "key": "configuration",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "115",
+    "productId": "1",
+    "key": "projectview.phase.4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "116",
+    "productId": "1",
+    "key": "projectview.phase.3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "117",
+    "productId": "1",
+    "key": "projectview.phase.2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "118",
+    "productId": "1",
+    "key": "firstName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "119",
+    "productId": "1",
+    "key": "projectview.phase.1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "120",
+    "productId": "1",
+    "key": "projectview.phase.0",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "121",
+    "productId": "1",
+    "key": "typeId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "122",
+    "productId": "1",
+    "key": "form.field.strPlannedStartDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "123",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.no.comments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "124",
+    "productId": "1",
+    "key": "plagiarism.analysis.rejected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "125",
+    "productId": "1",
+    "key": "therefore.file.generation.failed",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "126",
+    "productId": "1",
+    "key": "lang.in.fi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "127",
+    "productId": "1",
+    "key": "actions",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "128",
+    "productId": "1",
+    "key": "methods",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "129",
+    "productId": "1",
+    "key": "studentReadinessTitle",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "130",
+    "productId": "1",
+    "key": "form.field.evaluation[17]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "131",
+    "productId": "1",
+    "key": "thesisWorkspace",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "132",
+    "productId": "1",
+    "key": "modal.settings.lbl1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "133",
+    "productId": "1",
+    "key": "confirm.comment.delete",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "134",
+    "productId": "1",
+    "key": "send.for.commentate.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "135",
+    "productId": "1",
+    "key": "total.credits",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "136",
+    "productId": "1",
+    "key": "modal.evaluationForm.modal.hdr",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "137",
+    "productId": "1",
+    "key": "choose.pdf.for.archive",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "138",
+    "productId": "1",
+    "key": "single-unknown",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "139",
+    "productId": "1",
+    "key": "upload.file",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "140",
+    "productId": "1",
+    "key": "configuration.evaluation.close.all",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "141",
+    "productId": "1",
+    "key": "confidential.area.opened",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "142",
+    "productId": "1",
+    "key": "lang.in.en",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "143",
+    "productId": "1",
+    "key": "commentate.outer.reciever.reply",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "144",
+    "productId": "1",
+    "key": "projectview.thesis.details.thesis.link",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "145",
+    "productId": "1",
+    "key": "searchSelect",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "146",
+    "productId": "1",
+    "key": "comment.from.coordinator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "147",
+    "productId": "1",
+    "key": "admin.study.entitlement.updating.is.running",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "148",
+    "productId": "1",
+    "key": "yes",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "149",
+    "productId": "1",
+    "key": "chooseTestAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "150",
+    "productId": "1",
+    "key": "form.field.plannedEndDateStr",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "151",
+    "productId": "1",
+    "key": "form.field.evaluation[16]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "152",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.degreeProgramme",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "153",
+    "productId": "1",
+    "key": "published.thesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "154",
+    "productId": "1",
+    "key": "modal.add_attachment_modal.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "155",
+    "productId": "1",
+    "key": "projectview.activity.header",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "156",
+    "productId": "1",
+    "key": "student.thesisWorkspace.deadline",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "157",
+    "productId": "1",
+    "key": "modal.search.advisor.placeholder",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "158",
+    "productId": "1",
+    "key": "activitytypeid10",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "159",
+    "productId": "1",
+    "key": "form.field.goal",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "160",
+    "productId": "1",
+    "key": "thesisName_sv",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "161",
+    "productId": "1",
+    "key": "advisor.index.thesisOffers",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "162",
+    "productId": "1",
+    "key": "name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "163",
+    "productId": "1",
+    "key": "enable",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "164",
+    "productId": "1",
+    "key": "projectview.thesis.details.evaluator.email",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "165",
+    "productId": "1",
+    "key": "activityDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "166",
+    "productId": "1",
+    "key": "student",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "167",
+    "productId": "1",
+    "key": "topic.draft",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "168",
+    "productId": "1",
+    "key": "attachment.delete.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "169",
+    "productId": "1",
+    "key": "form.field.evaluation[15]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "170",
+    "productId": "1",
+    "key": "modal.partials.evaluatorList.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "171",
+    "productId": "1",
+    "key": "studyEntitlements",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "172",
+    "productId": "1",
+    "key": "taskPlannedEndStartDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "173",
+    "productId": "1",
+    "key": "phaseId5title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "174",
+    "productId": "1",
+    "key": "advisorSelected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "175",
+    "productId": "1",
+    "key": "projectview.company.contact.person",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "176",
+    "productId": "1",
+    "key": "thesesToBeAssessed",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "177",
+    "productId": "1",
+    "key": "createTask",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "178",
+    "productId": "1",
+    "key": "phaseName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "179",
+    "productId": "1",
+    "key": "advisor.projectView.delete.member",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "180",
+    "productId": "1",
+    "key": "phaseId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "181",
+    "productId": "1",
+    "key": "form.field.evaluation[14]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "182",
+    "productId": "1",
+    "key": "weight",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "183",
+    "productId": "1",
+    "key": "error.must.have.advisor.role",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "184",
+    "productId": "1",
+    "key": "weekday.friday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "185",
+    "productId": "1",
+    "key": "url.format.error",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "186",
+    "productId": "1",
+    "key": "plagiarism.checking.thesis.check.in.progress",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "187",
+    "productId": "1",
+    "key": "deleted.project.has.been.activated",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "188",
+    "productId": "1",
+    "key": "thesis.invitation.accepted",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "189",
+    "productId": "1",
+    "key": "activitytypeid6",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "190",
+    "productId": "1",
+    "key": "activitytypeid5",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "191",
+    "productId": "1",
+    "key": "add",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "192",
+    "productId": "1",
+    "key": "activitytypeid4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "193",
+    "productId": "1",
+    "key": "thesisWorkspaceDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "194",
+    "productId": "1",
+    "key": "activitytypeid3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "195",
+    "productId": "1",
+    "key": "activitytypeid2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "196",
+    "productId": "1",
+    "key": "taskNotStarted",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "197",
+    "productId": "1",
+    "key": "activitytypeid1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "198",
+    "productId": "1",
+    "key": "thesis.invitation.reject.button",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "199",
+    "productId": "1",
+    "key": "project",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "200",
+    "productId": "1",
+    "key": "advisor.projectView.deleteproject",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "201",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.avg",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "202",
+    "productId": "1",
+    "key": "weekday.wednesday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "203",
+    "productId": "1",
+    "key": "latestMessage",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "204",
+    "productId": "1",
+    "key": "coordinator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "205",
+    "productId": "1",
+    "key": "form.field.evaluation[13]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "206",
+    "productId": "1",
+    "key": "intership.credits",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "207",
+    "productId": "1",
+    "key": "modal.btn.search",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "208",
+    "productId": "1",
+    "key": "companyInformation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "209",
+    "productId": "1",
+    "key": "thesis.invitation.rejected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "210",
+    "productId": "1",
+    "key": "plagiarism.checking.status",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "211",
+    "productId": "1",
+    "key": "student.thesisworkspace.deadline.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "212",
+    "productId": "1",
+    "key": "student.thesisworkspace.deadline.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "213",
+    "productId": "1",
+    "key": "lastName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "214",
+    "productId": "1",
+    "key": "tki.credits.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "215",
+    "productId": "1",
+    "key": "advisor.projectView.change.evaluator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "216",
+    "productId": "1",
+    "key": "projectview.thesis.details.previous.knowledge",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "217",
+    "productId": "1",
+    "key": "projectview.thesis.details.sv",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "218",
+    "productId": "1",
+    "key": "fileList",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "219",
+    "productId": "1",
+    "key": "endDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "220",
+    "productId": "1",
+    "key": "coordinator.indexCoordinator.createTopic.no.students.error",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "221",
+    "productId": "1",
+    "key": "form.field.evaluation[12]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "222",
+    "productId": "1",
+    "key": "modal.add_activity.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "223",
+    "productId": "1",
+    "key": "coordinator.projects.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "224",
+    "productId": "1",
+    "key": "phase4Of3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "225",
+    "productId": "1",
+    "key": "degree.type.bachelor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "226",
+    "productId": "1",
+    "key": "advising.time.preference.EVENING",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "227",
+    "productId": "1",
+    "key": "programme",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "228",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.startDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "229",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.thesisType",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "230",
+    "productId": "1",
+    "key": "acceptedAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "231",
+    "productId": "1",
+    "key": "commentate.outer.file.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "232",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.delete",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "233",
+    "productId": "1",
+    "key": "choose.final.pdf",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "234",
+    "productId": "1",
+    "key": "form.field.evaluation[11]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "235",
+    "productId": "1",
+    "key": "new.topic.proposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "236",
+    "productId": "1",
+    "key": "thesis.invitation.group.member.not.added",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "237",
+    "productId": "1",
+    "key": "project.finished.and.url.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "238",
+    "productId": "1",
+    "key": "create",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "239",
+    "productId": "1",
+    "key": "choose.thesis.type",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "240",
+    "productId": "1",
+    "key": "plannedTools",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "241",
+    "productId": "1",
+    "key": "plagiarism.checking.to.analysis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "242",
+    "productId": "1",
+    "key": "activeProjects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "243",
+    "productId": "1",
+    "key": "phaseTypeId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "244",
+    "productId": "1",
+    "key": "commentate.messages",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "245",
+    "productId": "1",
+    "key": "plannedStartEndDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "246",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.hdr3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "247",
+    "productId": "1",
+    "key": "commentate.outer.reciever.previous.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "248",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.hdr2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "249",
+    "productId": "1",
+    "key": "form.field.evaluation[10]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "250",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "251",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.hdr0",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "252",
+    "productId": "1",
+    "key": "project.delete.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "253",
+    "productId": "1",
+    "key": "searchThesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "254",
+    "productId": "1",
+    "key": "projectview.comment.no.comments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "255",
+    "productId": "1",
+    "key": "plagiarism.checking.status.NOT_SENT",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "256",
+    "productId": "1",
+    "key": "contactAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "257",
+    "productId": "1",
+    "key": "student.thesisWorkspace.attachments.files",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "258",
+    "productId": "1",
+    "key": "projectview.task.label.description",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "259",
+    "productId": "1",
+    "key": "topic.proposal.accept.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "260",
+    "productId": "1",
+    "key": "send.for.commentate.error",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "261",
+    "productId": "1",
+    "key": "taskName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "262",
+    "productId": "1",
+    "key": "student.thesisWorkspace.plagiarism.checking",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "263",
+    "productId": "1",
+    "key": "modal.general.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "264",
+    "productId": "1",
+    "key": "thesisTypeName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "265",
+    "productId": "1",
+    "key": "modal.add_activity.lab2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "266",
+    "productId": "1",
+    "key": "modal.add_activity.lab1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "267",
+    "productId": "1",
+    "key": "thesis.own.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "268",
+    "productId": "1",
+    "key": "advisor.projectView.addevaluator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "269",
+    "productId": "1",
+    "key": "projectview.company.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "270",
+    "productId": "1",
+    "key": "projects.last.advanced",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "271",
+    "productId": "1",
+    "key": "advisor.projectView.plagiarismCheckInitializationInfo",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "272",
+    "productId": "1",
+    "key": "student.thesisWorkspace.confidential.attachments.no.attachments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "273",
+    "productId": "1",
+    "key": "noPhase",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "274",
+    "productId": "1",
+    "key": "sentDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "275",
+    "productId": "1",
+    "key": "messages",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "276",
+    "productId": "1",
+    "key": "modal.studentSearch.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "277",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.grade",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "278",
+    "productId": "1",
+    "key": "plagiarism.checking.status.analyze.done",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "279",
+    "productId": "1",
+    "key": "fineupload.processing",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "280",
+    "productId": "1",
+    "key": "createTopic",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "281",
+    "productId": "1",
+    "key": "plagiarism.checking.status.ANALYZED",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "282",
+    "productId": "1",
+    "key": "student.thesisWorkspace.attachments.no.attachments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "283",
+    "productId": "1",
+    "key": "indexAdvisor.info.pending.topic.proposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "284",
+    "productId": "1",
+    "key": "report.school.total",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "285",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.comment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "286",
+    "productId": "1",
+    "key": "form.field.terms",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "287",
+    "productId": "1",
+    "key": "useDescriptionTitle",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "288",
+    "productId": "1",
+    "key": "topic.proposal.reject.modal.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "289",
+    "productId": "1",
+    "key": "contactInfo",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "290",
+    "productId": "1",
+    "key": "communication",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "291",
+    "productId": "1",
+    "key": "coordinator.advisor.evaluatorErr",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "292",
+    "productId": "1",
+    "key": "evaluation.error.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "293",
+    "productId": "1",
+    "key": "form.field.thesisTitle",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "294",
+    "productId": "1",
+    "key": "topic.sent.to.advisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "295",
+    "productId": "1",
+    "key": "search",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "296",
+    "productId": "1",
+    "key": "delete",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "297",
+    "productId": "1",
+    "key": "noAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "298",
+    "productId": "1",
+    "key": "advisorName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "299",
+    "productId": "1",
+    "key": "projectSearch",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "300",
+    "productId": "1",
+    "key": "modal.add_comment_modal.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "301",
+    "productId": "1",
+    "key": "evaluation.form.info.plagiarism.check",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "302",
+    "productId": "1",
+    "key": "thesisPhases",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "303",
+    "productId": "1",
+    "key": "plagiarism.checking.significance",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "304",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.save",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "305",
+    "productId": "1",
+    "key": "evaluation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "306",
+    "productId": "1",
+    "key": "commentate.messages.heading",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "307",
+    "productId": "1",
+    "key": "language",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "308",
+    "productId": "1",
+    "key": "deadline",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "309",
+    "productId": "1",
+    "key": "attachments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "310",
+    "productId": "1",
+    "key": "tki.credits",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "311",
+    "productId": "1",
+    "key": "single-newTopicProposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "312",
+    "productId": "1",
+    "key": "disabled",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "313",
+    "productId": "1",
+    "key": "taskProgress",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "314",
+    "productId": "1",
+    "key": "logout",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "315",
+    "productId": "1",
+    "key": "educationType",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "316",
+    "productId": "1",
+    "key": "noCommentlistFound",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "317",
+    "productId": "1",
+    "key": "projectview.activity.no.activity.found",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "318",
+    "productId": "1",
+    "key": "coordinator.topicproposals.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "319",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.thesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "320",
+    "productId": "1",
+    "key": "fineupload.upload",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "321",
+    "productId": "1",
+    "key": "projectview.company.contact.email",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "322",
+    "productId": "1",
+    "key": "content",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "323",
+    "productId": "1",
+    "key": "waitingforregistering.waitingForRegistering",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "324",
+    "productId": "1",
+    "key": "coordinator.projects.addevaluator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "325",
+    "productId": "1",
+    "key": "weekday.sunday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "326",
+    "productId": "1",
+    "key": "isActive",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "327",
+    "productId": "1",
+    "key": "student.phaseId6",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "328",
+    "productId": "1",
+    "key": "student.phaseId5",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "329",
+    "productId": "1",
+    "key": "programmes",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "330",
+    "productId": "1",
+    "key": "student.phaseId4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "331",
+    "productId": "1",
+    "key": "modal.evaluationForm.ln_fi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "332",
+    "productId": "1",
+    "key": "student.phaseId3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "333",
+    "productId": "1",
+    "key": "student.phaseId2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "334",
+    "productId": "1",
+    "key": "student.phaseId1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "335",
+    "productId": "1",
+    "key": "activityId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "336",
+    "productId": "1",
+    "key": "plagiarism.checking.not.initialized",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "337",
+    "productId": "1",
+    "key": "student.phaseId0",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "338",
+    "productId": "1",
+    "key": "noactiveprojects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "339",
+    "productId": "1",
+    "key": "thesis.invitations.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "340",
+    "productId": "1",
+    "key": "listOfActiveProjects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "341",
+    "productId": "1",
+    "key": "additionalInformation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "342",
+    "productId": "1",
+    "key": "modal.btn.save_draft",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "343",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "344",
+    "productId": "1",
+    "key": "modal.evaluationForm.ln_en",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "345",
+    "productId": "1",
+    "key": "advising.time.preference.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "346",
+    "productId": "1",
+    "key": "modal.settings.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "347",
+    "productId": "1",
+    "key": "url",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "348",
+    "productId": "1",
+    "key": "projectview.task.message.notfound",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "349",
+    "productId": "1",
+    "key": "projectarchive",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "350",
+    "productId": "1",
+    "key": "thesis.state.draft",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "351",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab9",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "352",
+    "productId": "1",
+    "key": "advisor.projectView.acceptphase",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "353",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab8",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "354",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab7",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "355",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab6",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "356",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab5",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "357",
+    "productId": "1",
+    "key": "advisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "358",
+    "productId": "1",
+    "key": "thesisActivityDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "359",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "360",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "361",
+    "productId": "1",
+    "key": "coordinator.accept.comment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "362",
+    "productId": "1",
+    "key": "password",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "363",
+    "productId": "1",
+    "key": "form.field.email",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "364",
+    "productId": "1",
+    "key": "research",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "365",
+    "productId": "1",
+    "key": "studentReadiness",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "366",
+    "productId": "1",
+    "key": "activitytypeid110",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "367",
+    "productId": "1",
+    "key": "selectStudent",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "368",
+    "productId": "1",
+    "key": "thesisName_fi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "369",
+    "productId": "1",
+    "key": "configuration.evaluation.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "370",
+    "productId": "1",
+    "key": "editTask",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "371",
+    "productId": "1",
+    "key": "no.topic.proposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "372",
+    "productId": "1",
+    "key": "plagiarism.checking.status.ERROR",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "373",
+    "productId": "1",
+    "key": "projectview.thesis.details.tki.credits",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "374",
+    "productId": "1",
+    "key": "modal.btn.cancel",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "375",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.edit",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "376",
+    "productId": "1",
+    "key": "thesis.invitation.invite.group",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "377",
+    "productId": "1",
+    "key": "orientation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "378",
+    "productId": "1",
+    "key": "commentate.outer.sender.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "379",
+    "productId": "1",
+    "key": "advising.time.preference.ANY",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "380",
+    "productId": "1",
+    "key": "coordinator.comment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "381",
+    "productId": "1",
+    "key": "no.archived.projects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "382",
+    "productId": "1",
+    "key": "activitytypeid100",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "383",
+    "productId": "1",
+    "key": "thesisName_en",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "384",
+    "productId": "1",
+    "key": "deleted.thesis.type",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "385",
+    "productId": "1",
+    "key": "plagiarism.checking.status.SUBMISSION_FAILED",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "386",
+    "productId": "1",
+    "key": "fileUrl",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "387",
+    "productId": "1",
+    "key": "confidential.area.closed",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "388",
+    "productId": "1",
+    "key": "commentate.outer.send",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "389",
+    "productId": "1",
+    "key": "plagiarism.checking.thesis.check.done.and.approved.for.assessment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "390",
+    "productId": "1",
+    "key": "commentate.file.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "391",
+    "productId": "1",
+    "key": "phase1Of3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "392",
+    "productId": "1",
+    "key": "clipboardHeader",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "393",
+    "productId": "1",
+    "key": "plagiarism.checking.thesis.check.done.and.rejected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "394",
+    "productId": "1",
+    "key": "editTopic",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "395",
+    "productId": "1",
+    "key": "student.not.found",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "396",
+    "productId": "1",
+    "key": "form.field.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "397",
+    "productId": "1",
+    "key": "sendEmail",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "398",
+    "productId": "1",
+    "key": "phases",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "399",
+    "productId": "1",
+    "key": "thesisNoActivityDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "400",
+    "productId": "1",
+    "key": "waitingforregistering.link.not.saved",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "401",
+    "productId": "1",
+    "key": "agreement",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "402",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.user",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "403",
+    "productId": "1",
+    "key": "projectview.company",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "404",
+    "productId": "1",
+    "key": "form.field.personid",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "405",
+    "productId": "1",
+    "key": "modal.btn.close",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "406",
+    "productId": "1",
+    "key": "addActivity",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "407",
+    "productId": "1",
+    "key": "plagiarism.checking.opt.out.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "408",
+    "productId": "1",
+    "key": "configuration.evaluation.criteria",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "409",
+    "productId": "1",
+    "key": "waitingforregistering.no.projects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "410",
+    "productId": "1",
+    "key": "tools",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "411",
+    "productId": "1",
+    "key": "thesisType",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "412",
+    "productId": "1",
+    "key": "plagiarism.checking.send.file.infotext",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "413",
+    "productId": "1",
+    "key": "changed",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "414",
+    "productId": "1",
+    "key": "admin",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "415",
+    "productId": "1",
+    "key": "phaseDescription",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "416",
+    "productId": "1",
+    "key": "contactPerson",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "417",
+    "productId": "1",
+    "key": "projectview.thesis.details.fi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "418",
+    "productId": "1",
+    "key": "close",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "419",
+    "productId": "1",
+    "key": "commentate.outer.last.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "420",
+    "productId": "1",
+    "key": "earlier.refusal.comments.for.student",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "421",
+    "productId": "1",
+    "key": "taskInProgress",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "422",
+    "productId": "1",
+    "key": "plannedMethodsDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "423",
+    "productId": "1",
+    "key": "taskDescription",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "424",
+    "productId": "1",
+    "key": "student.thesisWorkspace.send.to.plagiarism.check",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "425",
+    "productId": "1",
+    "key": "modal.evaluationForm.chk1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "426",
+    "productId": "1",
+    "key": "projectview.thesis.details.en",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "427",
+    "productId": "1",
+    "key": "modal.add_activity.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "428",
+    "productId": "1",
+    "key": "thesis.has.been.evaluated",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "429",
+    "productId": "1",
+    "key": "advisor.refusal.comment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "430",
+    "productId": "1",
+    "key": "plagiarism.checking.analysis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "431",
+    "productId": "1",
+    "key": "coordinator.advisormodal.lbl3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "432",
+    "productId": "1",
+    "key": "coordinator.advisormodal.lbl2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "433",
+    "productId": "1",
+    "key": "coordinator.advisormodal.lbl1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "434",
+    "productId": "1",
+    "key": "plagiarism.checking.status.rejected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "435",
+    "productId": "1",
+    "key": "approval.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "436",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.student",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "437",
+    "productId": "1",
+    "key": "error.no.authentication.available",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "438",
+    "productId": "1",
+    "key": "evaluators",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "439",
+    "productId": "1",
+    "key": "modal.settings.emailmode4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "440",
+    "productId": "1",
+    "key": "approved",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "441",
+    "productId": "1",
+    "key": "modal.settings.emailmode3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "442",
+    "productId": "1",
+    "key": "modal.settings.emailmode2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "443",
+    "productId": "1",
+    "key": "modal.settings.emailmode1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "444",
+    "productId": "1",
+    "key": "url.format.error.msg",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "445",
+    "productId": "1",
+    "key": "modal.initialize_plagiarism_check_modal.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "446",
+    "productId": "1",
+    "key": "projectview.thesis.details.tools",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "447",
+    "productId": "1",
+    "key": "view.evaluation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "448",
+    "productId": "1",
+    "key": "thesis.state",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "449",
+    "productId": "1",
+    "key": "projectview.task.label.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "450",
+    "productId": "1",
+    "key": "phase",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "451",
+    "productId": "1",
+    "key": "projectview.task.label.schedule",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "452",
+    "productId": "1",
+    "key": "studentId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "453",
+    "productId": "1",
+    "key": "evaluionTargetId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "454",
+    "productId": "1",
+    "key": "cancel",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "455",
+    "productId": "1",
+    "key": "grade",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "456",
+    "productId": "1",
+    "key": "fileName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "457",
+    "productId": "1",
+    "key": "useDescriptionText",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "458",
+    "productId": "1",
+    "key": "commentate.outer.heading",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "459",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.submit",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "460",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.person",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "461",
+    "productId": "1",
+    "key": "previousKnowledge",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "462",
+    "productId": "1",
+    "key": "form.field.evaluation[24]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "463",
+    "productId": "1",
+    "key": "commentate.outer.first.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "464",
+    "productId": "1",
+    "key": "thesis.invitation.list.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "465",
+    "productId": "1",
+    "key": "degree.type.master",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "466",
+    "productId": "1",
+    "key": "plagiarism.checking.hide.button.text",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "467",
+    "productId": "1",
+    "key": "deleted.project.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "468",
+    "productId": "1",
+    "key": "form.field.advisorselected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "469",
+    "productId": "1",
+    "key": "advisor.approvePhase.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "470",
+    "productId": "1",
+    "key": "taskDone",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "471",
+    "productId": "1",
+    "key": "wihi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "472",
+    "productId": "1",
+    "key": "projectview.thesis.details.methods",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "473",
+    "productId": "1",
+    "key": "form.field.evaluation[23]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "474",
+    "productId": "1",
+    "key": "thesis.invitation.status",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "475",
+    "productId": "1",
+    "key": "activity.mark.added",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "476",
+    "productId": "1",
+    "key": "projectview.company.contact.phone.number",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "477",
+    "productId": "1",
+    "key": "copiedClipboard",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "478",
+    "productId": "1",
+    "key": "comingPhase",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "479",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.sentDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "480",
+    "productId": "1",
+    "key": "projectview.thesis.details",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "481",
+    "productId": "1",
+    "key": "phaseId10",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "482",
+    "productId": "1",
+    "key": "modal.partials.studentList.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "483",
+    "productId": "1",
+    "key": "studentReadinessDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "484",
+    "productId": "1",
+    "key": "commentate.outer.sender",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "485",
+    "productId": "1",
+    "key": "advisor.index.messagesDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "486",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.comments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "487",
+    "productId": "1",
+    "key": "projectview.attachment.header",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "488",
+    "productId": "1",
+    "key": "form.field.evaluation[22]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "489",
+    "productId": "1",
+    "key": "thesisInformation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "490",
+    "productId": "1",
+    "key": "configuration.evaluation.thesis.type.availability",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "491",
+    "productId": "1",
+    "key": "waitingforregistering.mark.as.registered.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "492",
+    "productId": "1",
+    "key": "thesisArchive",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "493",
+    "productId": "1",
+    "key": "additionalInformationDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "494",
+    "productId": "1",
+    "key": "projectview.thesis.details.plannedEndDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "495",
+    "productId": "1",
+    "key": "form.field.evaluation[21]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "496",
+    "productId": "1",
+    "key": "details",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "497",
+    "productId": "1",
+    "key": "waitingforregistering.mark.as.registered",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "498",
+    "productId": "1",
+    "key": "modal.evaluationForm.msg4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "499",
+    "productId": "1",
+    "key": "type",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "500",
+    "productId": "1",
+    "key": "modal.evaluationForm.msg3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "501",
+    "productId": "1",
+    "key": "coordinator.projectView.return.to.previous.phase",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "502",
+    "productId": "1",
+    "key": "modal.evaluationForm.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "503",
+    "productId": "1",
+    "key": "modal.evaluationForm.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "504",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.phase",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "505",
+    "productId": "1",
+    "key": "coordinator.indexCoordinator.createTopic.msg1.groups",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "506",
+    "productId": "1",
+    "key": "group.members",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "507",
+    "productId": "1",
+    "key": "phase.is.not.yet.accepted",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "508",
+    "productId": "1",
+    "key": "description",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "509",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.deadline",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "510",
+    "productId": "1",
+    "key": "coordinator.indexCoordinator.createTopic.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "511",
+    "productId": "1",
+    "key": "phase3Of3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "512",
+    "productId": "1",
+    "key": "form.field.evaluation[20]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "513",
+    "productId": "1",
+    "key": "submit",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "514",
+    "productId": "1",
+    "key": "addComment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "515",
+    "productId": "1",
+    "key": "projectview.thesis.details.advisor.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "516",
+    "productId": "1",
+    "key": "thesis.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "517",
+    "productId": "1",
+    "key": "coordinator.reportview.label",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "518",
+    "productId": "1",
+    "key": "newTopicProposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "519",
+    "productId": "1",
+    "key": "activate.deleted.project",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "520",
+    "productId": "1",
+    "key": "phaseType",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "521",
+    "productId": "1",
+    "key": "form.field.name.sv",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "522",
+    "productId": "1",
+    "key": "roleName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "523",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.tbl.hdr4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "524",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.tbl.hdr3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "525",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.tbl.hdr2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "526",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.tbl.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "527",
+    "productId": "1",
+    "key": "modal.partials.evaluatorList.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "528",
+    "productId": "1",
+    "key": "advising.time.preference",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "529",
+    "productId": "1",
+    "key": "student.confirm.delete.attachment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "530",
+    "productId": "1",
+    "key": "student.activity.level",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "531",
+    "productId": "1",
+    "key": "student.thesisWorkspace.confidential.attachments.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "532",
+    "productId": "1",
+    "key": "statement",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "533",
+    "productId": "1",
+    "key": "commentList",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "534",
+    "productId": "1",
+    "key": "phaseId-4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "535",
+    "productId": "1",
+    "key": "phaseId-3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "536",
+    "productId": "1",
+    "key": "phaseId-2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "537",
+    "productId": "1",
+    "key": "phaseId-1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "538",
+    "productId": "1",
+    "key": "commentate.replies",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "539",
+    "productId": "1",
+    "key": "modal.nopermission",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "540",
+    "productId": "1",
+    "key": "configuration.evaluation.criteria.saved",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "541",
+    "productId": "1",
+    "key": "admin.study.entitlement.update.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "542",
+    "productId": "1",
+    "key": "phaseId6",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "543",
+    "productId": "1",
+    "key": "evaluationId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "544",
+    "productId": "1",
+    "key": "phaseId5",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "545",
+    "productId": "1",
+    "key": "phaseId4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "546",
+    "productId": "1",
+    "key": "phaseId3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "547",
+    "productId": "1",
+    "key": "action",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "548",
+    "productId": "1",
+    "key": "phaseId2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "549",
+    "productId": "1",
+    "key": "phaseId1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "550",
+    "productId": "1",
+    "key": "phaseId0",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "551",
+    "productId": "1",
+    "key": "commentate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "552",
+    "productId": "1",
+    "key": "notAvailable",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "553",
+    "productId": "1",
+    "key": "uploading.files.failed",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "554",
+    "productId": "1",
+    "key": "weekday.monday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "555",
+    "productId": "1",
+    "key": "admin.study.entitlement.update.button",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "556",
+    "productId": "1",
+    "key": "activityType",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "557",
+    "productId": "1",
+    "key": "createDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "558",
+    "productId": "1",
+    "key": "coordinator.viewProposal.pending",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "559",
+    "productId": "1",
+    "key": "student.phaseId10",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "560",
+    "productId": "1",
+    "key": "noInfo",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "561",
+    "productId": "1",
+    "key": "login",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "562",
+    "productId": "1",
+    "key": "projects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "563",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.no.tasks",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "564",
+    "productId": "1",
+    "key": "projects.recently.advanced",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "565",
+    "productId": "1",
+    "key": "additionalInformationTitle",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "566",
+    "productId": "1",
+    "key": "reject",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "567",
+    "productId": "1",
+    "key": "journal",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "568",
+    "productId": "1",
+    "key": "error.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "569",
+    "productId": "1",
+    "key": "form.field.plannedStartDateStr",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "570",
+    "productId": "1",
+    "key": "thesis.member.deletion.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "571",
+    "productId": "1",
+    "key": "taskSchedule",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "572",
+    "productId": "1",
+    "key": "coordinator.advisor.evaluator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "573",
+    "productId": "1",
+    "key": "advisor.thesis.view",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "574",
+    "productId": "1",
+    "key": "graderId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "575",
+    "productId": "1",
+    "key": "tasks",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "576",
+    "productId": "1",
+    "key": "createThesisProposal",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "577",
+    "productId": "1",
+    "key": "no",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "578",
+    "productId": "1",
+    "key": "modal.add_activity.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "579",
+    "productId": "1",
+    "key": "send.for.commentate.file",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "580",
+    "productId": "1",
+    "key": "modify",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "581",
+    "productId": "1",
+    "key": "contactEmail",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "582",
+    "productId": "1",
+    "key": "form.field.orientation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "583",
+    "productId": "1",
+    "key": "programmeName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "584",
+    "productId": "1",
+    "key": "student.deadline.values.checkmsg",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "585",
+    "productId": "1",
+    "key": "commentate.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "586",
+    "productId": "1",
+    "key": "plagiarism.data.aria2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "587",
+    "productId": "1",
+    "key": "deletemessage",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "588",
+    "productId": "1",
+    "key": "plagiarism.data.aria1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "589",
+    "productId": "1",
+    "key": "thesis.is.evaluated",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "590",
+    "productId": "1",
+    "key": "coordinator.advisorchanged",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "591",
+    "productId": "1",
+    "key": "advisor.projectView.addevaluation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "592",
+    "productId": "1",
+    "key": "evaluation.form.info.basic",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "593",
+    "productId": "1",
+    "key": "topicProposalSendDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "594",
+    "productId": "1",
+    "key": "confidential.area.activate.confidential.area",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "595",
+    "productId": "1",
+    "key": "manageThesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "596",
+    "productId": "1",
+    "key": "commentate.outer.sender.link.expired",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "597",
+    "productId": "1",
+    "key": "send.for.commentate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "598",
+    "productId": "1",
+    "key": "configuration.evaluation.thesis.type.disabled",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "599",
+    "productId": "1",
+    "key": "open.for.evaluation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "600",
+    "productId": "1",
+    "key": "error.can.not.be.same.person",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "601",
+    "productId": "1",
+    "key": "studentInformation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "602",
+    "productId": "1",
+    "key": "upload.files.not.uploaded",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "603",
+    "productId": "1",
+    "key": "study.accomplishment.creation.failed",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "604",
+    "productId": "1",
+    "key": "noThesisFound",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "605",
+    "productId": "1",
+    "key": "evaluator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "606",
+    "productId": "1",
+    "key": "thesisId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "607",
+    "productId": "1",
+    "key": "informAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "608",
+    "productId": "1",
+    "key": "email",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "609",
+    "productId": "1",
+    "key": "single-noAdvisorSelected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "610",
+    "productId": "1",
+    "key": "plannedMethods",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "611",
+    "productId": "1",
+    "key": "student.phaseId-4",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "612",
+    "productId": "1",
+    "key": "topicProposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "613",
+    "productId": "1",
+    "key": "student.phaseId-3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "614",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "615",
+    "productId": "1",
+    "key": "student.phaseId-2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "616",
+    "productId": "1",
+    "key": "modal.evaluationCriteria.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "617",
+    "productId": "1",
+    "key": "student.phaseId-1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "618",
+    "productId": "1",
+    "key": "approvalDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "619",
+    "productId": "1",
+    "key": "indexAdvisor.info.pending.projects.to.be.evaluated",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "620",
+    "productId": "1",
+    "key": "thesis.invitation.accept.button",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "621",
+    "productId": "1",
+    "key": "coordinator.advisormodal.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "622",
+    "productId": "1",
+    "key": "link.to.published.thesis.missing",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "623",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.btn2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "624",
+    "productId": "1",
+    "key": "modal.evaluatorSearch.ftl.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "625",
+    "productId": "1",
+    "key": "credit.unit",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "626",
+    "productId": "1",
+    "key": "form.field.mt_lang",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "627",
+    "productId": "1",
+    "key": "studentName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "628",
+    "productId": "1",
+    "key": "role",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "629",
+    "productId": "1",
+    "key": "advisor.index.activeProjectsDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "630",
+    "productId": "1",
+    "key": "coordinator.viewProposal.deny",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "631",
+    "productId": "1",
+    "key": "phaseInProgress",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "632",
+    "productId": "1",
+    "key": "roles",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "633",
+    "productId": "1",
+    "key": "indexAdvisor.info.pending.projects.to.be.evaluated.move",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "634",
+    "productId": "1",
+    "key": "modal.createTopic.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "635",
+    "productId": "1",
+    "key": "modal.createTopic.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "636",
+    "productId": "1",
+    "key": "indexAdvisor.info.go.to.topic.proposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "637",
+    "productId": "1",
+    "key": "modal.studentSearch.hdr3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "638",
+    "productId": "1",
+    "key": "modal.studentSearch.hdr2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "639",
+    "productId": "1",
+    "key": "modal.studentSearch.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "640",
+    "productId": "1",
+    "key": "studentsInformation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "641",
+    "productId": "1",
+    "key": "advisor.projectView.initializePlagiarismCheck",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "642",
+    "productId": "1",
+    "key": "thesis.invitation.pending",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "643",
+    "productId": "1",
+    "key": "confidential.area.deactivate.confidential.area",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "644",
+    "productId": "1",
+    "key": "thesisLink",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "645",
+    "productId": "1",
+    "key": "form.field.thesisTypeid",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "646",
+    "productId": "1",
+    "key": "evaluator.fields.missing",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "647",
+    "productId": "1",
+    "key": "projectview.thesis.details.plannedStartDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "648",
+    "productId": "1",
+    "key": "commentText",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "649",
+    "productId": "1",
+    "key": "advisor.index.thesisOffersDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "650",
+    "productId": "1",
+    "key": "file.uploader",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "651",
+    "productId": "1",
+    "key": "projectview.thesis.details.content",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "652",
+    "productId": "1",
+    "key": "activities",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "653",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.deleted",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "654",
+    "productId": "1",
+    "key": "advising.time.preference.DAY",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "655",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab51",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "656",
+    "productId": "1",
+    "key": "form.field.evaluation[9]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "657",
+    "productId": "1",
+    "key": "projectview.thesis.details.advisor.email",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "658",
+    "productId": "1",
+    "key": "frontPage",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "659",
+    "productId": "1",
+    "key": "configuration.evaluation.weight",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "660",
+    "productId": "1",
+    "key": "download.evaluation.pdf",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "661",
+    "productId": "1",
+    "key": "id",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "662",
+    "productId": "1",
+    "key": "student.index.thesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "663",
+    "productId": "1",
+    "key": "form.field.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "664",
+    "productId": "1",
+    "key": "advisor.index.no.active.projects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "665",
+    "productId": "1",
+    "key": "drafts",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "666",
+    "productId": "1",
+    "key": "commentate.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "667",
+    "productId": "1",
+    "key": "configuration.evaluation.thesis.type.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "668",
+    "productId": "1",
+    "key": "projectview.attachment.no.attachments",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "669",
+    "productId": "1",
+    "key": "modal.evaluationForm.hdr2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "670",
+    "productId": "1",
+    "key": "modal.evaluationForm.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "671",
+    "productId": "1",
+    "key": "contactPhone",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "672",
+    "productId": "1",
+    "key": "fineupload.dropfile",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "673",
+    "productId": "1",
+    "key": "nomessages",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "674",
+    "productId": "1",
+    "key": "topicProposal",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "675",
+    "productId": "1",
+    "key": "selectAdvisorText",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "676",
+    "productId": "1",
+    "key": "filter",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "677",
+    "productId": "1",
+    "key": "activityDescription",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "678",
+    "productId": "1",
+    "key": "studentUsername",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "679",
+    "productId": "1",
+    "key": "form.field.evaluation[8]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "680",
+    "productId": "1",
+    "key": "group.size.error",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "681",
+    "productId": "1",
+    "key": "plagiarism.checking.reject",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "682",
+    "productId": "1",
+    "key": "modal.add_comment_modal.btn1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "683",
+    "productId": "1",
+    "key": "settings",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "684",
+    "productId": "1",
+    "key": "choose",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "685",
+    "productId": "1",
+    "key": "lang.in.sv",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "686",
+    "productId": "1",
+    "key": "noLastActivityFound",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "687",
+    "productId": "1",
+    "key": "commentate.outer.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "688",
+    "productId": "1",
+    "key": "taskTimeline",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "689",
+    "productId": "1",
+    "key": "projectview.thesis.details.thesisName",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "690",
+    "productId": "1",
+    "key": "comment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "691",
+    "productId": "1",
+    "key": "chooseTestCoordinator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "692",
+    "productId": "1",
+    "key": "show.all",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "693",
+    "productId": "1",
+    "key": "single-acceptedAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "694",
+    "productId": "1",
+    "key": "plagiarism.checking.status.SUBMITTED",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "695",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.msg2",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "696",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.advisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "697",
+    "productId": "1",
+    "key": "student.thesisWorkspace.task.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "698",
+    "productId": "1",
+    "key": "form.field.evaluation[7]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "699",
+    "productId": "1",
+    "key": "programmeId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "700",
+    "productId": "1",
+    "key": "advisor.index.no.active.proposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "701",
+    "productId": "1",
+    "key": "pick.emails",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "702",
+    "productId": "1",
+    "key": "thesisDetails",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "703",
+    "productId": "1",
+    "key": "thesisManagement",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "704",
+    "productId": "1",
+    "key": "plannedEndDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "705",
+    "productId": "1",
+    "key": "weekday.thursday",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "706",
+    "productId": "1",
+    "key": "project.finished.info.title",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "707",
+    "productId": "1",
+    "key": "modal.partials.studentList.msg1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "708",
+    "productId": "1",
+    "key": "configuration.evaluation.delete.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "709",
+    "productId": "1",
+    "key": "coordinator.viewProposal.accept",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "710",
+    "productId": "1",
+    "key": "phone",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "711",
+    "productId": "1",
+    "key": "plagiarism.checking.file",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "712",
+    "productId": "1",
+    "key": "gradeFinal",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "713",
+    "productId": "1",
+    "key": "form.field.evaluation[6]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "714",
+    "productId": "1",
+    "key": "fineupload.cancel",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "715",
+    "productId": "1",
+    "key": "notifications",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "716",
+    "productId": "1",
+    "key": "configuration.evaluation.create",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "717",
+    "productId": "1",
+    "key": "system.error",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "718",
+    "productId": "1",
+    "key": "activityNotes",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "719",
+    "productId": "1",
+    "key": "plagiarism.checking.allowed.file.type.info",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "720",
+    "productId": "1",
+    "key": "plagiarism.checking.send.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "721",
+    "productId": "1",
+    "key": "plagiarism.checking.hide.button.tooltip",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "722",
+    "productId": "1",
+    "key": "target",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "723",
+    "productId": "1",
+    "key": "projectPlan",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "724",
+    "productId": "1",
+    "key": "thesis.invitation.accepting.error.existing.project",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "725",
+    "productId": "1",
+    "key": "form.fiel.last.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "726",
+    "productId": "1",
+    "key": "projectview.task.header",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "727",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab14",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "728",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab13",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "729",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab12",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "730",
+    "productId": "1",
+    "key": "plagiarism.checking.status.ACCEPTED",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "731",
+    "productId": "1",
+    "key": "thesisDescriptionText",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "732",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab11",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "733",
+    "productId": "1",
+    "key": "coordinator.viewProposal.addAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "734",
+    "productId": "1",
+    "key": "modal.evaluationForm.lab10",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "735",
+    "productId": "1",
+    "key": "form.field.evaluation[5]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "736",
+    "productId": "1",
+    "key": "report.sum",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "737",
+    "productId": "1",
+    "key": "project.finished.info.content",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "738",
+    "productId": "1",
+    "key": "modal.settings.weekly.sending.day",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "739",
+    "productId": "1",
+    "key": "form.error.saving.help",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "740",
+    "productId": "1",
+    "key": "form.field.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "741",
+    "productId": "1",
+    "key": "plannedStartDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "742",
+    "productId": "1",
+    "key": "plagiarism.checking.status.REJECTED",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "743",
+    "productId": "1",
+    "key": "topic.proposal.declined",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "744",
+    "productId": "1",
+    "key": "modal.btn.save",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "745",
+    "productId": "1",
+    "key": "noThesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "746",
+    "productId": "1",
+    "key": "assessedTheses",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "747",
+    "productId": "1",
+    "key": "thesis.invitation.reject.confirm.message",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "748",
+    "productId": "1",
+    "key": "advisor.projectView.changeadvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "749",
+    "productId": "1",
+    "key": "scheduled.daily.email.subject",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "750",
+    "productId": "1",
+    "key": "form.field.evaluation[4]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "751",
+    "productId": "1",
+    "key": "form.field.description",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "752",
+    "productId": "1",
+    "key": "plagiarism.checking.error.3",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "753",
+    "productId": "1",
+    "key": "plagiarism.checking.send.to.checking",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "754",
+    "productId": "1",
+    "key": "form.field.name.fi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "755",
+    "productId": "1",
+    "key": "commentDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "756",
+    "productId": "1",
+    "key": "thesis.state.send",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "757",
+    "productId": "1",
+    "key": "coordinator.reportview.button",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "758",
+    "productId": "1",
+    "key": "cancel.phase.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "759",
+    "productId": "1",
+    "key": "student.thesisWorkspace.comments.send.comment",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "760",
+    "productId": "1",
+    "key": "topic.proposal.rejected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "761",
+    "productId": "1",
+    "key": "thesis.evaluation.draft.saved",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "762",
+    "productId": "1",
+    "key": "clipboardCopy",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "763",
+    "productId": "1",
+    "key": "link",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "764",
+    "productId": "1",
+    "key": "cn",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "765",
+    "productId": "1",
+    "key": "form.field.evaluation[3]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "766",
+    "productId": "1",
+    "key": "projectevaluation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "767",
+    "productId": "1",
+    "key": "file.upload.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "768",
+    "productId": "1",
+    "key": "form.field.name.en",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "769",
+    "productId": "1",
+    "key": "single-advisorSelected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "770",
+    "productId": "1",
+    "key": "loggedOut",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "771",
+    "productId": "1",
+    "key": "filter.by.my.role",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "772",
+    "productId": "1",
+    "key": "single-advisorRejected",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "773",
+    "productId": "1",
+    "key": "projectview.task.no.tasks",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "774",
+    "productId": "1",
+    "key": "commentate.outer.date",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "775",
+    "productId": "1",
+    "key": "form.field.first.name",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "776",
+    "productId": "1",
+    "key": "phaseId_ready",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "777",
+    "productId": "1",
+    "key": "student.thesisWorkspace.confidential.attachments.files",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "778",
+    "productId": "1",
+    "key": "configuration.evaluation.add.criterion.row",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "779",
+    "productId": "1",
+    "key": "unknown",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "780",
+    "productId": "1",
+    "key": "advisor.index.proposal.table.coordinator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "781",
+    "productId": "1",
+    "key": "showdetails",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "782",
+    "productId": "1",
+    "key": "commentate.person",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "783",
+    "productId": "1",
+    "key": "keyword",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "784",
+    "productId": "1",
+    "key": "form.field.evaluation[2]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "785",
+    "productId": "1",
+    "key": "add.link.to.published.thesis",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "786",
+    "productId": "1",
+    "key": "advisor.index.activeProjects",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "787",
+    "productId": "1",
+    "key": "studentNumber",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "788",
+    "productId": "1",
+    "key": "startDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "789",
+    "productId": "1",
+    "key": "advisor.approvePhase.ph1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "790",
+    "productId": "1",
+    "key": "advisorInformation",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "791",
+    "productId": "1",
+    "key": "thesis.members",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "792",
+    "productId": "1",
+    "key": "text",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "793",
+    "productId": "1",
+    "key": "coordinator.topicproposals.addAdvisorEvaluator",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "794",
+    "productId": "1",
+    "key": "modal.btn.accept",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "795",
+    "productId": "1",
+    "key": "plannedToolsDesc",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "796",
+    "productId": "1",
+    "key": "fileDescription",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "797",
+    "productId": "1",
+    "key": "form.field.evaluation[1]",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "798",
+    "productId": "1",
+    "key": "confidential.area.delete.confirm",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "799",
+    "productId": "1",
+    "key": "form.field.strPlannedEndDate",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "800",
+    "productId": "1",
+    "key": "thesisDescriptionTitle",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "801",
+    "productId": "1",
+    "key": "activitytypeid90",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "802",
+    "productId": "1",
+    "key": "thesisTypeId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "803",
+    "productId": "1",
+    "key": "lastAdvisor",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "804",
+    "productId": "1",
+    "key": "roleId",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "805",
+    "productId": "1",
+    "key": "form.field.studyEntitlementIds",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "806",
+    "productId": "1",
+    "key": "noProposals",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "807",
+    "productId": "1",
+    "key": "datetime",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "808",
+    "productId": "1",
+    "key": "fineupload.caption",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "809",
+    "productId": "1",
+    "key": "approve",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "810",
+    "productId": "1",
+    "key": "advisor.projectView.updatePlagiarismCheckSettings",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "811",
+    "productId": "1",
+    "key": "disable",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "812",
+    "productId": "1",
+    "key": "contactCompany",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "813",
+    "productId": "1",
+    "key": "configuration.evaluation.open.all",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "814",
+    "productId": "1",
+    "key": "scheduled.weekly.email.subject",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "815",
+    "productId": "1",
+    "key": "form.field.name_fi",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "816",
+    "productId": "1",
+    "key": "form.field.name_en",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "817",
+    "productId": "1",
+    "key": "thesisTypeid",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "818",
+    "productId": "1",
+    "key": "plannedStartDateStr",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "819",
+    "productId": "1",
+    "key": "modal.add_attachment_modal.hdr1",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "820",
+    "productId": "1",
+    "key": "name_sv",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "821",
+    "productId": "1",
+    "key": "plannedEndDateStr",
+    "hidden": "0",
+    "deleted": "0"
+  },
+  {
+    "id": "822",
+    "productId": "1",
+    "key": "weigth",
+    "hidden": "0",
+    "deleted": "0"
+  }
+]
