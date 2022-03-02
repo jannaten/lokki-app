@@ -1,0 +1,34 @@
+{
+    "fi_FI": {
+      "id": 1,
+      "value": "Viestit",
+      "fromDefault": true
+    },
+    "en_GB": {
+      "id": 820,
+      "value": "Messages",
+      "fromDefault": true
+    },
+    "sv_SV": {
+      "id": 1640,
+      "value": "Viestit",
+      "fromDefault": true
+    },
+    "pt_BR": {
+      "id": 9461,
+      "value": "Mensagens",
+      "fromDefault": true
+    },
+    "es_ES": {
+      "id": 9463,
+      "value": "Mensajes",
+      "fromDefault": true
+    },
+    "en_EN": {
+      "id": 10992,
+      "localizationId": 14,
+      "value": "Messagesvvvv",
+      "fromDefault": false
+    }
+  }
+  

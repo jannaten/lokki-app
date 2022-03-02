@@ -14,7 +14,6 @@ router.get("/", async (req, res) => {
         model: db.organization_product,
         attributes: { exclude: ["createdAt", "updatedAt"] },
         include: [{ model: db.product }],
-        // include: [{ model: db.product, attributes: ["id", "name"] }],
       },
     ],
   });
