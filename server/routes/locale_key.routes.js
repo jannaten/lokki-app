@@ -40,17 +40,18 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
     where: { organizationId: defaultOrganizationId, productId: proId },
   });
   let nonDefaultLocalization = [];
-  if (defaultLocalization) {
+  let removedLocalization = [...defaultLocalization];
+  if (fromDefault) {
     nonDefaultLocalization = await db.localization.findAll({
       where: { organizationId: orgId, productId: proId },
     });
+    removedLocalization = [...defaultLocalization].filter((el) => {
+      let locale =
+        nonDefaultLocalization.find((locale) => locale.locale) &&
+        nonDefaultLocalization.find((locale) => locale.locale).locale;
+      return el.locale !== locale;
+    });
   }
-  const removedLocalization = [...defaultLocalization].filter((el) => {
-    let locale =
-      nonDefaultLocalization.find((locale) => locale.locale) &&
-      nonDefaultLocalization.find((locale) => locale.locale).locale;
-    return el.locale !== locale;
-  });
   const localization = [...removedLocalization, ...nonDefaultLocalization];
   const locale_keys = await db.locale_key.findAll({
     where: { productId: proId },

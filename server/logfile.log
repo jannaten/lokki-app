@@ -740,3 +740,17 @@
 {"level":"info","message":"Database is connected"}
 {"level":"info","message":"Database is connected"}
 {"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Assignment to constant variable. Assignment to constant variable.","stack":"TypeError: Assignment to constant variable.\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:48:25\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Assignment to constant variable. Assignment to constant variable.","stack":"TypeError: Assignment to constant variable.\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:48:25\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
