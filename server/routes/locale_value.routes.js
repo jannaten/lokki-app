@@ -36,19 +36,60 @@ router.post("/", async (req, res) => {
 });
 
 // Editing data
-router.put("/:id", async (req, res) => {
-  const { id } = req.params;
-  const { value, error } = locale_value_schema.validate(req.body);
+router.put("/", async (req, res) => {
+  console.log(req.body);
+  const { value, error } = locale_value_schema.validate({
+    value: req.body.value,
+    localeKeyId: req.body.localeKeyId,
+    localizationId: req.body.localizationId,
+  });
   if (error) return res.status(400).send({ message: error.details[0].message });
-  const localeValueExist = await db.locale_value.findAll({ where: { id } });
-  if (!localeValueExist[0])
-    return res
-      .status(404)
-      .send({ message: `locale value of id ${id} not found` });
-  await db.locale_value.update(value, { where: { id } });
-  const query = await db.locale_value.findAll({ where: { id } });
-  res.status(200).send(query[0]);
+  const { localizationId, localeKeyId } = value;
+  if (typeof req.body.id === "number") {
+    const localeValueExist = await db.locale_value.findAll({
+      where: { id: req.body.id },
+    });
+    if (!localeValueExist[0])
+      return res
+        .status(404)
+        .send({ message: `locale value of id ${req.body.id} not found` });
+    await db.locale_value.update(value, { where: { id: req.body.id } });
+    const query = await db.locale_value.findAll({
+      where: { id: req.body.id },
+      attributes: { exclude: ["createdAt", "updatedAt"] },
+    });
+    res.status(200).send(query[0]);
+  }
+  if (req.body.id === null) {
+    const locale_value = await db.locale_value.create({
+      value: value.value,
+      localizationId,
+      localeKeyId,
+    });
+    let localValue = {
+      id: locale_value.id,
+      value: locale_value.value,
+      localeKeyId: locale_value.localeKeyId,
+      localizationId: locale_value.localizationId,
+    };
+    res.status(201).send(localValue);
+  }
 });
+
+// // Editing data
+// router.put("/:id", async (req, res) => {
+//   const { id } = req.params;
+//   const { value, error } = locale_value_schema.validate(req.body);
+//   if (error) return res.status(400).send({ message: error.details[0].message });
+//   const localeValueExist = await db.locale_value.findAll({ where: { id } });
+//   if (!localeValueExist[0])
+//     return res
+//       .status(404)
+//       .send({ message: `locale value of id ${id} not found` });
+//   await db.locale_value.update(value, { where: { id } });
+//   const query = await db.locale_value.findAll({ where: { id } });
+//   res.status(200).send(query[0]);
+// });
 
 // Deleting data
 router.delete("/:id", async (req, res) => {

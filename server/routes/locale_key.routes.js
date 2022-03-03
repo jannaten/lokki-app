@@ -35,13 +35,13 @@ router.get("/:id", async (req, res) => {
 router.get("/org/:orgId/pro/:proId", async (req, res) => {
   const defaultOrganizationId = 1;
   const { orgId, proId } = req.params;
-  const fromDefault = defaultOrganizationId !== Number(orgId);
+  const notDefault = defaultOrganizationId !== Number(orgId);
   const defaultLocalization = await db.localization.findAll({
     where: { organizationId: defaultOrganizationId, productId: proId },
   });
   let nonDefaultLocalization = [];
   let removedLocalization = [...defaultLocalization];
-  if (fromDefault) {
+  if (notDefault) {
     nonDefaultLocalization = await db.localization.findAll({
       where: { organizationId: orgId, productId: proId },
     });
@@ -53,13 +53,32 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
     });
   }
   const localization = [...removedLocalization, ...nonDefaultLocalization];
-  const locale_keys = await db.locale_key.findAll({
-    where: { productId: proId },
-    include: [
-      { model: db.locale_value, include: [{ model: db.localization }] },
-    ],
-    limit: 50,
-  });
+  const locale_keys = await db.locale_key.findAll(
+    !notDefault
+      ? {
+          where: { productId: proId },
+          include: [
+            {
+              model: db.locale_value,
+              include: [
+                { model: db.localization, where: { organizationId: orgId } },
+              ],
+            },
+          ],
+          limit: 50,
+        }
+      : {
+          where: { productId: proId },
+          include: [
+            {
+              model: db.locale_value,
+              include: [{ model: db.localization }],
+            },
+          ],
+          limit: 50,
+        }
+  );
+
   const modified_value = [...locale_keys];
   const keyValueArray = [];
   for (let i = 0; i < modified_value.length; i++) {
@@ -81,12 +100,12 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
             id,
             value,
             localeKeyId,
-            fromDefault,
+            localizationId,
+            // fromDefault: defaultLocalization.some(() => {
+            //   if (notDefault) return true;
+            //   return false;
+            // }),
           };
-          if (!fromDefault) {
-            locale_values[localization[j].locale].localizationId =
-              localizationId;
-          }
         }
       }
     }

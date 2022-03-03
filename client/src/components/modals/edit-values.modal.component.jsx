@@ -3,10 +3,9 @@ import { useContext, useState } from "react";
 import { DataContext } from "../../contexts";
 
 function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
-  const [name, setName] = useState("");
   const [editedValueChangeList, setEditedValueChangeList] = useState([]);
 
-  const { addOrganization } = useContext(DataContext);
+  const { editLocalizeValues } = useContext(DataContext);
 
   const handleChange = (value) => {
     let copy = [...editedValueChangeList];
@@ -33,8 +32,6 @@ function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
       setEditedValueChangeList(copy);
     }
   };
-
-  console.log(editedValueChangeList);
 
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
@@ -63,9 +60,13 @@ function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
                     value: e.target.value,
                     localeKeyId: locale_keys.id,
                     localizationId: localization.id,
-                    id: locale_keys.locale_values[localization.locale]
-                      ? locale_keys.locale_values[localization.locale].id
-                      : null,
+                    // fromDefault: locale_keys.locale_values[localization.locale]
+                    //   ? locale_keys.locale_values[localization.locale]
+                    //       .fromDefault
+                    //   : true,
+                    // id: locale_keys.locale_values[localization.locale]
+                    //   ? locale_keys.locale_values[localization.locale].id
+                    //   : null,
                   });
                 }}
               />
@@ -74,9 +75,10 @@ function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
           <Button
             variant="primary"
             onClick={async () => {
-              await addOrganization({ name });
+              if (editedValueChangeList.length > 0)
+                await editLocalizeValues(editedValueChangeList);
               setVisible(!visible);
-              setName("");
+              setEditedValueChangeList([]);
             }}
           >
             Submit

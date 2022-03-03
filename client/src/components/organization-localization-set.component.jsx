@@ -9,7 +9,11 @@ const OrganizationLocalizationSet = ({ locale_keys, localizations }) => {
       <td>{locale_keys.key}</td>
       {localizations.map((localization) => (
         <React.Fragment key={localization.id}>
-          <td>
+          <td
+            onClick={() =>
+              console.log(locale_keys.locale_values[localization.locale])
+            }
+          >
             {locale_keys.locale_values[localization.locale]
               ? locale_keys.locale_values[localization.locale].value
               : ""}

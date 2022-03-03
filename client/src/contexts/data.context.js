@@ -5,7 +5,7 @@ import { useState, useEffect, createContext } from "react";
 export const DataContext = createContext();
 
 const DataContextProvider = ({ children }) => {
-  const { addOrganizationUrl } = endPoints;
+  const { addOrganizationUrl, editLocalizeValueUrl } = endPoints;
   const { getOrganizationsUrl, getProductsUrl, addProductUrl } = endPoints;
 
   const [organizations, setOrganizations] = useState([]);
@@ -34,6 +34,13 @@ const DataContextProvider = ({ children }) => {
     getProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const editLocalizeValues = async (values) => {
+    for (let i = 0; i < values.length; i++) {
+      const respond = await axios.put(editLocalizeValueUrl, values[i]);
+      console.log(respond.data);
+    }
+  };
 
   const addProduct = async (org, productId) => {
     try {
@@ -74,6 +81,7 @@ const DataContextProvider = ({ children }) => {
   return (
     <DataContext.Provider
       value={{
+        editLocalizeValues,
         setOrganizations,
         addOrganization,
         organizations,

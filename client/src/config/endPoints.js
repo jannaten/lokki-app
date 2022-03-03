@@ -4,6 +4,7 @@ const BACKEND_URL = "api";
 export const endPoints = {
   getLocalizationByOrgProUrl: (orgId, proId) =>
     `${ORIGIN}/${BACKEND_URL}/localization/org/${orgId}/pro/${proId}`,
+  editLocalizeValueUrl: `${ORIGIN}/${BACKEND_URL}/locale_value`,
   getLocaleKeyValuePairByOrgIdProIdUrl: (orgId, proId) =>
     `${ORIGIN}/${BACKEND_URL}/locale_key/org/${orgId}/pro/${proId}`,
   addProductUrl: `${ORIGIN}/${BACKEND_URL}/organization_product`,
