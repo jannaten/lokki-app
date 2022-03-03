@@ -1,6 +1,7 @@
-import { Table } from "react-bootstrap";
-import React, { useContext } from "react";
+import { OrganizationLocalizationSet } from ".";
 import { DataLocaleContext } from "../contexts";
+import React, { useContext } from "react";
+import { Table } from "react-bootstrap";
 
 const OrganizationLocalization = () => {
   const { localizations, localeKeysValues } = useContext(DataLocaleContext);
@@ -19,22 +20,16 @@ const OrganizationLocalization = () => {
                 ))}
               </>
             )}
+            <th></th>
           </tr>
         </thead>
         <tbody>
           {localeKeysValues.map((locale_keys) => (
-            <tr key={locale_keys.id}>
-              <td>{locale_keys.key}</td>
-              {localizations.map((localization) => (
-                <React.Fragment key={localization.id}>
-                  <td>
-                    {locale_keys.locale_values[localization.locale]
-                      ? locale_keys.locale_values[localization.locale].value
-                      : ""}
-                  </td>
-                </React.Fragment>
-              ))}
-            </tr>
+            <OrganizationLocalizationSet
+              localizations={localizations}
+              locale_keys={locale_keys}
+              key={locale_keys.id}
+            />
           ))}
         </tbody>
       </Table>
