@@ -42,41 +42,26 @@ const DataLocaleContextProvider = ({ children }) => {
   };
 
   const editLocalizeValues = async (values) => {
-    for (let i = 0; i < values.length; i++) {
-      //   const respond = await axios.put(editLocalizeValueUrl, values[i]);
-      //   console.log(respond.data);
-      const data = values[i];
-      const copyLocalization = [...localizations];
-      const modifiedLocaleKeysValues = [...localeKeysValues];
-
-      copyLocalization.map((localization) => {
-        modifiedLocaleKeysValues.map((el) => {
-          if (el.locale_values[localization.locale]) {
-            if (el.locale_values[localization.locale].id === data.id) {
-              el.locale_values[localization.locale].id = data.id;
-              el.locale_values[localization.locale].value = data.value;
-              el.locale_values[localization.locale].localizationId =
-                data.localizationId;
-              el.locale_values[localization.locale].localeKeyId =
-                data.localeKeyId;
+    if (values.length > 0) {
+      for (let i = 0; i < values.length; i++) {
+        try {
+          const respond = await axios.put(editLocalizeValueUrl, values[i]);
+          const { data } = respond;
+          if (!data) return;
+          const { locale } = localizations.find(
+            (local) => local.id === data.localizationId
+          );
+          const modifiedLocalKeyValues = [...localeKeysValues].map((el) => {
+            if (data.localeKeyId === el.id) {
+              el.locale_values[locale] = data;
             }
-          }
-          if (el.id === data.localeKeyId) {
-            const locale = localization.locale;
-            let obj = {};
-            if (el.locale_values[locale] === null) {
-              obj.id = data.id;
-              obj.value = data.value;
-              obj.localizationId = data.localizationId;
-              obj.localeKeyId = data.localeKeyId;
-              el.locale_values[locale] = obj;
-            }
-          }
-          return el;
-        });
-        return localization;
-      });
-      // console.log(modifiedLocaleKeysValues);
+            return el;
+          });
+          setLocaleKeysValues(modifiedLocalKeyValues);
+        } catch (error) {
+          console.error(error.message);
+        }
+      }
     }
   };
 
