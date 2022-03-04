@@ -1,11 +1,11 @@
-import { Modal, Form, Button } from "react-bootstrap";
 import { useContext, useState } from "react";
-import { DataContext } from "../../contexts";
+import { DataLocaleContext } from "../../contexts";
+import { Modal, Form, Button } from "react-bootstrap";
 
 function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
   const [editedValueChangeList, setEditedValueChangeList] = useState([]);
 
-  const { editLocalizeValues } = useContext(DataContext);
+  const { editLocalizeValues } = useContext(DataLocaleContext);
 
   const handleChange = (value) => {
     let copy = [...editedValueChangeList];
@@ -64,9 +64,9 @@ function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
                     //   ? locale_keys.locale_values[localization.locale]
                     //       .fromDefault
                     //   : true,
-                    // id: locale_keys.locale_values[localization.locale]
-                    //   ? locale_keys.locale_values[localization.locale].id
-                    //   : null,
+                    id: locale_keys.locale_values[localization.locale]
+                      ? locale_keys.locale_values[localization.locale].id
+                      : null,
                   });
                 }}
               />
