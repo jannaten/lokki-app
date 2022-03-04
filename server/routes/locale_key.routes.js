@@ -103,10 +103,13 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
             value,
             localeKeyId,
             localizationId,
-            // fromDefault: defaultLocalization.some(() => {
-            //   if (notDefault) return true;
-            //   return false;
-            // }),
+            fromDefault: defaultLocalization.some((el) => {
+              if (Number(orgId) !== 1) {
+                return el.id === localizationId;
+              } else if (Number(orgId) !== 1) {
+                return false;
+              }
+            }),
           };
         }
       }
