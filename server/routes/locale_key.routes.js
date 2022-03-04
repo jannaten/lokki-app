@@ -89,7 +89,9 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
     let locale_values = {};
     for (let j = 0; j < localization.length; j++) {
       locale_values[localization[j].locale] = null;
-      for (let k = 0; modified_value[i].locale_values[k]; k++) {
+      // Both line work somehow the same way -- I don't know how
+      // for (let k = 0; modified_value[i].locale_values[k]; k++) {
+      for (let k = 0; k < modified_value[i].locale_values.length; k++) {
         if (
           modified_value[i].locale_values[k].localization.locale ===
           localization[j].locale
