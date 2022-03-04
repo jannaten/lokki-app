@@ -4,7 +4,9 @@ import React, { useContext } from "react";
 import { Table } from "react-bootstrap";
 
 const OrganizationLocalization = () => {
-  const { localizations, localeKeysValues } = useContext(DataLocaleContext);
+  const { localizations, localeKeysValues, defaultLocaleKeysValues } =
+    useContext(DataLocaleContext);
+  console.log(defaultLocaleKeysValues);
   return (
     <div>
       <Table striped bordered hover>

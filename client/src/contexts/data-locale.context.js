@@ -12,10 +12,12 @@ const DataLocaleContextProvider = ({ children }) => {
 
   const [localizations, setLocalizations] = useState([]);
   const [localeKeysValues, setLocaleKeysValues] = useState([]);
+  const [defaultLocaleKeysValues, setDefaultLocaleKeysValues] = useState([]);
 
   useEffect(() => {
     getLocalizationByOrgPro();
     getLocaleKeysValuesByOrgIdProId();
+    getDefalutLocaleKeysValuesByOrgIdProId();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orgId, proId]);
 
@@ -38,6 +40,19 @@ const DataLocaleContextProvider = ({ children }) => {
       setLocaleKeysValues(data);
     } catch (error) {
       console.log(error.message);
+    }
+  };
+
+  const getDefalutLocaleKeysValuesByOrgIdProId = async () => {
+    if (Number(orgId) !== 1) {
+      try {
+        const { data } = await axios.get(
+          getLocaleKeyValuePairByOrgIdProIdUrl(1, proId)
+        );
+        setDefaultLocaleKeysValues(data);
+      } catch (error) {
+        console.log(error.message);
+      }
     }
   };
 
@@ -68,6 +83,7 @@ const DataLocaleContextProvider = ({ children }) => {
   return (
     <DataLocaleContext.Provider
       value={{
+        defaultLocaleKeysValues,
         editLocalizeValues,
         localeKeysValues,
         localizations,
