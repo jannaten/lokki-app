@@ -23,6 +23,7 @@ function Header() {
         style={{
           position: "fixed",
           marginTop: "0rem",
+          zIndex: "7",
         }}
       >
         <Container fluid>
