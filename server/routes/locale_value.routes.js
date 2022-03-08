@@ -109,7 +109,6 @@ router.put("/", async (req, res) => {
         },
       });
       if (!localeValueExist[0]) {
-        console.log("I am here 107");
         const data = await db.locale_value.create({
           localizationId: req.body.localizationId,
           localeKeyId: req.body.localeKeyId,

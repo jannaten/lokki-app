@@ -1,5 +1,6 @@
 export { default as Header } from "./header.component";
 export { default as Layout } from "./layout.component";
+export { default as SideBar } from "./side-bar.component";
 export { default as OrganizationList } from "./organization-list.component";
 export { default as AddProductModal } from "./modals/add-product.modal.component";
 export { default as EditValuesModal } from "./modals/edit-values.modal.component";

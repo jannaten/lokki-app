@@ -11,7 +11,9 @@ const DataLocaleContextProvider = ({ children }) => {
   const { getLocalizationByOrgProUrl, editLocalizeValueUrl } = endPoints;
 
   const [localizations, setLocalizations] = useState([]);
+  const [selectedLocale, setSelectedLocale] = useState([]);
   const [localeKeysValues, setLocaleKeysValues] = useState([]);
+  const [sidebarLocalizations, setSidebarLocalizations] = useState([]);
   const [defaultLocaleKeysValues, setDefaultLocaleKeysValues] = useState([]);
 
   useEffect(() => {
@@ -27,6 +29,7 @@ const DataLocaleContextProvider = ({ children }) => {
         getLocalizationByOrgProUrl(orgId, proId)
       );
       setLocalizations(data);
+      setSidebarLocalizations(data);
     } catch (error) {
       console.error(error.message);
     }
@@ -39,7 +42,7 @@ const DataLocaleContextProvider = ({ children }) => {
       );
       setLocaleKeysValues(data);
     } catch (error) {
-      console.log(error.message);
+      console.error(error.message);
     }
   };
 
@@ -51,7 +54,7 @@ const DataLocaleContextProvider = ({ children }) => {
         );
         setDefaultLocaleKeysValues(data);
       } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
       }
     }
   };
@@ -80,12 +83,39 @@ const DataLocaleContextProvider = ({ children }) => {
     }
   };
 
+  const onHideLanguage = (localization) => {
+    if (selectedLocale.some((el) => el === localization.locale)) {
+      const removeLocale = [...selectedLocale].filter(
+        (el) => el !== localization.locale
+      );
+      setSelectedLocale(removeLocale);
+    } else {
+      setSelectedLocale([...selectedLocale, localization.locale]);
+    }
+    const isLocalizationExist = localizations.some(
+      (el) => el.id === localization.id
+    );
+    if (isLocalizationExist) {
+      const nonHiddenLocalization = [...localizations].filter(
+        (el) => el.id !== localization.id
+      );
+      setLocalizations(nonHiddenLocalization);
+    } else {
+      setLocalizations(
+        [...localizations, localization].sort((a, b) => a.id - b.id)
+      );
+    }
+  };
+
   return (
     <DataLocaleContext.Provider
       value={{
         defaultLocaleKeysValues,
+        sidebarLocalizations,
         editLocalizeValues,
         localeKeysValues,
+        selectedLocale,
+        onHideLanguage,
         localizations,
       }}
     >

@@ -1,8 +1,8 @@
 import { routes } from "../config";
 import { useContext } from "react";
-import { DataContext, DataChildContext } from "../contexts";
 import { FormControl, Button } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router-dom";
+import { DataContext, DataChildContext } from "../contexts";
 import { Nav, Navbar, Container, NavDropdown, Form } from "react-bootstrap";
 
 function Header() {
@@ -16,7 +16,16 @@ function Header() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar
+        bg="light"
+        expand="lg"
+        className="w-100"
+        style={{
+          position: "fixed",
+          margin: "auto",
+          zIndex: "7",
+        }}
+      >
         <Container fluid>
           <Navbar.Brand
             style={{ cursor: "pointer" }}
