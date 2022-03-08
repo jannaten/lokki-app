@@ -1,3 +1,4 @@
+import { PencilFill } from "react-bootstrap-icons";
 import { Button } from "react-bootstrap";
 import React, { useState } from "react";
 import { EditValuesModal } from ".";
@@ -21,7 +22,20 @@ const OrganizationLocalizationSet = ({ locale_keys, localizations }) => {
         </React.Fragment>
       ))}
       <td>
-        <Button onClick={() => setVisible(!visible)}>Edit</Button>
+        <Button
+          style={{
+            border: "none",
+            borderRadius: "0",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-around",
+          }}
+          onClick={() => setVisible(!visible)}
+          variant="dark"
+        >
+          <PencilFill className="me-2 mb-1" /> Edit
+        </Button>
       </td>
       <EditValuesModal
         visible={visible}

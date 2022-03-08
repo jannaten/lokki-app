@@ -37,7 +37,7 @@ function SideBar() {
         className="mt-2"
         style={{ border: "none", borderRadius: "0" }}
       >
-        Add Localization Key
+        Add Key values
       </Button>
     </div>
   );

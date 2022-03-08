@@ -3,6 +3,7 @@ const Joi = require("joi");
 const product_schema = Joi.object({
   id: Joi.number(),
   name: Joi.string().min(2).max(255).required(),
+  image: Joi.string().min(2).max(255),
 });
 
 const organization_schema = Joi.object({

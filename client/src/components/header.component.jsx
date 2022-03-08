@@ -22,8 +22,7 @@ function Header() {
         className="w-100"
         style={{
           position: "fixed",
-          margin: "auto",
-          zIndex: "7",
+          marginTop: "0rem",
         }}
       >
         <Container fluid>

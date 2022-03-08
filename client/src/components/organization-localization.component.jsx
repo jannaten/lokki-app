@@ -5,11 +5,7 @@ import React, { useContext } from "react";
 import { useWindowSize } from "../hooks";
 
 const OrganizationLocalization = () => {
-  const {
-    localizations,
-    localeKeysValues,
-    //  defaultLocaleKeysValues
-  } = useContext(DataLocaleContext);
+  const { localizations, localeKeysValues } = useContext(DataLocaleContext);
   const size = useWindowSize();
   return (
     <Row className="w-100 p-0 m-0">
@@ -18,12 +14,12 @@ const OrganizationLocalization = () => {
         sm={6}
         md={4}
         lg={2}
-        className="p-0"
         style={
           size.width > 575
             ? {
+                width: "13vw",
                 position: "fixed",
-                marginTop: "4rem",
+                marginTop: "5rem",
                 zIndex: 6,
               }
             : { zIndex: 6 }
@@ -39,7 +35,12 @@ const OrganizationLocalization = () => {
         sm={6}
         md={8}
         lg={10}
-        style={{ paddingLeft: "0.5rem", marginTop: "4rem", marginLeft: "auto" }}
+        style={{
+          width: "87vw",
+          marginTop: "5rem",
+          marginLeft: "auto",
+          paddingLeft: "0.5rem",
+        }}
       >
         <Table striped bordered hover>
           <thead>
