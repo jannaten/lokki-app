@@ -7,8 +7,14 @@ function SideBar() {
     useContext(DataLocaleContext);
   return (
     <div
-      className="container mt-5"
-      style={{ display: "flex", flexDirection: "column" }}
+      style={{
+        display: "flex",
+        height: "100vh",
+        flexDirection: "column",
+        backgroundColor: "#f8f9fa",
+        border: "0.1rem solid #e9ecef",
+        padding: "2rem 0.5rem 0rem 0.5rem",
+      }}
     >
       {sidebarLocalizations.map((localization) => (
         <Button
@@ -26,17 +32,10 @@ function SideBar() {
           {localization.locale}
         </Button>
       ))}
-      <Button
-        variant="dark"
-        style={{ marginTop: "17rem", border: "none", borderRadius: "0" }}
-      >
+      <Button variant="dark" style={{ marginTop: "45vh", borderRadius: "0" }}>
         Add Language
       </Button>
-      <Button
-        variant="dark"
-        className="mt-2"
-        style={{ border: "none", borderRadius: "0" }}
-      >
+      <Button variant="dark" style={{ marginTop: "1vh", borderRadius: "0" }}>
         Add Key values
       </Button>
     </div>

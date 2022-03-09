@@ -8,7 +8,7 @@ const OrganizationLocalization = () => {
   const { localizations, localeKeysValues } = useContext(DataLocaleContext);
   const size = useWindowSize();
   return (
-    <Row className="w-100 p-0 m-0">
+    <Row className="w-100">
       <Col
         xs={12}
         sm={6}
@@ -19,7 +19,7 @@ const OrganizationLocalization = () => {
             ? {
                 width: "13vw",
                 position: "fixed",
-                marginTop: "5rem",
+                marginTop: "3.5rem",
                 zIndex: 6,
               }
             : { zIndex: 6 }
@@ -37,12 +37,11 @@ const OrganizationLocalization = () => {
         lg={10}
         style={{
           width: "87vw",
-          marginTop: "5rem",
+          marginTop: "3.5rem",
           marginLeft: "auto",
-          paddingLeft: "0.5rem",
         }}
       >
-        <Table striped bordered hover>
+        <Table striped bordered hover style={{ marginTop: "1rem" }}>
           <thead>
             <tr>
               <th>keys</th>

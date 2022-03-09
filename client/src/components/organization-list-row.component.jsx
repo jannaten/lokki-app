@@ -18,11 +18,31 @@ const OrganizationListRow = ({ organization }) => {
   const { id, name, organization_products } = organization;
   return (
     <tr key={id} style={{ borderBottom: "1px solid #212529" }}>
-      <td
-        style={{ cursor: "pointer" }}
-        onClick={() => navigate(`${organizationRoute}/${id}`)}
-      >
-        {name}
+      <td onClick={() => navigate(`${organizationRoute}/${id}`)}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "flex-start",
+          }}
+        >
+          <Button
+            variant=""
+            style={{
+              background: "none",
+              display: "flex",
+              padding: "0.5rem",
+              borderRadius: "0",
+              marginRight: "1rem",
+              alignItems: "center",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            {name}
+          </Button>
+        </div>
       </td>
       {organization_products.length > 0 && (
         <div
