@@ -61,7 +61,7 @@ function Header() {
                     >
                       <p
                         style={{
-                          margin: "0.1rem 0rem 0rem 0rem",
+                          margin: "0.1rem 0.7rem 0rem 0rem",
                         }}
                       >
                         {name}

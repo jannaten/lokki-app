@@ -1,13 +1,15 @@
-import { OrganizationLocalizationSet, SideBar } from ".";
 import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
-import { DataLocaleContext } from "../contexts";
+import { DataLocaleContext, DataChildContext } from "../contexts";
+import { OrganizationLocalizationSet, SideBar } from ".";
 import React, { useContext } from "react";
 import { useWindowSize } from "../hooks";
 
 const OrganizationLocalization = () => {
   const size = useWindowSize();
+  const { organization } = useContext(DataChildContext);
   const { localizations, localeKeysValues, defaultLocaleKeysValues } =
     useContext(DataLocaleContext);
+  const { name } = organization;
   return (
     <Row className="w-100">
       <Col
@@ -43,13 +45,24 @@ const OrganizationLocalization = () => {
           paddingLeft: "2rem",
         }}
       >
-        <h2>Localization Key & Values</h2>
+        <h2>{name?.toUpperCase()} localization keys & values</h2>
         <InputGroup size="lg">
           <FormControl
             aria-label="Large"
+            style={{ borderRadius: "0" }}
+            placeholder="Search by localization key or values"
             aria-describedby="inputGroup-sizing-sm"
           />
-          <InputGroup.Text id="inputGroup-sizing-lg">Search</InputGroup.Text>
+          <InputGroup.Text
+            style={{
+              color: "white",
+              borderRadius: "0",
+              backgroundColor: "#212529",
+            }}
+            id="inputGroup-sizing-lg"
+          >
+            Search
+          </InputGroup.Text>
         </InputGroup>
         <Table hover style={{ marginTop: "1rem" }}>
           <thead>
