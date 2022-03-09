@@ -46,7 +46,7 @@ const OrganizationLocalization = () => {
         }}
       >
         <h2>{name?.toUpperCase()} localization keys & values</h2>
-        <InputGroup size="lg">
+        <InputGroup size="lg" className="mt-4">
           <FormControl
             aria-label="Large"
             style={{ borderRadius: "0" }}
@@ -64,6 +64,7 @@ const OrganizationLocalization = () => {
             Search
           </InputGroup.Text>
         </InputGroup>
+        <p className="h5 mt-4">{localeKeysValues.length} result has found</p>
         <Table hover style={{ marginTop: "1rem" }}>
           <thead>
             <tr>
