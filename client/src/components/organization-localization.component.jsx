@@ -1,5 +1,5 @@
 import { OrganizationLocalizationSet, SideBar } from ".";
-import { Col, Row, Table } from "react-bootstrap";
+import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
 import { DataLocaleContext } from "../contexts";
 import React, { useContext } from "react";
 import { useWindowSize } from "../hooks";
@@ -38,11 +38,20 @@ const OrganizationLocalization = () => {
         lg={10}
         style={{
           width: "87vw",
-          marginTop: "3.5rem",
+          marginTop: "5.5rem",
           marginLeft: "auto",
+          paddingLeft: "2rem",
         }}
       >
-        <Table striped bordered hover style={{ marginTop: "1rem" }}>
+        <h2>Localization Key & Values</h2>
+        <InputGroup size="lg">
+          <FormControl
+            aria-label="Large"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+          <InputGroup.Text id="inputGroup-sizing-lg">Search</InputGroup.Text>
+        </InputGroup>
+        <Table hover style={{ marginTop: "1rem" }}>
           <thead>
             <tr>
               <th>keys</th>

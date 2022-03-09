@@ -68,7 +68,14 @@ const OrganizationLocalizationSet = ({
           </td>
         </React.Fragment>
       ))}
-      <td>
+      <td
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "flex-end",
+        }}
+      >
         <Button
           style={{
             border: "none",

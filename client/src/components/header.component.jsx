@@ -1,8 +1,8 @@
-import { routes } from "../config";
 import { useContext } from "react";
+import { routes, endPoints } from "../config";
 import { useNavigate, useLocation } from "react-router-dom";
 import { DataContext, DataChildContext } from "../contexts";
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown, Image } from "react-bootstrap";
 
 function Header() {
   const navigate = useNavigate();
@@ -12,12 +12,14 @@ function Header() {
 
   const { organizationRoute, home, productRoute } = routes;
   const { organization_products } = organization;
+  const { getImage } = endPoints;
 
   return (
     <>
       <Navbar
-        bg="light"
+        bg="dark"
         expand="lg"
+        variant="dark"
         className="w-100"
         style={{
           position: "fixed",
@@ -48,8 +50,22 @@ function Header() {
                     <NavDropdown.Item
                       key={id}
                       onClick={() => navigate(`/${organizationRoute}/${id}`)}
+                      style={{
+                        display: "flex",
+                        padding: "0.5rem",
+                        textAlign: "center",
+                        alignItems: "center",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                      }}
                     >
-                      {name}
+                      <p
+                        style={{
+                          margin: "0.1rem 0rem 0rem 0rem",
+                        }}
+                      >
+                        {name}
+                      </p>
                     </NavDropdown.Item>
                   ))}
               </NavDropdown>
@@ -58,7 +74,7 @@ function Header() {
                   {organization_products && organization_products.length > 0 && (
                     <NavDropdown
                       title="product list"
-                      id="navbarScrollingDropdown"
+                      id="navbarScrollingDropdown1"
                     >
                       {organization_products.map(({ product }) => (
                         <NavDropdown.Item
@@ -68,8 +84,27 @@ function Header() {
                               `/${organizationRoute}/${organization.id}/${productRoute}/${product.id}`
                             )
                           }
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            flexDirection: "row",
+                            justifyContent: "center",
+                            padding: "0.5rem",
+                          }}
                         >
-                          {product.name}
+                          <Image
+                            width={25}
+                            height={25}
+                            alt={product.image}
+                            src={getImage(product.image)}
+                          />
+                          <p
+                            style={{
+                              margin: "0.1rem 0.5rem 0rem 1rem",
+                            }}
+                          >
+                            {product.name}
+                          </p>
                         </NavDropdown.Item>
                       ))}
                     </NavDropdown>
