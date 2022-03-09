@@ -30,10 +30,10 @@ const OrganizationListRow = ({ organization }) => {
           <Button
             variant=""
             style={{
-              background: "none",
               display: "flex",
               padding: "0.5rem",
               borderRadius: "0",
+              background: "none",
               marginRight: "1rem",
               alignItems: "center",
               flexDirection: "row",

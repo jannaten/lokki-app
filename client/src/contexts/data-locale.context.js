@@ -7,6 +7,7 @@ export const DataLocaleContext = createContext();
 
 const DataLocaleContextProvider = ({ children }) => {
   const { orgId, proId } = useParams();
+  const { deleteLocalizeValueUrl } = endPoints;
   const { getLocaleKeyValuePairByOrgIdProIdUrl } = endPoints;
   const { getLocalizationByOrgProUrl, editLocalizeValueUrl } = endPoints;
 
@@ -19,7 +20,9 @@ const DataLocaleContextProvider = ({ children }) => {
   useEffect(() => {
     getLocalizationByOrgPro();
     getLocaleKeysValuesByOrgIdProId();
-    getDefalutLocaleKeysValuesByOrgIdProId();
+    if (orgId !== "1") {
+      getDefalutLocaleKeysValuesByOrgIdProId();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orgId, proId]);
 
@@ -107,11 +110,44 @@ const DataLocaleContextProvider = ({ children }) => {
     }
   };
 
+  const onRestoreLocalevalue = async (
+    locale_value,
+    defaule_value,
+    localization
+  ) => {
+    try {
+      const { data } = await axios.delete(
+        deleteLocalizeValueUrl(locale_value.id)
+      );
+      if (!data) return;
+      const modifiedLocaleKeyValues = [...localeKeysValues].filter((el) => {
+        if (el.id === locale_value.localeKeyId) {
+          if (defaule_value) {
+            el.locale_values[localization.locale] = {
+              fromDefault: true,
+              id: defaule_value.id,
+              localeKeyId: defaule_value.localeKeyId,
+              localizationId: defaule_value.localizationId,
+              value: defaule_value.value,
+            };
+          } else {
+            el.locale_values[localization.locale] = {};
+          }
+        }
+        return el;
+      });
+      setLocaleKeysValues(modifiedLocaleKeyValues);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
   return (
     <DataLocaleContext.Provider
       value={{
         defaultLocaleKeysValues,
         sidebarLocalizations,
+        onRestoreLocalevalue,
         editLocalizeValues,
         localeKeysValues,
         selectedLocale,

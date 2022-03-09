@@ -2,6 +2,7 @@ const ORIGIN = "http://localhost:5500";
 const BACKEND_URL = "api";
 
 export const endPoints = {
+  deleteLocalizeValueUrl: (id) => `${ORIGIN}/${BACKEND_URL}/locale_value/${id}`,
   getImage: (source) => `${ORIGIN}/${BACKEND_URL}/attachments/icons/${source}`,
   getLocalizationByOrgProUrl: (orgId, proId) =>
     `${ORIGIN}/${BACKEND_URL}/localization/org/${orgId}/pro/${proId}`,

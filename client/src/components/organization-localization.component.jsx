@@ -5,8 +5,9 @@ import React, { useContext } from "react";
 import { useWindowSize } from "../hooks";
 
 const OrganizationLocalization = () => {
-  const { localizations, localeKeysValues } = useContext(DataLocaleContext);
   const size = useWindowSize();
+  const { localizations, localeKeysValues, defaultLocaleKeysValues } =
+    useContext(DataLocaleContext);
   return (
     <Row className="w-100">
       <Col
@@ -63,6 +64,13 @@ const OrganizationLocalization = () => {
                 localizations={localizations}
                 locale_keys={locale_keys}
                 key={locale_keys.id}
+                defaultLocaleKeys={
+                  defaultLocaleKeysValues
+                    ? defaultLocaleKeysValues.find(
+                        (el) => el.id === locale_keys.id
+                      )
+                    : []
+                }
               />
             ))}
           </tbody>

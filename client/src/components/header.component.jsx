@@ -1,9 +1,8 @@
 import { routes } from "../config";
 import { useContext } from "react";
-import { FormControl, Button } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router-dom";
 import { DataContext, DataChildContext } from "../contexts";
-import { Nav, Navbar, Container, NavDropdown, Form } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 
 function Header() {
   const navigate = useNavigate();
@@ -78,15 +77,6 @@ function Header() {
                 </>
               )}
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
