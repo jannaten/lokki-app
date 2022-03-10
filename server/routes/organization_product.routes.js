@@ -48,7 +48,7 @@ router.post("/", async (req, res) => {
       .status(400)
       .send({ error: "Organization can't add the same product" });
   const organization_product = await db.organization_product.create(value);
-  res.status(201).send(organization_product);
+  return res.status(201).send(organization_product);
 });
 
 // Editing data
@@ -65,7 +65,7 @@ router.put("/:id", async (req, res) => {
       .send({ message: `organization product of id ${id} not found` });
   await db.organization_product.update(value, { where: { id } });
   const query = await db.organization_product.findAll({ where: { id } });
-  res.status(200).send(query[0]);
+  return res.status(200).send(query[0]);
 });
 
 // Deleting data

@@ -7,8 +7,8 @@ export const DataLocaleContext = createContext();
 
 const DataLocaleContextProvider = ({ children }) => {
   const { orgId, proId } = useParams();
-  const { deleteLocalizeValueUrl } = endPoints;
   const { getLocaleKeyValuePairByOrgIdProIdUrl } = endPoints;
+  const { deleteLocalizeValueUrl, addLocalizationUrl } = endPoints;
   const { getLocalizationByOrgProUrl, editLocalizeValueUrl } = endPoints;
 
   const [localizations, setLocalizations] = useState([]);
@@ -142,6 +142,30 @@ const DataLocaleContextProvider = ({ children }) => {
     }
   };
 
+  const addLocalization = async (value) => {
+    try {
+      const { data } = await axios.post(addLocalizationUrl, {
+        name: value.name,
+        productId: proId,
+        locale: value.locale,
+        organizationId: orgId,
+      });
+      if (data) {
+        const addedLocalization = [...localizations, data];
+        const addedSidebarLocalization = [...sidebarLocalizations, data];
+        setLocalizations(addedLocalization);
+        setSidebarLocalizations(addedSidebarLocalization);
+        const modifiedLocaleKeysValues = [...localeKeysValues].filter((el) => {
+          el.locale_values[data.locale] = null;
+          return el;
+        });
+        setLocaleKeysValues(modifiedLocaleKeysValues);
+      }
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
   return (
     <DataLocaleContext.Provider
       value={{
@@ -150,6 +174,7 @@ const DataLocaleContextProvider = ({ children }) => {
         onRestoreLocalevalue,
         editLocalizeValues,
         localeKeysValues,
+        addLocalization,
         selectedLocale,
         onHideLanguage,
         localizations,

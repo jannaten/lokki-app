@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
   const { value, error } = locale_value_schema.validate(req.body);
   if (error) return res.status(400).send({ message: error.details[0].message });
   const locale_value = await db.locale_value.create(value);
-  res.status(201).send(locale_value);
+  return res.status(201).send(locale_value);
 });
 
 // Editing data
@@ -53,7 +53,7 @@ router.put("/", async (req, res) => {
         localeKeyId: value.localeKeyId,
         value: value.value,
       });
-      res.status(201).send({
+      return res.status(201).send({
         id: data.id,
         value: data.value,
         localeKeyId: data.localeKeyId,
@@ -85,7 +85,7 @@ router.put("/", async (req, res) => {
         },
         attributes: { exclude: ["createdAt", "updatedAt"] },
       });
-      res.status(200).send(query[0]);
+      return res.status(200).send(query[0]);
     }
   } else if (respond[0].organizationId !== 1) {
     if (req.body.id === null) {
@@ -94,7 +94,7 @@ router.put("/", async (req, res) => {
         localeKeyId: req.body.localeKeyId,
         value: req.body.value,
       });
-      res.status(201).send({
+      return res.status(201).send({
         id: data.id,
         value: data.value,
         localeKeyId: data.localeKeyId,
@@ -114,7 +114,7 @@ router.put("/", async (req, res) => {
           localeKeyId: req.body.localeKeyId,
           value: req.body.value,
         });
-        res.status(201).send({
+        return res.status(201).send({
           id: data.id,
           value: data.value,
           localeKeyId: data.localeKeyId,
@@ -150,7 +150,7 @@ router.put("/", async (req, res) => {
           },
           attributes: { exclude: ["createdAt", "updatedAt"] },
         });
-        res.status(200).send(query[0]);
+        return res.status(200).send(query[0]);
       }
     }
   }

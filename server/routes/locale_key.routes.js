@@ -125,7 +125,7 @@ router.post("/", async (req, res) => {
   const { value, error } = locale_key_schema.validate(req.body);
   if (error) return res.status(400).send({ message: error.details[0].message });
   const locale_key = await db.locale_key.create(value);
-  res.status(201).send(locale_key);
+  return res.status(201).send(locale_key);
 });
 
 // Editing data
@@ -140,7 +140,7 @@ router.put("/:id", async (req, res) => {
       .send({ message: `locale key of id ${id} not found` });
   await db.locale_key.update(value, { where: { id } });
   const query = await db.locale_key.findAll({ where: { id } });
-  res.status(200).send(query[0]);
+  return res.status(200).send(query[0]);
 });
 
 // Deleting data

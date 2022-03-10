@@ -35,8 +35,19 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
 router.post("/", async (req, res) => {
   const { value, error } = localization_schema.validate(req.body);
   if (error) return res.status(400).send({ message: error.details[0].message });
+  const ifLocaleExist = await db.localization.findAll({
+    where: {
+      organizationId: value.organizationId,
+      productId: value.productId,
+      locale: value.locale,
+    },
+  });
+  if (ifLocaleExist[0])
+    return res
+      .status(400)
+      .send({ message: `${value.locale} locale already exist` });
   const localization = await db.localization.create(value);
-  res.status(201).send(localization);
+  return res.status(201).send(localization);
 });
 
 // Editing data
@@ -51,7 +62,7 @@ router.put("/:id", async (req, res) => {
       .send({ message: `localization of id ${id} not found` });
   await db.localization.update(value, { where: { id } });
   const query = await db.localization.findAll({ where: { id } });
-  res.status(200).send(query[0]);
+  return res.status(200).send(query[0]);
 });
 
 // Deleting data

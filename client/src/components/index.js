@@ -7,6 +7,7 @@ export { default as AddProductModal } from "./modals/add-product.modal.component
 export { default as EditValuesModal } from "./modals/edit-values.modal.component";
 export { default as OrganizationListRow } from "./organization-list-row.component";
 export { default as OrganizationProducts } from "./organization-products.component";
+export { default as AddLocalizationModal } from "./modals/add-localization.modal.component";
 export { default as AddOrganizationModal } from "./modals/add-organization.modal.component";
 export { default as OrganizationLocalization } from "./organization-localization.component";
 export { default as OrganizationLocalizationSet } from "./organization-localization-set.component";

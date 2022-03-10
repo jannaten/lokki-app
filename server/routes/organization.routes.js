@@ -47,7 +47,7 @@ router.post("/", async (req, res) => {
   if (error) return res.status(400).send({ message: error.details[0].message });
   value.apiKey = (Math.random() + 1).toString(36).substring(7);
   const organization = await db.organization.create(value);
-  res.status(201).send({
+  return res.status(201).send({
     id: organization.id,
     name: organization.name,
     updatedAt: organization.updatedAt,
@@ -67,7 +67,7 @@ router.put("/:id", async (req, res) => {
       .send({ message: `organization of id ${id} not found` });
   await db.organization.update(value, { where: { id } });
   const query = await db.organization.findAll({ where: { id } });
-  res.status(200).send(query[0]);
+  return res.status(200).send(query[0]);
 });
 
 // Deleting data
