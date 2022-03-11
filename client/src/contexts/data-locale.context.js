@@ -7,9 +7,10 @@ export const DataLocaleContext = createContext();
 
 const DataLocaleContextProvider = ({ children }) => {
   const { orgId, proId } = useParams();
-  const { getLocaleKeyValuePairByOrgIdProIdUrl } = endPoints;
   const { deleteLocalizeValueUrl, addLocalizationUrl } = endPoints;
   const { getLocalizationByOrgProUrl, editLocalizeValueUrl } = endPoints;
+  const { getLocaleKeyValuePairByOrgIdProIdUrl, addLocaleKeyValuesUrl } =
+    endPoints;
 
   const [localizations, setLocalizations] = useState([]);
   const [selectedLocale, setSelectedLocale] = useState([]);
@@ -33,8 +34,8 @@ const DataLocaleContextProvider = ({ children }) => {
       );
       setLocalizations(data);
       setSidebarLocalizations(data);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 
@@ -44,8 +45,8 @@ const DataLocaleContextProvider = ({ children }) => {
         getLocaleKeyValuePairByOrgIdProIdUrl(orgId, proId)
       );
       setLocaleKeysValues(data);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 
@@ -56,8 +57,8 @@ const DataLocaleContextProvider = ({ children }) => {
           getLocaleKeyValuePairByOrgIdProIdUrl(1, proId)
         );
         setDefaultLocaleKeysValues(data);
-      } catch (error) {
-        console.error(error.message);
+      } catch ({ response }) {
+        console.error(response?.data?.message);
       }
     }
   };
@@ -79,10 +80,27 @@ const DataLocaleContextProvider = ({ children }) => {
             return el;
           });
           setLocaleKeysValues(modifiedLocalKeyValues);
-        } catch (error) {
-          console.error(error.message);
+        } catch ({ response }) {
+          console.error(response?.data?.message);
         }
       }
+    }
+  };
+
+  const onAddlocaleKeyValues = async (keyValuePair) => {
+    const { key, valueList } = keyValuePair;
+    try {
+      const { data } = await axios.post(addLocaleKeyValuesUrl, {
+        productId: proId,
+        localizations,
+        valueList,
+        key,
+      });
+      if (data) {
+        setLocaleKeysValues([...localeKeysValues, data]);
+      }
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 
@@ -170,6 +188,7 @@ const DataLocaleContextProvider = ({ children }) => {
     <DataLocaleContext.Provider
       value={{
         defaultLocaleKeysValues,
+        onAddlocaleKeyValues,
         sidebarLocalizations,
         onRestoreLocalevalue,
         editLocalizeValues,

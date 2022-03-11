@@ -22,8 +22,8 @@ const DataChildContextProvider = ({ children }) => {
     try {
       const { data } = await axios.get(getOrganizationByParamsUrl(orgId));
       setOrganization(data);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 

@@ -1334,3 +1334,99 @@
 {"level":"info","message":"Database is connected"}
 {"level":"info","message":"Database is connected"}
 {"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Order must be type of array or instance of a valid sequelize method. Order must be type of array or instance of a valid sequelize method.","stack":"Error: Order must be type of array or instance of a valid sequelize method.\n    at MySQLQueryGenerator.getQueryOrders (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-generator.js:1503:13)\n    at MySQLQueryGenerator.selectQuery (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-generator.js:965:27)\n    at MySQLQueryInterface.select (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:396:59)\n    at Function.findAll (C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\node_modules\\sequelize\\lib\\model.js:1119:47)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:56:23"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"localization is not defined localization is not defined","stack":"ReferenceError: localization is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:146:45\n    at Array.filter (<anonymous>)\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:145:30\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot set property 'id' of undefined Cannot set property 'id' of undefined","stack":"TypeError: Cannot set property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:158:51\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot set property 'id' of undefined Cannot set property 'id' of undefined","stack":"TypeError: Cannot set property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:157:53\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot set property 'id' of undefined Cannot set property 'id' of undefined","stack":"TypeError: Cannot set property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:157:53\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"Cannot set property 'id' of undefined Cannot set property 'id' of undefined","stack":"TypeError: Cannot set property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:157:53\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"error","message":"Cannot set property 'id' of undefined Cannot set property 'id' of undefined","stack":"TypeError: Cannot set property 'id' of undefined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:157:53\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"localize_value is not defined localize_value is not defined","stack":"ReferenceError: localize_value is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:156:9\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"error","message":"locale_value_check is not defined locale_value_check is not defined","stack":"ReferenceError: locale_value_check is not defined\n    at C:\\Users\\janna\\OneDrive\\Desktop\\lokki\\localization-service\\server\\routes\\locale_key.routes.js:174:33\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}
+{"level":"info","message":"Database is connected"}

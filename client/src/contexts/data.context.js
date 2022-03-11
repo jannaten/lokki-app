@@ -15,8 +15,8 @@ const DataContextProvider = ({ children }) => {
     try {
       const { data } = await axios.get(getOrganizationsUrl);
       data && setOrganizations(data);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 
@@ -24,8 +24,8 @@ const DataContextProvider = ({ children }) => {
     try {
       const { data } = await axios.get(getProductsUrl);
       data && setProducts(data);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 
@@ -55,8 +55,8 @@ const DataContextProvider = ({ children }) => {
         return el;
       });
       setOrganizations(modifiedOrganization);
-    } catch (error) {
-      console.log(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 
@@ -66,8 +66,8 @@ const DataContextProvider = ({ children }) => {
       data.organization_products = [];
       const addedOrganizations = [...organizations, data];
       setOrganizations(addedOrganizations);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      console.error(response?.data?.message);
     }
   };
 

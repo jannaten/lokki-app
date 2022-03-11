@@ -1,12 +1,18 @@
 import { Button } from "react-bootstrap";
+import { AddLocalizationModal } from ".";
+// import { useParams } from "react-router-dom";
+import { AddLocaleKeyValuesModal } from ".";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../contexts";
-import AddLocalizationModal from "./modals/add-localization.modal.component";
 
 function SideBar() {
-  const [visible, setVisible] = useState(false);
-  const { sidebarLocalizations, onHideLanguage, selectedLocale } =
-    useContext(DataLocaleContext);
+  // const { orgId } = useParams();
+  const [addLocalizationModalVisible, setAddLocalizationModalVisible] =
+    useState(false);
+  const [addLocaleKeyValueModalVisible, setAddLocaleKeyValueModalVisible] =
+    useState(false);
+  const { selectedLocale, onHideLanguage } = useContext(DataLocaleContext);
+  const { sidebarLocalizations, localizations } = useContext(DataLocaleContext);
   return (
     <div
       style={{
@@ -36,19 +42,36 @@ function SideBar() {
       ))}
       <Button
         variant="dark"
-        onClick={() => setVisible(!visible)}
+        onClick={() =>
+          setAddLocalizationModalVisible(!addLocalizationModalVisible)
+        }
         style={{ marginTop: "45vh", borderRadius: "0" }}
       >
         Add Language
       </Button>
       <AddLocalizationModal
-        visible={visible}
-        setVisible={setVisible}
         localizations={sidebarLocalizations}
+        visible={addLocalizationModalVisible}
+        setVisible={setAddLocalizationModalVisible}
       />
-      <Button variant="dark" style={{ marginTop: "1vh", borderRadius: "0" }}>
-        Add Key values
-      </Button>
+      {/* {orgId === "1" && ( */}
+      <>
+        <Button
+          variant="dark"
+          onClick={() =>
+            setAddLocaleKeyValueModalVisible(!addLocaleKeyValueModalVisible)
+          }
+          style={{ marginTop: "1vh", borderRadius: "0" }}
+        >
+          Add Key values
+        </Button>
+        <AddLocaleKeyValuesModal
+          localizations={localizations}
+          visible={addLocaleKeyValueModalVisible}
+          setVisible={setAddLocaleKeyValueModalVisible}
+        />
+      </>
+      {/* )} */}
     </div>
   );
 }

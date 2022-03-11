@@ -11,3 +11,4 @@ export { default as AddLocalizationModal } from "./modals/add-localization.modal
 export { default as AddOrganizationModal } from "./modals/add-organization.modal.component";
 export { default as OrganizationLocalization } from "./organization-localization.component";
 export { default as OrganizationLocalizationSet } from "./organization-localization-set.component";
+export { default as AddLocaleKeyValuesModal } from "./modals/add-locale-key-values.modal.component";

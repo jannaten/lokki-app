@@ -1,5 +1,5 @@
 // importing modules & libraries
-const { locale_key_schema } = require("../validation");
+const { locale_key_schema, locale_value_schema } = require("../validation");
 const express = require("express");
 const db = require("../models");
 
@@ -122,10 +122,56 @@ router.get("/org/:orgId/pro/:proId", async (req, res) => {
 
 // Adding data
 router.post("/", async (req, res) => {
-  const { value, error } = locale_key_schema.validate(req.body);
+  const t = await db.sequelize.transaction();
+  const { productId, key, localizations, valueList } = req.body;
+  const { value, error } = locale_key_schema.validate({
+    productId,
+    key,
+  });
   if (error) return res.status(400).send({ message: error.details[0].message });
-  const locale_key = await db.locale_key.create(value);
-  return res.status(201).send(locale_key);
+  const locale_key = await db.locale_key.create(value, { transaction: t });
+  if (locale_key) {
+    let modifiedLocaleKey = {
+      id: locale_key.id,
+      key: locale_key.key,
+      productId: locale_key.productId,
+    };
+    let locale_values = {};
+    for (let i = 0; i < localizations.length; i++) {
+      if (valueList.length !== 0) {
+        const { value: locale_value_check, error: locale_value_error } =
+          locale_value_schema.validate({
+            localeKeyId: locale_key.id,
+            localizationId: valueList.filter(
+              (el) => el.localizationId === localizations[i].id
+            )[0].localizationId,
+            value: valueList.filter(
+              (el) => el.localizationId === localizations[i].id
+            )[0].value,
+          });
+        if (locale_value_error)
+          return res
+            .status(400)
+            .send({ message: locale_value_error.details[0].message });
+        const localize_value = await db.locale_value.create(
+          locale_value_check,
+          { transaction: t }
+        );
+        locale_values[localizations[i].locale] = {
+          localizationId: localize_value.localizationId,
+          localeKeyId: localize_value.localeKeyId,
+          value: localize_value.value,
+          id: localize_value.id,
+          fromDefault: false,
+        };
+      } else {
+        locale_values[localizations[i].locale] = null;
+      }
+      modifiedLocaleKey.locale_values = locale_values;
+    }
+    return res.status(201).send(modifiedLocaleKey);
+  }
+  await t.commit();
 });
 
 // Editing data
