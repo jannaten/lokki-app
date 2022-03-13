@@ -11,12 +11,51 @@ const OrganizationLocalization = () => {
   const { orgId } = useParams();
   const [showEditedValue, setShowEditedValue] = useState(false);
   const [enableEditAllMode, setEnableEditAllMode] = useState(false);
+  const [editedValueChangeList, setEditedValueChangeList] = useState([]);
 
   const { organization } = useContext(DataChildContext);
+  const { editLocalizeValues } = useContext(DataLocaleContext);
   const { onSortLocaleValue, localeKeysValues } = useContext(DataLocaleContext);
   const { localizations, defaultLocaleKeysValues } =
     useContext(DataLocaleContext);
+
   const { name } = organization;
+
+  const handleChange = (value) => {
+    let copy = [...editedValueChangeList];
+    if (
+      !copy.some(
+        (el) =>
+          el.localizationId === value.localizationId &&
+          el.localeKeyId === value.localeKeyId
+      )
+    ) {
+      copy = [
+        ...copy,
+        {
+          id: value.id ? value.id : null,
+          localizationId: value.localizationId,
+          localeKeyId: value.localeKeyId,
+          value: value.value,
+        },
+      ];
+      setEditedValueChangeList(copy);
+      return;
+    }
+    if (copy.some((el) => el.localizationId === value.localizationId)) {
+      copy.map((el) => {
+        if (
+          el.localizationId === value.localizationId &&
+          el.localeKeyId === value.localeKeyId
+        ) {
+          el.value = value.value;
+        }
+        return el;
+      });
+      setEditedValueChangeList(copy);
+    }
+  };
+
   return (
     <Row className="w-100">
       <Col
@@ -88,7 +127,12 @@ const OrganizationLocalization = () => {
           className="mt-3"
           style={{ borderRadius: "0" }}
           variant={!enableEditAllMode ? "dark" : "outline-dark"}
-          onClick={() => setEnableEditAllMode(!enableEditAllMode)}
+          onClick={async () => {
+            if (editedValueChangeList.length > 0)
+              await editLocalizeValues(editedValueChangeList);
+            setEnableEditAllMode(!enableEditAllMode);
+            setEditedValueChangeList([]);
+          }}
         >
           {!enableEditAllMode
             ? "Enable Edit All Mode"
@@ -117,6 +161,7 @@ const OrganizationLocalization = () => {
                 <OrganizationLocalizationSet
                   enableEditAllMode={enableEditAllMode}
                   localizations={localizations}
+                  handleChange={handleChange}
                   locale_keys={locale_keys}
                   key={locale_keys.id}
                   defaultLocaleKeys={defaultLocaleKeysValues.find(

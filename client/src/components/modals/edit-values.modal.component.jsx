@@ -60,10 +60,6 @@ function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
                     value: e.target.value,
                     localeKeyId: locale_keys.id,
                     localizationId: localization.id,
-                    // fromDefault: locale_keys.locale_values[localization.locale]
-                    //   ? locale_keys.locale_values[localization.locale]
-                    //       .fromDefault
-                    //   : true,
                     id: locale_keys.locale_values[localization.locale]
                       ? locale_keys.locale_values[localization.locale].id
                       : null,

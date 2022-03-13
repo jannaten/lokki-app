@@ -11,11 +11,14 @@ const OrganizationLocalizationSet = ({
   defaultLocaleKeys,
   enableEditAllMode,
   localizations,
+  handleChange,
   locale_keys,
 }) => {
   const { orgId } = useParams();
   const [visible, setVisible] = useState(false);
+
   const { onRestoreLocaleValues } = useContext(DataLocaleContext);
+
   return (
     <tr>
       <td>{locale_keys.key}</td>
@@ -23,18 +26,25 @@ const OrganizationLocalizationSet = ({
         <React.Fragment key={localization.id}>
           <td>
             {enableEditAllMode ? (
-              <>
-                {locale_keys.locale_values[localization.locale] ? (
-                  <Form.Control
-                    type="text"
-                    placeholder={
-                      locale_keys.locale_values[localization.locale].value
-                    }
-                  />
-                ) : (
-                  <Form.Control type="text" placeholder="" />
-                )}
-              </>
+              <Form.Control
+                type="text"
+                defaultValue={
+                  locale_keys.locale_values[localization.locale]
+                    ? locale_keys.locale_values[localization.locale].value
+                    : ""
+                }
+                onChange={(e) => {
+                  console.log("I am being called");
+                  handleChange({
+                    value: e.target.value,
+                    localeKeyId: locale_keys.id,
+                    localizationId: localization.id,
+                    id: locale_keys.locale_values[localization.locale]
+                      ? locale_keys.locale_values[localization.locale].id
+                      : null,
+                  });
+                }}
+              />
             ) : (
               <>
                 {locale_keys.locale_values[localization.locale]
