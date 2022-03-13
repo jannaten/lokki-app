@@ -4,11 +4,12 @@ import { PencilFill } from "react-bootstrap-icons";
 import { DataLocaleContext } from "../contexts";
 import Tooltip from "react-bootstrap/Tooltip";
 import { useParams } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { EditValuesModal } from ".";
 
 const OrganizationLocalizationSet = ({
   defaultLocaleKeys,
+  enableEditAllMode,
   localizations,
   locale_keys,
 }) => {
@@ -21,51 +22,70 @@ const OrganizationLocalizationSet = ({
       {localizations.map((localization) => (
         <React.Fragment key={localization.id}>
           <td>
-            {locale_keys.locale_values[localization.locale]
-              ? locale_keys.locale_values[localization.locale].value
-              : ""}
-            {locale_keys.locale_values[localization.locale] && (
+            {enableEditAllMode ? (
               <>
-                {orgId !== "1" &&
-                locale_keys.locale_values[localization.locale] &&
-                locale_keys.locale_values[localization.locale].id &&
-                !locale_keys.locale_values[localization.locale].fromDefault ? (
-                  <OverlayTrigger
-                    key="right"
-                    placement="right"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={
-                      <Tooltip id="button-tooltip">
-                        Default value:{" "}
-                        {typeof defaultLocaleKeys !== "undefined" &&
-                          defaultLocaleKeys.locale_values[localization.locale]
-                            ?.value}
-                      </Tooltip>
+                {locale_keys.locale_values[localization.locale] ? (
+                  <Form.Control
+                    type="text"
+                    placeholder={
+                      locale_keys.locale_values[localization.locale].value
                     }
-                  >
-                    <Button
-                      variant="dark"
-                      style={{
-                        border: "0",
-                        borderRadius: "0",
-                        marginLeft: "0.5rem",
-                      }}
-                      onClick={() => {
-                        onRestoreLocaleValues(
-                          locale_keys.locale_values[localization.locale],
-                          defaultLocaleKeys
-                            ? defaultLocaleKeys.locale_values[
+                  />
+                ) : (
+                  <Form.Control type="text" placeholder="" />
+                )}
+              </>
+            ) : (
+              <>
+                {locale_keys.locale_values[localization.locale]
+                  ? locale_keys.locale_values[localization.locale].value
+                  : ""}
+                {locale_keys.locale_values[localization.locale] && (
+                  <>
+                    {orgId !== "1" &&
+                    locale_keys.locale_values[localization.locale] &&
+                    locale_keys.locale_values[localization.locale].id &&
+                    !locale_keys.locale_values[localization.locale]
+                      .fromDefault ? (
+                      <OverlayTrigger
+                        key="right"
+                        placement="right"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={
+                          <Tooltip id="button-tooltip">
+                            Default value:{" "}
+                            {typeof defaultLocaleKeys !== "undefined" &&
+                              defaultLocaleKeys.locale_values[
                                 localization.locale
-                              ]
-                            : undefined,
-                          localization
-                        );
-                      }}
-                    >
-                      Restore
-                    </Button>
-                  </OverlayTrigger>
-                ) : null}
+                              ]?.value}
+                          </Tooltip>
+                        }
+                      >
+                        <Button
+                          variant="dark"
+                          style={{
+                            border: "0",
+                            borderRadius: "0",
+                            marginLeft: "0.5rem",
+                          }}
+                          onClick={() => {
+                            onRestoreLocaleValues(
+                              locale_keys.locale_values[localization.locale],
+                              defaultLocaleKeys
+                                ? defaultLocaleKeys.locale_values[
+                                    localization.locale
+                                  ]
+                                : undefined,
+                              localization
+                            );
+                          }}
+                        >
+                          Restore
+                        </Button>
+                      </OverlayTrigger>
+                    ) : null}
+                  </>
+                )}
               </>
             )}
           </td>

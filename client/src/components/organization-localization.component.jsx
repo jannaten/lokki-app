@@ -10,6 +10,7 @@ const OrganizationLocalization = () => {
   const size = useWindowSize();
   const { orgId } = useParams();
   const [showEditedValue, setShowEditedValue] = useState(false);
+  const [enableEditAllMode, setEnableEditAllMode] = useState(false);
 
   const { organization } = useContext(DataChildContext);
   const { onSortLocaleValue, localeKeysValues } = useContext(DataLocaleContext);
@@ -83,8 +84,15 @@ const OrganizationLocalization = () => {
             {!showEditedValue ? "Show Edited Values" : "Show All Values"}
           </Button>
         )}
-        <Button className="mt-3" variant="dark" style={{ borderRadius: "0" }}>
-          Enable Edit All Mode
+        <Button
+          className="mt-3"
+          style={{ borderRadius: "0" }}
+          variant={!enableEditAllMode ? "dark" : "outline-dark"}
+          onClick={() => setEnableEditAllMode(!enableEditAllMode)}
+        >
+          {!enableEditAllMode
+            ? "Enable Edit All Mode"
+            : "Disable Edit All Mode"}
         </Button>
         <p className="h5 mt-4">{localeKeysValues.length} result has found</p>
         <Table hover style={{ marginTop: "1rem" }}>
@@ -107,6 +115,7 @@ const OrganizationLocalization = () => {
             {localeKeysValues.map((locale_keys) => {
               return (
                 <OrganizationLocalizationSet
+                  enableEditAllMode={enableEditAllMode}
                   localizations={localizations}
                   locale_keys={locale_keys}
                   key={locale_keys.id}
