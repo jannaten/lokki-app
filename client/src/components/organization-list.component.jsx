@@ -17,7 +17,7 @@ function OrganizationsList() {
                 <th>products</th>
               </tr>
             </thead>
-            <tbody hover>
+            <tbody>
               {organizations &&
                 organizations.map((organization) => (
                   <OrganizationListRow

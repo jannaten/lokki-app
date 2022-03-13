@@ -15,6 +15,7 @@ const OrganizationLocalizationSet = ({
   const [visible, setVisible] = useState(false);
   const { onRestoreLocalevalue } = useContext(DataLocaleContext);
   const { orgId } = useParams();
+
   return (
     <tr>
       <td>{locale_keys.key}</td>
@@ -27,22 +28,21 @@ const OrganizationLocalizationSet = ({
             {locale_keys.locale_values[localization.locale] && (
               <>
                 {orgId !== "1" &&
+                locale_keys.locale_values[localization.locale] &&
                 locale_keys.locale_values[localization.locale].id &&
                 !locale_keys.locale_values[localization.locale].fromDefault ? (
                   <OverlayTrigger
+                    key="right"
                     placement="right"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={(props) => (
-                      <Tooltip id="button-tooltip" {...props}>
-                        <div>
-                          {defaultLocaleKeys.locale_values[localization.locale]
-                            ? defaultLocaleKeys.locale_values[
-                                localization.locale
-                              ].value
-                            : "Default value : none"}
-                        </div>
+                    overlay={
+                      <Tooltip id="button-tooltip">
+                        Default value:{" "}
+                        {typeof defaultLocaleKeys !== "undefined" &&
+                          defaultLocaleKeys.locale_values[localization.locale]
+                            ?.value}
                       </Tooltip>
-                    )}
+                    }
                   >
                     <Button
                       variant="dark"
@@ -51,13 +51,29 @@ const OrganizationLocalizationSet = ({
                         borderRadius: "0",
                         marginLeft: "0.5rem",
                       }}
-                      onClick={() =>
+                      onClick={() => {
                         onRestoreLocalevalue(
                           locale_keys.locale_values[localization.locale],
-                          defaultLocaleKeys.locale_values[localization.locale],
+                          defaultLocaleKeys
+                            ? defaultLocaleKeys.locale_values[
+                                localization.locale
+                              ]
+                            : undefined,
                           localization
-                        )
-                      }
+                        );
+                      }}
+                      // onClick={() => {
+                      //   onRestoreLocalevalue(
+                      //     locale_keys.locale_values[localization.locale],
+                      //     defaultLocaleKeys.find(
+                      //       (el) => el.id === locale_keys.id
+                      //     ) &&
+                      //       defaultLocaleKeys.find(
+                      //         (el) => el.id === locale_keys.id
+                      //       ).locale_values[localization.locale],
+                      //     localization
+                      //   );
+                      // }}
                     >
                       Restore
                     </Button>
@@ -102,3 +118,40 @@ const OrganizationLocalizationSet = ({
 };
 
 export default OrganizationLocalizationSet;
+
+// <OverlayTrigger
+//   placement="right"
+//   delay={{ show: 250, hide: 400 }}
+//   overlay={(props) => (
+//     <Tooltip id="button-tooltip" {...props}>
+//       <div>
+//         {defaultLocaleKeys.locale_values[localization.locale]
+//           ? defaultLocaleKeys.locale_values[
+//               localization.locale
+//             ] &&
+//             defaultLocaleKeys.locale_values[
+//               localization.locale
+//             ].value
+//           : "Default value : none"}
+//       </div>
+//     </Tooltip>
+//   )}
+// >
+//   <Button
+//     variant="dark"
+//     style={{
+//       border: "0",
+//       borderRadius: "0",
+//       marginLeft: "0.5rem",
+//     }}
+//     onClick={() =>
+//       onRestoreLocalevalue(
+//         locale_keys.locale_values[localization.locale],
+//         defaultLocaleKeys.locale_values[localization.locale],
+//         localization
+//       )
+//     }
+//   >
+//     Restore
+//   </Button>
+// </OverlayTrigger>

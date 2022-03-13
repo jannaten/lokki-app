@@ -44,46 +44,49 @@ const OrganizationListRow = ({ organization }) => {
           </Button>
         </div>
       </td>
-      {organization_products.length > 0 && (
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "row",
-            justifyContent: "flex-start",
-          }}
-        >
-          {organization_products
-            .sort((a, b) => a.id - b.id)
-            .map((organization_product) => (
-              <Button
-                style={{
-                  display: "flex",
-                  padding: "0.5rem",
-                  borderRadius: "0",
-                  marginRight: "1rem",
-                  alignItems: "center",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                }}
-                onClick={() =>
-                  navigate(
-                    `${organizationRoute}/${id}/${productRoute}/${organization_product.product.id}`
-                  )
-                }
-                variant="outline-dark"
-                key={organization_product.product.id}
-              >
-                <Image
-                  width={30}
-                  height={30}
-                  src={getImage(organization_product.product.image)}
-                />
-                <td>{organization_product.product.name}</td>
-              </Button>
-            ))}
-        </div>
-      )}
+      <td>
+        {organization_products.length > 0 && (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "row",
+              justifyContent: "flex-start",
+            }}
+          >
+            {organization_products
+              .sort((a, b) => a.id - b.id)
+              .map((organization_product) => (
+                <Button
+                  style={{
+                    display: "flex",
+                    padding: "0.5rem",
+                    borderRadius: "0",
+                    marginRight: "1rem",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                  }}
+                  onClick={() =>
+                    navigate(
+                      `${organizationRoute}/${id}/${productRoute}/${organization_product.product.id}`
+                    )
+                  }
+                  variant="outline-dark"
+                  key={organization_product.product.id}
+                >
+                  <Image
+                    width={30}
+                    height={30}
+                    className="me-1"
+                    src={getImage(organization_product.product.image)}
+                  />
+                  <p className="my-1">{organization_product.product.name}</p>
+                </Button>
+              ))}
+          </div>
+        )}
+      </td>
       <td>
         <Button
           style={{ border: "0", borderRadius: "0" }}

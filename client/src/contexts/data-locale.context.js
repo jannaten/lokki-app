@@ -130,7 +130,7 @@ const DataLocaleContextProvider = ({ children }) => {
 
   const onRestoreLocalevalue = async (
     locale_value,
-    defaule_value,
+    default_value,
     localization
   ) => {
     try {
@@ -140,16 +140,16 @@ const DataLocaleContextProvider = ({ children }) => {
       if (!data) return;
       const modifiedLocaleKeyValues = [...localeKeysValues].filter((el) => {
         if (el.id === locale_value.localeKeyId) {
-          if (defaule_value) {
+          if (default_value) {
             el.locale_values[localization.locale] = {
               fromDefault: true,
-              id: defaule_value.id,
-              localeKeyId: defaule_value.localeKeyId,
-              localizationId: defaule_value.localizationId,
-              value: defaule_value.value,
+              id: default_value.id,
+              localeKeyId: default_value.localeKeyId,
+              localizationId: default_value.localizationId,
+              value: default_value.value,
             };
           } else {
-            el.locale_values[localization.locale] = {};
+            el.locale_values[localization.locale] = null;
           }
         }
         return el;
@@ -184,6 +184,19 @@ const DataLocaleContextProvider = ({ children }) => {
     }
   };
 
+  const onSortLocaleValue = (showEditedValue) => {
+    if (showEditedValue) {
+      const sortedLocaleKeyValues = [...localeKeysValues].filter((el) => {
+        return localizations.map(
+          (local) => el.locale_values[local]?.fromDefault === false
+        );
+      });
+      console.log(sortedLocaleKeyValues);
+    } else {
+      return;
+    }
+  };
+
   return (
     <DataLocaleContext.Provider
       value={{
@@ -192,6 +205,7 @@ const DataLocaleContextProvider = ({ children }) => {
         sidebarLocalizations,
         onRestoreLocalevalue,
         editLocalizeValues,
+        onSortLocaleValue,
         localeKeysValues,
         addLocalization,
         selectedLocale,
