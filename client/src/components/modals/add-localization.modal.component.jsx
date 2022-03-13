@@ -31,7 +31,8 @@ function AddLocalizationModal({ setVisible, visible, localizations }) {
             />
           </Form.Group>
           <Button
-            variant="primary"
+            variant="dark"
+            style={{ borderRadius: "0" }}
             onClick={async () => {
               if (!localizations.find((el) => el.locale === locale)) {
                 await addLocalization({ name, locale });

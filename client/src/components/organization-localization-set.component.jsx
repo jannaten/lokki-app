@@ -8,6 +8,8 @@ import { Button, Form } from "react-bootstrap";
 import { EditValuesModal } from ".";
 
 const OrganizationLocalizationSet = ({
+  setEditedValueChangeList,
+  editedValueChangeList,
   defaultLocaleKeys,
   enableEditAllMode,
   localizations,
@@ -34,7 +36,6 @@ const OrganizationLocalizationSet = ({
                     : ""
                 }
                 onChange={(e) => {
-                  console.log("I am being called");
                   handleChange({
                     value: e.target.value,
                     localeKeyId: locale_keys.id,
@@ -128,7 +129,10 @@ const OrganizationLocalizationSet = ({
         visible={visible}
         setVisible={setVisible}
         locale_keys={locale_keys}
+        handleChange={handleChange}
         localizations={localizations}
+        editedValueChangeList={editedValueChangeList}
+        setEditedValueChangeList={setEditedValueChangeList}
       />
     </tr>
   );

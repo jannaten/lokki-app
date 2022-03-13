@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../../contexts";
-import { Modal, Form, Button } from "react-bootstrap";
+import { Modal, Form, Button, Row, Col } from "react-bootstrap";
 
 function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
   const { orgId } = useParams();
@@ -41,40 +41,57 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
       </Modal.Header>
       <Modal.Body>
         <Form>
-          <Form.Group className="mb-3 d-flex" controlId="formBasicEmail">
-            <Form.Label>Locale Key</Form.Label>
-            <Form.Control
-              type="text"
-              defaultValue={localeKey}
-              placeholder="insert locale key"
-              onChange={(e) => {
-                setLocaleKey(e.target.value);
-              }}
-            />
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Row>
+              <Col sm={12} md={3} lg={2}>
+                <Form.Label style={{ marginLeft: "1rem" }} className="mt-2">
+                  key
+                </Form.Label>
+              </Col>
+              <Col sm={12} md={9} lg={10}>
+                <Form.Control
+                  type="text"
+                  defaultValue={localeKey}
+                  placeholder="insert locale key"
+                  onChange={(e) => {
+                    setLocaleKey(e.target.value);
+                  }}
+                />
+              </Col>
+            </Row>
           </Form.Group>
           {localizations.map((localization) => (
             <Form.Group
               key={localization.id}
-              className="mb-3 d-flex"
+              className="mb-3"
               controlId="formBasicEmail"
             >
-              <Form.Label>{localization.locale}</Form.Label>
-              <Form.Control
-                type="text"
-                defaultValue=""
-                disabled={localeKey.length < 1}
-                placeholder={`insert value for ${localization.name} language`}
-                onChange={(e) => {
-                  handleChange({
-                    value: e.target.value,
-                    localizationId: localization.id,
-                  });
-                }}
-              />
+              <Row>
+                <Col sm={12} md={3} lg={2}>
+                  <Form.Label style={{ marginLeft: "1rem" }} className="mt-2">
+                    {localization.locale}
+                  </Form.Label>
+                </Col>
+                <Col sm={12} md={9} lg={10}>
+                  <Form.Control
+                    type="text"
+                    defaultValue=""
+                    disabled={localeKey.length < 1}
+                    placeholder={`insert value for ${localization.name} language`}
+                    onChange={(e) => {
+                      handleChange({
+                        value: e.target.value,
+                        localizationId: localization.id,
+                      });
+                    }}
+                  />
+                </Col>
+              </Row>
             </Form.Group>
           ))}
           <Button
-            variant="primary"
+            variant="dark"
+            style={{ borderRadius: "0" }}
             disabled={localeKey.length < 1}
             onClick={async () => {
               if (orgId === "1") {

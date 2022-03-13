@@ -159,6 +159,8 @@ const OrganizationLocalization = () => {
             {localeKeysValues.map((locale_keys) => {
               return (
                 <OrganizationLocalizationSet
+                  setEditedValueChangeList={setEditedValueChangeList}
+                  editedValueChangeList={editedValueChangeList}
                   enableEditAllMode={enableEditAllMode}
                   localizations={localizations}
                   handleChange={handleChange}

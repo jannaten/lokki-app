@@ -31,11 +31,9 @@ function AddProductModal({
         </Modal.Body>
       )}
       <Modal.Footer>
-        <Button variant="secondary" onClick={() => setVisible(!visible)}>
-          Close
-        </Button>
         <Button
-          variant="primary"
+          variant="dark"
+          style={{ borderRadius: "0" }}
           onClick={() => {
             addProduct(
               organization,
@@ -45,7 +43,14 @@ function AddProductModal({
             setVisible(!visible);
           }}
         >
-          Save Changes
+          Add
+        </Button>
+        <Button
+          variant="outline-dark"
+          style={{ borderRadius: "0" }}
+          onClick={() => setVisible(!visible)}
+        >
+          Close
         </Button>
       </Modal.Footer>
     </Modal>

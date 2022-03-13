@@ -1,75 +1,77 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { DataLocaleContext } from "../../contexts";
-import { Modal, Form, Button } from "react-bootstrap";
+import { Modal, Form, Button, Row, Col } from "react-bootstrap";
 
-function EditValuesModal({ setVisible, visible, localizations, locale_keys }) {
-  const [editedValueChangeList, setEditedValueChangeList] = useState([]);
-
+function EditValuesModal({
+  setEditedValueChangeList,
+  editedValueChangeList,
+  localizations,
+  handleChange,
+  locale_keys,
+  setVisible,
+  visible,
+}) {
   const { editLocalizeValues } = useContext(DataLocaleContext);
-
-  const handleChange = (value) => {
-    let copy = [...editedValueChangeList];
-    if (!copy.some((el) => el.localizationId === value.localizationId)) {
-      copy = [
-        ...copy,
-        {
-          id: value.id ? value.id : null,
-          localizationId: value.localizationId,
-          localeKeyId: value.localeKeyId,
-          value: value.value,
-        },
-      ];
-      setEditedValueChangeList(copy);
-      return;
-    }
-    if (copy.some((el) => el.localizationId === value.localizationId)) {
-      copy.map((el) => {
-        if (el.localizationId === value.localizationId) {
-          el.value = value.value;
-        }
-        return el;
-      });
-      setEditedValueChangeList(copy);
-    }
-  };
-
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
       <Modal.Header closeButton>
-        <Modal.Title>Add organization</Modal.Title>
+        <Modal.Title>Edit Localization Values</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>
+          <Form.Group className="mb-3" controlId="formBasicText123">
+            <Row>
+              <Col sm={12} md={3} lg={2}>
+                <Form.Label className="mt-2 me-4">Key</Form.Label>
+              </Col>
+              <Col sm={12} md={9} lg={10}>
+                <Form.Control
+                  defaultValue={locale_keys.key}
+                  type="text"
+                  disabled
+                />
+              </Col>
+            </Row>
+          </Form.Group>
           {localizations.map((localization) => (
             <Form.Group
+              className="mb-3"
               key={localization.id}
-              className="mb-3 d-flex"
-              controlId="formBasicEmail"
+              controlId="formBasicText"
             >
-              <Form.Label>{localization.locale}</Form.Label>
-              <Form.Control
-                type="text"
-                defaultValue={
-                  locale_keys.locale_values[localization.locale]
-                    ? locale_keys.locale_values[localization.locale].value
-                    : ""
-                }
-                placeholder={`insert value for ${localization.name} language`}
-                onChange={(e) => {
-                  handleChange({
-                    value: e.target.value,
-                    localeKeyId: locale_keys.id,
-                    localizationId: localization.id,
-                    id: locale_keys.locale_values[localization.locale]
-                      ? locale_keys.locale_values[localization.locale].id
-                      : null,
-                  });
-                }}
-              />
+              <Row>
+                <Col sm={12} md={3} lg={2}>
+                  <Form.Label className="mt-2 me-4">
+                    {localization.locale}
+                  </Form.Label>
+                </Col>
+                <Col sm={12} md={9} lg={10}>
+                  <Form.Control
+                    type="text"
+                    defaultValue={
+                      locale_keys.locale_values[localization.locale]
+                        ? locale_keys.locale_values[localization.locale].value
+                        : ""
+                    }
+                    placeholder={`insert value for ${localization.name} language`}
+                    onChange={(e) => {
+                      handleChange({
+                        value: e.target.value,
+                        localeKeyId: locale_keys.id,
+                        localizationId: localization.id,
+                        id: locale_keys.locale_values[localization.locale]
+                          ? locale_keys.locale_values[localization.locale].id
+                          : null,
+                      });
+                    }}
+                  />
+                </Col>
+              </Row>
             </Form.Group>
           ))}
           <Button
-            variant="primary"
+            variant="dark"
+            style={{ borderRadius: "0" }}
             onClick={async () => {
               if (editedValueChangeList.length > 0)
                 await editLocalizeValues(editedValueChangeList);

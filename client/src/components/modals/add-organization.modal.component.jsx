@@ -23,7 +23,8 @@ function AddOrganizationModal({ setVisible, visible }) {
             />
           </Form.Group>
           <Button
-            variant="primary"
+            variant="dark"
+            style={{ borderRadius: "0" }}
             onClick={async () => {
               await addOrganization({ name });
               setVisible(!visible);
