@@ -128,7 +128,7 @@ const DataLocaleContextProvider = ({ children }) => {
     }
   };
 
-  const onRestoreLocalevalue = async (
+  const onRestoreLocaleValues = async (
     locale_value,
     default_value,
     localization
@@ -184,16 +184,25 @@ const DataLocaleContextProvider = ({ children }) => {
     }
   };
 
-  const onSortLocaleValue = (showEditedValue) => {
-    if (showEditedValue) {
-      const sortedLocaleKeyValues = [...localeKeysValues].filter((el) => {
-        return localizations.map(
-          (local) => el.locale_values[local]?.fromDefault === false
-        );
-      });
-      console.log(sortedLocaleKeyValues);
+  const onSortLocaleValue = async (showEditedValue) => {
+    let sortedLocaleKeyValues = [];
+    if (showEditedValue && orgId !== "1") {
+      for (let i = 0; i < localeKeysValues.length; i++) {
+        for (let j = 0; j < localizations.length; j++) {
+          const local = localizations[j].locale;
+          if (local && localeKeysValues[i].locale_values[local] !== null) {
+            if (
+              localeKeysValues[i].locale_values[local].fromDefault === false
+            ) {
+              sortedLocaleKeyValues.push(localeKeysValues[i]);
+            }
+          }
+        }
+      }
+      setLocaleKeysValues(sortedLocaleKeyValues);
     } else {
-      return;
+      sortedLocaleKeyValues = [];
+      await getLocaleKeysValuesByOrgIdProId();
     }
   };
 
@@ -201,9 +210,9 @@ const DataLocaleContextProvider = ({ children }) => {
     <DataLocaleContext.Provider
       value={{
         defaultLocaleKeysValues,
+        onRestoreLocaleValues,
         onAddlocaleKeyValues,
         sidebarLocalizations,
-        onRestoreLocalevalue,
         editLocalizeValues,
         onSortLocaleValue,
         localeKeysValues,

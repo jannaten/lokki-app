@@ -12,10 +12,9 @@ const OrganizationLocalizationSet = ({
   localizations,
   locale_keys,
 }) => {
-  const [visible, setVisible] = useState(false);
-  const { onRestoreLocalevalue } = useContext(DataLocaleContext);
   const { orgId } = useParams();
-
+  const [visible, setVisible] = useState(false);
+  const { onRestoreLocaleValues } = useContext(DataLocaleContext);
   return (
     <tr>
       <td>{locale_keys.key}</td>
@@ -52,7 +51,7 @@ const OrganizationLocalizationSet = ({
                         marginLeft: "0.5rem",
                       }}
                       onClick={() => {
-                        onRestoreLocalevalue(
+                        onRestoreLocaleValues(
                           locale_keys.locale_values[localization.locale],
                           defaultLocaleKeys
                             ? defaultLocaleKeys.locale_values[
@@ -62,18 +61,6 @@ const OrganizationLocalizationSet = ({
                           localization
                         );
                       }}
-                      // onClick={() => {
-                      //   onRestoreLocalevalue(
-                      //     locale_keys.locale_values[localization.locale],
-                      //     defaultLocaleKeys.find(
-                      //       (el) => el.id === locale_keys.id
-                      //     ) &&
-                      //       defaultLocaleKeys.find(
-                      //         (el) => el.id === locale_keys.id
-                      //       ).locale_values[localization.locale],
-                      //     localization
-                      //   );
-                      // }}
                     >
                       Restore
                     </Button>
@@ -93,6 +80,7 @@ const OrganizationLocalizationSet = ({
         }}
       >
         <Button
+          variant="dark"
           style={{
             border: "none",
             display: "flex",
@@ -102,7 +90,6 @@ const OrganizationLocalizationSet = ({
             justifyContent: "space-around",
           }}
           onClick={() => setVisible(!visible)}
-          variant="dark"
         >
           <PencilFill className="me-2 mb-1" /> Edit
         </Button>
@@ -118,40 +105,3 @@ const OrganizationLocalizationSet = ({
 };
 
 export default OrganizationLocalizationSet;
-
-// <OverlayTrigger
-//   placement="right"
-//   delay={{ show: 250, hide: 400 }}
-//   overlay={(props) => (
-//     <Tooltip id="button-tooltip" {...props}>
-//       <div>
-//         {defaultLocaleKeys.locale_values[localization.locale]
-//           ? defaultLocaleKeys.locale_values[
-//               localization.locale
-//             ] &&
-//             defaultLocaleKeys.locale_values[
-//               localization.locale
-//             ].value
-//           : "Default value : none"}
-//       </div>
-//     </Tooltip>
-//   )}
-// >
-//   <Button
-//     variant="dark"
-//     style={{
-//       border: "0",
-//       borderRadius: "0",
-//       marginLeft: "0.5rem",
-//     }}
-//     onClick={() =>
-//       onRestoreLocalevalue(
-//         locale_keys.locale_values[localization.locale],
-//         defaultLocaleKeys.locale_values[localization.locale],
-//         localization
-//       )
-//     }
-//   >
-//     Restore
-//   </Button>
-// </OverlayTrigger>

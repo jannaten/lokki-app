@@ -2,11 +2,13 @@ import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
 import { DataLocaleContext, DataChildContext } from "../contexts";
 import { OrganizationLocalizationSet, SideBar } from ".";
 import React, { useContext, useState } from "react";
+import { useParams } from "react-router-dom";
 import { useWindowSize } from "../hooks";
 import { Button } from "react-bootstrap";
 
 const OrganizationLocalization = () => {
   const size = useWindowSize();
+  const { orgId } = useParams();
   const [showEditedValue, setShowEditedValue] = useState(false);
 
   const { organization } = useContext(DataChildContext);
@@ -68,17 +70,19 @@ const OrganizationLocalization = () => {
             Search
           </InputGroup.Text>
         </InputGroup>
-        <Button
-          className="mt-3 me-3"
-          style={{ borderRadius: "0" }}
-          variant={showEditedValue ? "dark" : "outline-dark"}
-          onClick={() => {
-            onSortLocaleValue(showEditedValue);
-            setShowEditedValue(!showEditedValue);
-          }}
-        >
-          Show Edited Values
-        </Button>
+        {orgId !== "1" && (
+          <Button
+            className="mt-3 me-3"
+            style={{ borderRadius: "0" }}
+            variant={!showEditedValue ? "dark" : "outline-dark"}
+            onClick={() => {
+              onSortLocaleValue(!showEditedValue);
+              setShowEditedValue(!showEditedValue);
+            }}
+          >
+            {!showEditedValue ? "Show Edited Values" : "Show All Values"}
+          </Button>
+        )}
         <Button className="mt-3" variant="dark" style={{ borderRadius: "0" }}>
           Enable Edit All Mode
         </Button>
@@ -109,13 +113,6 @@ const OrganizationLocalization = () => {
                   defaultLocaleKeys={defaultLocaleKeysValues.find(
                     (el) => el.id === locale_keys.id
                   )}
-                  // defaultLocaleKeys={
-                  //   locale_keys &&
-                  //   defaultLocaleKeysValues &&
-                  //   defaultLocaleKeysValues.filter(
-                  //     (el) => typeof el !== "undefined"
-                  //   )
-                  // }
                 />
               );
             })}
