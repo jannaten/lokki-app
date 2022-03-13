@@ -2,9 +2,9 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import React, { useState, useContext } from "react";
 import { PencilFill } from "react-bootstrap-icons";
 import { DataLocaleContext } from "../contexts";
+import { Button, Form } from "react-bootstrap";
 import Tooltip from "react-bootstrap/Tooltip";
 import { useParams } from "react-router-dom";
-import { Button, Form } from "react-bootstrap";
 import { EditValuesModal } from ".";
 
 const OrganizationLocalizationSet = ({

@@ -1,6 +1,6 @@
-import { Modal, Form, Button } from "react-bootstrap";
-import { useContext, useState } from "react";
 import { DataContext } from "../../contexts";
+import { useContext, useState } from "react";
+import { Modal, Form, Button } from "react-bootstrap";
 
 function AddOrganizationModal({ setVisible, visible }) {
   const [name, setName] = useState("");

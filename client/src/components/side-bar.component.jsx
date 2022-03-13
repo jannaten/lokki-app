@@ -1,12 +1,12 @@
 import { Button } from "react-bootstrap";
 import { AddLocalizationModal } from ".";
-// import { useParams } from "react-router-dom";
 import { AddLocaleKeyValuesModal } from ".";
+import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../contexts";
 
 function SideBar() {
-  // const { orgId } = useParams();
+  const { orgId } = useParams();
   const [addLocalizationModalVisible, setAddLocalizationModalVisible] =
     useState(false);
   const [addLocaleKeyValueModalVisible, setAddLocaleKeyValueModalVisible] =
@@ -54,24 +54,24 @@ function SideBar() {
         visible={addLocalizationModalVisible}
         setVisible={setAddLocalizationModalVisible}
       />
-      {/* {orgId === "1" && ( */}
-      <>
-        <Button
-          variant="dark"
-          onClick={() =>
-            setAddLocaleKeyValueModalVisible(!addLocaleKeyValueModalVisible)
-          }
-          style={{ marginTop: "1vh", borderRadius: "0" }}
-        >
-          Add Key values
-        </Button>
-        <AddLocaleKeyValuesModal
-          localizations={localizations}
-          visible={addLocaleKeyValueModalVisible}
-          setVisible={setAddLocaleKeyValueModalVisible}
-        />
-      </>
-      {/* )} */}
+      {orgId === "1" && (
+        <>
+          <Button
+            variant="dark"
+            onClick={() =>
+              setAddLocaleKeyValueModalVisible(!addLocaleKeyValueModalVisible)
+            }
+            style={{ marginTop: "1vh", borderRadius: "0" }}
+          >
+            Add Key values
+          </Button>
+          <AddLocaleKeyValuesModal
+            localizations={localizations}
+            visible={addLocaleKeyValueModalVisible}
+            setVisible={setAddLocaleKeyValueModalVisible}
+          />
+        </>
+      )}
     </div>
   );
 }

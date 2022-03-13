@@ -1,6 +1,6 @@
-import { Modal, Form, Button } from "react-bootstrap";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../../contexts";
+import { Modal, Form, Button } from "react-bootstrap";
 
 function AddLocalizationModal({ setVisible, visible, localizations }) {
   const [name, setName] = useState("");
