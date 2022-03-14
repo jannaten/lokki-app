@@ -185,12 +185,7 @@ const DataLocaleContextProvider = ({ children }) => {
         const addedSidebarLocalization = [...sidebarLocalizations, data];
         setLocalizations(addedLocalization);
         setSidebarLocalizations(addedSidebarLocalization);
-        const modifiedLocaleKeysValues = [...localeKeysValues].filter((el) => {
-          el.locale_values[data.locale] = null;
-          return el;
-        });
-        successToast(`${data.name} languageis now added`, theme);
-        setLocaleKeysValues(modifiedLocaleKeysValues);
+        successToast(`${data.name} language is now added`, theme);
       }
     } catch ({ response }) {
       errorToast(response?.data?.message);
