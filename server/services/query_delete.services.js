@@ -1,21 +1,12 @@
-const query_delete_by_id = async (
-  req,
-  res,
-  model,
-  bool = { isUser: false }
-) => {
-  const { isUser } = bool;
+const query_delete_by_id = async (req, res, model, value) => {
   const { id } = req.params;
-  const type = await model.findAll({
-    attributes: isUser && { exclude: ["password"] },
+  const query = await model.findAll({
     where: { id },
   });
-  if (type[0]) {
-    await model.destroy({ where: { id } });
-    return res.status(200).send(type[0]);
-  } else {
-    return res.status(404).send({ message: `type of id ${id} not found` });
-  }
+  if (!query[0])
+    return res.status(404).send({ message: `${value} of id ${id} not found` });
+  await model.destroy({ where: { id } });
+  return res.status(200).send(query[0]);
 };
 
 module.exports = { query_delete_by_id };

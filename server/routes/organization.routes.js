@@ -1,4 +1,5 @@
 // importing modules nad libraries
+const { query_put, query_delete_by_id } = require("../services");
 const { organization_schema } = require("../validation");
 const express = require("express");
 const db = require("../models");
@@ -57,31 +58,12 @@ router.post("/", async (req, res) => {
 
 // Editing data
 router.put("/:id", async (req, res) => {
-  const { id } = req.params;
-  const { value, error } = organization_schema.validate(req.body);
-  if (error) return res.status(400).send({ message: error.details[0].message });
-  const organizationExist = await db.organization.findAll({ where: { id } });
-  if (!organizationExist[0])
-    return res
-      .status(404)
-      .send({ message: `organization of id ${id} not found` });
-  await db.organization.update(value, { where: { id } });
-  const query = await db.organization.findAll({ where: { id } });
-  return res.status(200).send(query[0]);
+  await query_put(req, res, db.organization, organization_schema, "org");
 });
 
 // Deleting data
 router.delete("/:id", async (req, res) => {
-  const { id } = req.params;
-  const organization = await db.organization.findAll({
-    where: { id },
-  });
-  if (!organization[0])
-    return res
-      .status(404)
-      .send({ message: `organization of id ${id} not found` });
-  await db.organization.destroy({ where: { id } });
-  return res.status(200).send(organization[0]);
+  await query_delete_by_id(req, res, db.organization, "organization");
 });
 
 module.exports = router;

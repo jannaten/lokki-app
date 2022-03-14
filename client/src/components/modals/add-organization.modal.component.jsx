@@ -31,7 +31,7 @@ function AddOrganizationModal({ setVisible, visible }) {
               setName("");
             }}
           >
-            Submit
+            Add
           </Button>
         </Form>
       </Modal.Body>

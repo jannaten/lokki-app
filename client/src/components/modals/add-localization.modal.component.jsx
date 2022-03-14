@@ -44,7 +44,7 @@ function AddLocalizationModal({ setVisible, visible, localizations }) {
               }
             }}
           >
-            Submit
+            Add
           </Button>
         </Form>
       </Modal.Body>

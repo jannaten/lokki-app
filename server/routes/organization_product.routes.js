@@ -1,4 +1,5 @@
 // importing modules & libraries
+const { query_put, query_delete_by_id } = require("../services");
 const { organization_product_schema } = require("../validation");
 const express = require("express");
 const db = require("../models");
@@ -53,33 +54,23 @@ router.post("/", async (req, res) => {
 
 // Editing data
 router.put("/:id", async (req, res) => {
-  const { id } = req.params;
-  const { value, error } = organization_product_schema.validate(req.body);
-  if (error) return res.status(400).send({ message: error.details[0].message });
-  const organizationProductExist = await db.organization_product.findAll({
-    where: { id },
-  });
-  if (!organizationProductExist[0])
-    return res
-      .status(404)
-      .send({ message: `organization product of id ${id} not found` });
-  await db.organization_product.update(value, { where: { id } });
-  const query = await db.organization_product.findAll({ where: { id } });
-  return res.status(200).send(query[0]);
+  await query_put(
+    req,
+    res,
+    db.organization_product,
+    organization_product_schema,
+    "organization"
+  );
 });
 
 // Deleting data
 router.delete("/:id", async (req, res) => {
-  const { id } = req.params;
-  const organization_product = await db.organization_product.findAll({
-    where: { id },
-  });
-  if (!organization_product[0])
-    return res
-      .status(404)
-      .send({ message: `organization product of id ${id} not found` });
-  await db.organization_product.destroy({ where: { id } });
-  return res.status(200).send(organization_product[0]);
+  await query_delete_by_id(
+    req,
+    res,
+    db.organization_product,
+    "organization product"
+  );
 });
 
 module.exports = router;

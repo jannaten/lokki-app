@@ -79,7 +79,7 @@ function EditValuesModal({
               setEditedValueChangeList([]);
             }}
           >
-            Submit
+            Save Changes
           </Button>
         </Form>
       </Modal.Body>

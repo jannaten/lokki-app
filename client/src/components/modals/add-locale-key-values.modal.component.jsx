@@ -105,7 +105,7 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
               setAddLocaleValueChangeList([]);
             }}
           >
-            Submit
+            Add
           </Button>
         </Form>
       </Modal.Body>
