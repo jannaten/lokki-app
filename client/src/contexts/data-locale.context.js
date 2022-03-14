@@ -1,11 +1,14 @@
 import axios from "axios";
 import { endPoints } from "../config";
+import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
+import { successToast, errorToast } from "../components";
 import { useState, useEffect, createContext } from "react";
 
 export const DataLocaleContext = createContext();
 
 const DataLocaleContextProvider = ({ children }) => {
+  const theme = useTheme();
   const { orgId, proId } = useParams();
   const { deleteLocalizeValueUrl, addLocalizationUrl } = endPoints;
   const { getLocalizationByOrgProUrl, editLocalizeValueUrl } = endPoints;
@@ -35,6 +38,7 @@ const DataLocaleContextProvider = ({ children }) => {
       setLocalizations(data);
       setSidebarLocalizations(data);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };
@@ -46,6 +50,7 @@ const DataLocaleContextProvider = ({ children }) => {
       );
       setLocaleKeysValues(data);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };
@@ -58,6 +63,7 @@ const DataLocaleContextProvider = ({ children }) => {
         );
         setDefaultLocaleKeysValues(data);
       } catch ({ response }) {
+        errorToast(response?.data?.message);
         console.error(response?.data?.message);
       }
     }
@@ -79,8 +85,10 @@ const DataLocaleContextProvider = ({ children }) => {
             }
             return el;
           });
+          successToast(`${values[i].value} value is updated`, theme);
           setLocaleKeysValues(modifiedLocalKeyValues);
         } catch ({ response }) {
+          errorToast(response?.data?.message);
           console.error(response?.data?.message);
         }
       }
@@ -99,7 +107,9 @@ const DataLocaleContextProvider = ({ children }) => {
       if (data) {
         setLocaleKeysValues([...localeKeysValues, data]);
       }
+      successToast(`key vlaues pair added`, theme);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };
@@ -154,9 +164,11 @@ const DataLocaleContextProvider = ({ children }) => {
         }
         return el;
       });
+      successToast(`${locale_value.value} is now deleted`, theme);
       setLocaleKeysValues(modifiedLocaleKeyValues);
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      errorToast(response?.data?.message);
+      console.error(response?.data?.message);
     }
   };
 
@@ -177,10 +189,12 @@ const DataLocaleContextProvider = ({ children }) => {
           el.locale_values[data.locale] = null;
           return el;
         });
+        successToast(`${data.name} languageis now added`, theme);
         setLocaleKeysValues(modifiedLocaleKeysValues);
       }
-    } catch (error) {
-      console.error(error.message);
+    } catch ({ response }) {
+      errorToast(response?.data?.message);
+      console.error(response?.data?.message);
     }
   };
 
@@ -199,6 +213,7 @@ const DataLocaleContextProvider = ({ children }) => {
           }
         }
       }
+      successToast(`only eidited values are visible`, theme);
       setLocaleKeysValues(sortedLocaleKeyValues);
     } else {
       sortedLocaleKeyValues = [];

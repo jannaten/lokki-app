@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { DataContextProvider } from "./contexts";
 import { Routes, Route } from "react-router-dom";
 import { routes, themes } from "./config";
+import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import "./App.css";
 
@@ -26,6 +27,7 @@ function App() {
           />
         </Routes>
       </DataContextProvider>
+      <Toaster />
     </ThemeProvider>
   );
 }

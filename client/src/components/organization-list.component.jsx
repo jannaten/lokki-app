@@ -1,7 +1,7 @@
 import { DataContext } from "../contexts";
 import { useContext, useState } from "react";
+import { OrganizationListRow, AddOrganizationModal } from ".";
 import { Container, Table, Button, Row, Col } from "react-bootstrap";
-import { OrganizationListRow, AddOrganizationModal } from "../components";
 
 function OrganizationsList() {
   const [visible, setVisible] = useState(false);

@@ -1,10 +1,13 @@
 import axios from "axios";
 import { endPoints } from "../config";
+import { useTheme } from "styled-components";
+import { successToast, errorToast } from "../components";
 import { useState, useEffect, createContext } from "react";
 
 export const DataContext = createContext();
 
 const DataContextProvider = ({ children }) => {
+  const theme = useTheme();
   const { addOrganizationUrl } = endPoints;
   const { getOrganizationsUrl, getProductsUrl, addProductUrl } = endPoints;
 
@@ -16,6 +19,7 @@ const DataContextProvider = ({ children }) => {
       const { data } = await axios.get(getOrganizationsUrl);
       data && setOrganizations(data);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };
@@ -25,6 +29,7 @@ const DataContextProvider = ({ children }) => {
       const { data } = await axios.get(getProductsUrl);
       data && setProducts(data);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };
@@ -54,8 +59,10 @@ const DataContextProvider = ({ children }) => {
         }
         return el;
       });
+      successToast(`${obj.product} product added to ${org.name}`, theme);
       setOrganizations(modifiedOrganization);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };
@@ -65,8 +72,10 @@ const DataContextProvider = ({ children }) => {
       const { data } = await axios.post(addOrganizationUrl, name);
       data.organization_products = [];
       const addedOrganizations = [...organizations, data];
+      successToast(`${data.name} organization added`, theme);
       setOrganizations(addedOrganizations);
     } catch ({ response }) {
+      errorToast(response?.data?.message);
       console.error(response?.data?.message);
     }
   };

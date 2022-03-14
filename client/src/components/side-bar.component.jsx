@@ -1,9 +1,8 @@
 import { Button } from "react-bootstrap";
-import { AddLocalizationModal } from ".";
-import { AddLocaleKeyValuesModal } from ".";
 import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../contexts";
+import { AddLocalizationModal, AddLocaleKeyValuesModal } from ".";
 
 function SideBar() {
   const { orgId } = useParams();
