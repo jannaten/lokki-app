@@ -1,14 +1,15 @@
-import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
-import { DataLocaleContext, DataChildContext } from "../contexts";
-import { OrganizationLocalizationSet, SideBar } from ".";
-import React, { useContext, useState } from "react";
-import { useParams } from "react-router-dom";
-import { useWindowSize } from "../hooks";
 import { Button } from "react-bootstrap";
+import { useWindowSize } from "../hooks";
+import { useParams } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { OrganizationLocalizationSet, SideBar } from ".";
+import { DataLocaleContext, DataChildContext } from "../contexts";
+import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
 
 const OrganizationLocalization = () => {
   const size = useWindowSize();
   const { orgId } = useParams();
+  const [searchQuery, setSearchQuery] = useState("");
   const [showEditedValue, setShowEditedValue] = useState(false);
   const [enableEditAllMode, setEnableEditAllMode] = useState(false);
   const [editedValueChangeList, setEditedValueChangeList] = useState([]);
@@ -56,6 +57,28 @@ const OrganizationLocalization = () => {
     }
   };
 
+  let filteredLocaleKeyValues = [];
+  filteredLocaleKeyValues = localeKeysValues.filter((el) => {
+    if (el.key.toLowerCase().includes(searchQuery.toLowerCase())) {
+      return true;
+    }
+    for (let locale of Object.keys(el.locale_values)) {
+      if (el.locale_values[locale] !== null) {
+        if (!el.locale_values[locale].value) {
+          continue;
+        }
+        if (
+          el.locale_values[locale].value
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
+  });
+
   return (
     <Row className="w-100">
       <Col
@@ -96,8 +119,9 @@ const OrganizationLocalization = () => {
           <FormControl
             aria-label="Large"
             style={{ borderRadius: "0" }}
-            placeholder="Search by localization key or values"
             aria-describedby="inputGroup-sizing-sm"
+            placeholder="Search by localization key or values"
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
           <InputGroup.Text
             style={{
@@ -138,7 +162,9 @@ const OrganizationLocalization = () => {
             ? "Enable Edit All Mode"
             : "Disable Edit All Mode"}
         </Button>
-        <p className="h5 mt-4">{localeKeysValues.length} result has found</p>
+        <p className="h5 mt-4">
+          {filteredLocaleKeyValues.length} result has found
+        </p>
         <Table hover style={{ marginTop: "1rem" }}>
           <thead>
             <tr>
@@ -156,7 +182,7 @@ const OrganizationLocalization = () => {
             </tr>
           </thead>
           <tbody>
-            {localeKeysValues.map((locale_keys) => {
+            {filteredLocaleKeyValues.map((locale_keys) => {
               return (
                 <OrganizationLocalizationSet
                   setEditedValueChangeList={setEditedValueChangeList}
@@ -180,3 +206,23 @@ const OrganizationLocalization = () => {
 };
 
 export default OrganizationLocalization;
+// Works as well
+// let filteredLocaleKeyValues = [];
+// filteredLocaleKeyValues = localeKeysValues.filter((el) => {
+//   if (el.key.toLowerCase().includes(searchQuery.toLowerCase())) {
+//     return true;
+//   }
+//   for (let i = 0; i < localizations.length; i++) {
+//     const locale = localizations[i].locale;
+//     if (el.locale_values[locale] !== null) {
+//       if (
+//         el.locale_values[locale].value
+//           .toLowerCase()
+//           .includes(searchQuery.toLowerCase())
+//       ) {
+//         return true;
+//       }
+//     }
+//   }
+//   return false;
+// });
