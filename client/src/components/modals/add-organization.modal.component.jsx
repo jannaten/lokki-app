@@ -1,8 +1,10 @@
 import { DataContext } from "../../contexts";
+import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 
 function AddOrganizationModal({ setVisible, visible }) {
+  const theme = useTheme();
   const [name, setName] = useState("");
   const { addOrganization } = useContext(DataContext);
 
@@ -23,8 +25,12 @@ function AddOrganizationModal({ setVisible, visible }) {
             />
           </Form.Group>
           <Button
-            variant="dark"
-            style={{ borderRadius: "0" }}
+            variant=""
+            style={{
+              borderRadius: "0",
+              color: theme.basic.bright,
+              backgroundColor: theme.primary,
+            }}
             onClick={async () => {
               await addOrganization({ name });
               setVisible(!visible);

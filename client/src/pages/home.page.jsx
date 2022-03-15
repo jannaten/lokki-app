@@ -1,7 +1,7 @@
 import { Layout, OrganizationList } from "../components";
 
-const Home = () => (
-  <Layout>
+const Home = ({ setTheme }) => (
+  <Layout setTheme={setTheme}>
     <OrganizationList />
   </Layout>
 );

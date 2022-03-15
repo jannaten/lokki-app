@@ -1,10 +1,12 @@
 import { DataContext } from "../contexts";
+import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { InputGroup, FormControl } from "react-bootstrap";
 import { OrganizationListRow, AddOrganizationModal } from ".";
 import { Container, Table, Button, Row, Col } from "react-bootstrap";
 
 function OrganizationsList() {
+  const theme = useTheme();
   const [visible, setVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const { organizations } = useContext(DataContext);
@@ -36,9 +38,9 @@ function OrganizationsList() {
             />
             <InputGroup.Text
               style={{
-                color: "white",
                 borderRadius: "0",
-                backgroundColor: "#212529",
+                color: theme.basic.bright,
+                backgroundColor: theme.primary,
               }}
               id="inputGroup-sizing-lg"
             >
@@ -47,7 +49,7 @@ function OrganizationsList() {
           </InputGroup>
           <Table responsive="sm" borderless>
             <thead>
-              <tr style={{ borderBottom: "1px solid #212529" }}>
+              <tr style={{ borderBottom: `1px solid ${theme.basic.dark}` }}>
                 <th>no.</th>
                 <th>products</th>
               </tr>
@@ -63,9 +65,14 @@ function OrganizationsList() {
             </tbody>
           </Table>
           <Button
-            variant="dark"
+            variant=""
             onClick={() => setVisible(!visible)}
-            style={{ border: "none", borderRadius: "0" }}
+            style={{
+              border: "none",
+              borderRadius: "0",
+              color: theme.basic.bright,
+              background: theme.primary,
+            }}
           >
             Add organization
           </Button>

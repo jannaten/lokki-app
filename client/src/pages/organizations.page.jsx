@@ -1,8 +1,8 @@
 import { Layout } from "../components";
 import { OrganizationProducts } from "../components";
 
-const Organizations = () => (
-  <Layout>
+const Organizations = ({ setTheme }) => (
+  <Layout setTheme={setTheme}>
     <OrganizationProducts />
   </Layout>
 );

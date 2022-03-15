@@ -1,27 +1,27 @@
 import { useContext } from "react";
-import { routes, endPoints } from "../config";
+import { useTheme } from "styled-components";
 import { useNavigate, useLocation } from "react-router-dom";
 import { DataContext, DataChildContext } from "../contexts";
+import { routes, endPoints, themePallate } from "../config";
 import { Nav, Navbar, Container, NavDropdown, Image } from "react-bootstrap";
 
-function Header() {
+function Header({ setTheme }) {
+  const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
   const { organizations } = useContext(DataContext);
   const { organization } = useContext(DataChildContext);
 
-  const { organizationRoute, home, productRoute } = routes;
-  const { organization_products } = organization;
   const { getImage } = endPoints;
+  const { organizationRoute, home, productRoute } = routes;
 
+  const { organization_products } = organization;
   return (
     <>
       <Navbar
-        bg="dark"
-        expand="lg"
-        variant="dark"
         className="w-100"
         style={{
+          backgroundColor: theme.primary,
           position: "fixed",
           marginTop: "0rem",
           zIndex: "7",
@@ -29,7 +29,7 @@ function Header() {
       >
         <Container fluid>
           <Navbar.Brand
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", color: theme.basic.bright }}
             onClick={() => navigate(home)}
           >
             Lokki
@@ -44,6 +44,7 @@ function Header() {
               <NavDropdown
                 title="organization list"
                 id="navbarScrollingDropdown"
+                style={{ color: theme.basic.bright }}
               >
                 {organizations.length > 0 &&
                   organizations.map(({ id, name }) => (
@@ -74,7 +75,7 @@ function Header() {
                   {organization_products && organization_products.length > 0 && (
                     <NavDropdown
                       title="product list"
-                      id="navbarScrollingDropdown1"
+                      id="navbarScrollingDropdown"
                     >
                       {organization_products.map(({ product }) => (
                         <NavDropdown.Item
@@ -86,10 +87,10 @@ function Header() {
                           }
                           style={{
                             display: "flex",
+                            padding: "0.5rem",
                             alignItems: "center",
                             flexDirection: "row",
                             justifyContent: "center",
-                            padding: "0.5rem",
                           }}
                         >
                           <Image
@@ -111,6 +112,59 @@ function Header() {
                   )}
                 </>
               )}
+            </Nav>
+            <Nav
+              style={{ maxHeight: "100px", paddingRight: "1rem" }}
+              navbarScroll
+            >
+              <div
+                style={{
+                  width: "2rem",
+                  height: "2rem",
+                  marginLeft: "5rem",
+                  borderRadius: "10%",
+                  marginTop: "0.3rem",
+                  marginRight: "0.3rem",
+                  backgroundColor: theme.primary,
+                  border: `0.25rem solid #FFFFFF7F`,
+                  boxShadow: `0rem 0rem 0.25rem #0000007F`,
+                }}
+              ></div>
+              <NavDropdown
+                title="theme"
+                style={{ marginRight: "4rem" }}
+                id="navbarScrollingDropdown"
+              >
+                {themePallate.map((theme) => (
+                  <NavDropdown.Item
+                    key={theme.id}
+                    style={{
+                      display: "flex",
+                      padding: "0.5rem",
+                      alignItems: "center",
+                      flexDirection: "row",
+                      justifyContent: "flex-start",
+                    }}
+                    onClick={() => {
+                      setTheme(theme.themeIdentity);
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "2rem",
+                        height: "2rem",
+                        marginLeft: "1rem",
+                        marginRight: "1rem",
+                        borderRadius: "10%",
+                        backgroundColor: theme.primary,
+                        boxShadow: `0rem 0rem 0.25rem #0000007F`,
+                        border: `0.25rem solid ${theme.secondary}7F`,
+                      }}
+                    ></div>
+                    {theme.name}
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

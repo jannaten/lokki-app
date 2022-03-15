@@ -4,6 +4,7 @@ import { PencilFill } from "react-bootstrap-icons";
 import { DataLocaleContext } from "../contexts";
 import { Button, Form } from "react-bootstrap";
 import Tooltip from "react-bootstrap/Tooltip";
+import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
 import { EditValuesModal } from ".";
 
@@ -16,6 +17,7 @@ const OrganizationLocalizationSet = ({
   handleChange,
   locale_keys,
 }) => {
+  const theme = useTheme();
   const { orgId } = useParams();
   const [visible, setVisible] = useState(false);
 
@@ -73,11 +75,13 @@ const OrganizationLocalizationSet = ({
                         }
                       >
                         <Button
-                          variant="dark"
+                          variant=""
                           style={{
                             border: "0",
                             borderRadius: "0",
                             marginLeft: "0.5rem",
+                            color: theme.basic.bright,
+                            backgroundColor: theme.secondary,
                           }}
                           onClick={() => {
                             onRestoreLocaleValues(
@@ -111,14 +115,16 @@ const OrganizationLocalizationSet = ({
         }}
       >
         <Button
-          variant="dark"
+          variant=""
           style={{
             border: "none",
             display: "flex",
             borderRadius: "0",
             flexDirection: "row",
             alignItems: "center",
+            color: theme.basic.bright,
             justifyContent: "space-around",
+            backgroundColor: theme.secondary,
           }}
           onClick={() => setVisible(!visible)}
         >

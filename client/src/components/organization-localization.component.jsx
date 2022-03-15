@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { useWindowSize } from "../hooks";
+import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
 import React, { useContext, useState } from "react";
 import { OrganizationLocalizationSet, SideBar } from ".";
@@ -7,6 +8,7 @@ import { DataLocaleContext, DataChildContext } from "../contexts";
 import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
 
 const OrganizationLocalization = () => {
+  const theme = useTheme();
   const size = useWindowSize();
   const { orgId } = useParams();
   const [searchQuery, setSearchQuery] = useState("");
@@ -125,9 +127,9 @@ const OrganizationLocalization = () => {
           />
           <InputGroup.Text
             style={{
-              color: "white",
               borderRadius: "0",
-              backgroundColor: "#212529",
+              color: theme.basic.bright,
+              backgroundColor: theme.primary,
             }}
             id="inputGroup-sizing-lg"
           >
@@ -136,9 +138,22 @@ const OrganizationLocalization = () => {
         </InputGroup>
         {orgId !== "1" && (
           <Button
+            variant=""
             className="mt-3 me-3"
-            style={{ borderRadius: "0" }}
-            variant={!showEditedValue ? "dark" : "outline-dark"}
+            style={
+              showEditedValue
+                ? {
+                    borderRadius: "0",
+                    bakgroundColor: "none",
+                    color: theme.secondary,
+                    border: `0.1rem solid ${theme.secondary}`,
+                  }
+                : {
+                    borderRadius: "0",
+                    color: theme.basic.bright,
+                    backgroundColor: theme.secondary,
+                  }
+            }
             onClick={() => {
               onSortLocaleValue(!showEditedValue);
               setShowEditedValue(!showEditedValue);
@@ -149,8 +164,21 @@ const OrganizationLocalization = () => {
         )}
         <Button
           className="mt-3"
-          style={{ borderRadius: "0" }}
-          variant={!enableEditAllMode ? "dark" : "outline-dark"}
+          style={
+            enableEditAllMode
+              ? {
+                  borderRadius: "0",
+                  bakgroundColor: "none",
+                  color: theme.secondary,
+                  border: `0.1rem solid ${theme.secondary}`,
+                }
+              : {
+                  borderRadius: "0",
+                  color: theme.basic.bright,
+                  backgroundColor: theme.secondary,
+                }
+          }
+          variant=""
           onClick={async () => {
             if (editedValueChangeList.length > 0)
               await editLocalizeValues(editedValueChangeList);

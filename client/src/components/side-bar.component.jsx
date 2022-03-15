@@ -1,10 +1,12 @@
 import { Button } from "react-bootstrap";
+import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../contexts";
 import { AddLocalizationModal, AddLocaleKeyValuesModal } from ".";
 
 function SideBar() {
+  const theme = useTheme();
   const { orgId } = useParams();
   const [addLocalizationModalVisible, setAddLocalizationModalVisible] =
     useState(false);
@@ -25,26 +27,40 @@ function SideBar() {
     >
       {sidebarLocalizations.map((localization) => (
         <Button
-          style={{ borderRadius: "0" }}
+          variant=""
+          style={
+            selectedLocale &&
+            selectedLocale.some((el) => el === localization.locale)
+              ? {
+                  borderRadius: "0",
+                  bakgroundColor: "none",
+                  color: theme.secondary,
+                  border: `0.1rem solid ${theme.secondary}`,
+                }
+              : {
+                  borderRadius: "0",
+                  color: theme.basic.bright,
+                  backgroundColor: theme.secondary,
+                }
+          }
           onClick={() => onHideLanguage(localization)}
           key={localization.id}
           className="m-1"
-          variant={
-            selectedLocale &&
-            selectedLocale.some((el) => el === localization.locale)
-              ? "outline-dark"
-              : "dark"
-          }
         >
           {localization.locale}
         </Button>
       ))}
       <Button
-        variant="dark"
+        variant=""
         onClick={() =>
           setAddLocalizationModalVisible(!addLocalizationModalVisible)
         }
-        style={{ marginTop: "45vh", borderRadius: "0" }}
+        style={{
+          marginTop: "45vh",
+          borderRadius: "0",
+          color: theme.basic.bright,
+          backgroundColor: theme.secondary,
+        }}
       >
         Add Language
       </Button>
@@ -56,11 +72,16 @@ function SideBar() {
       {orgId === "1" && (
         <>
           <Button
-            variant="dark"
+            variant=""
             onClick={() =>
               setAddLocaleKeyValueModalVisible(!addLocaleKeyValueModalVisible)
             }
-            style={{ marginTop: "1vh", borderRadius: "0" }}
+            style={{
+              marginTop: "1vh",
+              borderRadius: "0",
+              color: theme.basic.bright,
+              backgroundColor: theme.secondary,
+            }}
           >
             Add Key values
           </Button>

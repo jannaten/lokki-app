@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useTheme } from "styled-components";
 import { DataLocaleContext } from "../../contexts";
 import { Modal, Form, Button, Row, Col } from "react-bootstrap";
 
@@ -11,6 +12,7 @@ function EditValuesModal({
   setVisible,
   visible,
 }) {
+  const theme = useTheme();
   const { editLocalizeValues } = useContext(DataLocaleContext);
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
@@ -70,8 +72,12 @@ function EditValuesModal({
             </Form.Group>
           ))}
           <Button
-            variant="dark"
-            style={{ borderRadius: "0" }}
+            variant=""
+            style={{
+              borderRadius: "0",
+              color: theme.basic.bright,
+              backgroundColor: theme.primary,
+            }}
             onClick={async () => {
               if (editedValueChangeList.length > 0)
                 await editLocalizeValues(editedValueChangeList);

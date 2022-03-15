@@ -1,4 +1,5 @@
 import { Modal, Form, Button } from "react-bootstrap";
+import { useTheme } from "styled-components";
 
 function AddProductModal({
   setSelectedProduct,
@@ -9,6 +10,7 @@ function AddProductModal({
   products,
   visible,
 }) {
+  const theme = useTheme();
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
       <Modal.Header closeButton>
@@ -32,8 +34,12 @@ function AddProductModal({
       )}
       <Modal.Footer>
         <Button
-          variant="dark"
-          style={{ borderRadius: "0" }}
+          variant=""
+          style={{
+            borderRadius: "0",
+            color: theme.basic.bright,
+            backgroundColor: theme.primary,
+          }}
           onClick={() => {
             addProduct(
               organization,

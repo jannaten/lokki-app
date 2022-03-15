@@ -1,8 +1,10 @@
 import { useContext, useState } from "react";
+import { useTheme } from "styled-components";
 import { DataLocaleContext } from "../../contexts";
 import { Modal, Form, Button } from "react-bootstrap";
 
 function AddLocalizationModal({ setVisible, visible, localizations }) {
+  const theme = useTheme();
   const [name, setName] = useState("");
   const [locale, setLocale] = useState("");
   const { addLocalization } = useContext(DataLocaleContext);
@@ -31,8 +33,12 @@ function AddLocalizationModal({ setVisible, visible, localizations }) {
             />
           </Form.Group>
           <Button
-            variant="dark"
-            style={{ borderRadius: "0" }}
+            variant=""
+            style={{
+              borderRadius: "0",
+              color: theme.basic.bright,
+              backgroundColor: theme.primary,
+            }}
             onClick={async () => {
               if (!localizations.find((el) => el.locale === locale)) {
                 await addLocalization({ name, locale });

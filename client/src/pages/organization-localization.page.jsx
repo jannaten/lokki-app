@@ -1,9 +1,9 @@
 import { Layout, OrganizationLocalization } from "../components";
 import { DataLocaleContextProvider } from "../contexts";
 
-function OrganizationProducts() {
+function OrganizationProducts({ setTheme }) {
   return (
-    <Layout>
+    <Layout setTheme={setTheme}>
       <DataLocaleContextProvider>
         <OrganizationLocalization />
       </DataLocaleContextProvider>

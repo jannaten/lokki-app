@@ -2,11 +2,13 @@ import { Button, Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { routes, endPoints } from "../config";
 import { Plus } from "react-bootstrap-icons";
+import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { DataContext } from "../contexts";
 import { AddProductModal } from ".";
 
 const OrganizationListRow = ({ organization }) => {
+  const theme = useTheme();
   const navigate = useNavigate();
   const { getImage } = endPoints;
   const { organizationRoute, productRoute } = routes;
@@ -17,7 +19,7 @@ const OrganizationListRow = ({ organization }) => {
 
   const { id, name, organization_products } = organization;
   return (
-    <tr key={id} style={{ borderBottom: "1px solid #212529" }}>
+    <tr key={id} style={{ borderBottom: `1px solid ${theme.basic.dark}` }}>
       <td onClick={() => navigate(`${organizationRoute}/${id}`)}>
         <div
           style={{
@@ -89,9 +91,14 @@ const OrganizationListRow = ({ organization }) => {
       </td>
       <td>
         <Button
-          style={{ border: "0", borderRadius: "0" }}
+          style={{
+            border: "0",
+            borderRadius: "0",
+            color: theme.basic.bright,
+            backgroundColor: theme.primary,
+          }}
           onClick={() => setVisible(!visible)}
-          variant="dark"
+          variant=""
         >
           <Plus width={25} height={25} />
         </Button>

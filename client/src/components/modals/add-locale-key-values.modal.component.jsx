@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
+import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../../contexts";
 import { Modal, Form, Button, Row, Col } from "react-bootstrap";
 
 function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
+  const theme = useTheme();
   const { orgId } = useParams();
   const [localeKey, setLocaleKey] = useState("");
   const [addLocaleValueChangeList, setAddLocaleValueChangeList] = useState([]);
@@ -90,8 +92,12 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
             </Form.Group>
           ))}
           <Button
-            variant="dark"
-            style={{ borderRadius: "0" }}
+            variant=""
+            style={{
+              borderRadius: "0",
+              color: theme.basic.bright,
+              backgroundColor: theme.primary,
+            }}
             disabled={localeKey.length < 1}
             onClick={async () => {
               if (orgId === "1") {

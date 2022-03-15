@@ -19,11 +19,11 @@ function App() {
           <Route path={home} element={<Home setTheme={setTheme} />} />
           <Route
             path={organizationByParamRoute("orgId")}
-            element={<Organizations />}
+            element={<Organizations setTheme={setTheme} />}
           />
           <Route
             path={organizationLocalizationByParamRoute("orgId", "proId")}
-            element={<OrganizationLocalization />}
+            element={<OrganizationLocalization setTheme={setTheme} />}
           />
         </Routes>
       </DataContextProvider>

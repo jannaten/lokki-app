@@ -1,9 +1,9 @@
 import { Header } from ".";
 import { DataChildContextProvider } from "../contexts";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, setTheme }) => (
   <DataChildContextProvider>
-    <Header />
+    <Header setTheme={setTheme} />
     {children}
   </DataChildContextProvider>
 );
