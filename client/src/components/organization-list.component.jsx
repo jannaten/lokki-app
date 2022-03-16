@@ -1,9 +1,9 @@
+import { InputGroups } from ".";
 import { DataContext } from "../contexts";
 import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
-import { InputGroup, FormControl } from "react-bootstrap";
-import { OrganizationListRow, AddOrganizationModal } from ".";
-import { Container, Table, Button, Row, Col } from "react-bootstrap";
+import { Container, Table, Row, Col } from "react-bootstrap";
+import { OrganizationListRow, AddOrganizationModal, CustomButton } from ".";
 
 function OrganizationsList() {
   const theme = useTheme();
@@ -28,25 +28,10 @@ function OrganizationsList() {
               ? `${filteredOrganizations.length} organizations found`
               : `${filteredOrganizations.length} organization found`}
           </h2>
-          <InputGroup size="lg" className="mt-3">
-            <FormControl
-              aria-label="Large"
-              style={{ borderRadius: "0" }}
-              aria-describedby="inputGroup-sizing-sm"
-              placeholder="search organizations by name"
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-            <InputGroup.Text
-              style={{
-                borderRadius: "0",
-                color: theme.basic.bright,
-                backgroundColor: theme.primary,
-              }}
-              id="inputGroup-sizing-lg"
-            >
-              Search
-            </InputGroup.Text>
-          </InputGroup>
+          <InputGroups
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="search organizations by name"
+          />
           <Table responsive="sm" borderless>
             <thead>
               <tr style={{ borderBottom: `1px solid ${theme.basic.dark}` }}>
@@ -64,18 +49,10 @@ function OrganizationsList() {
                 ))}
             </tbody>
           </Table>
-          <Button
-            variant=""
+          <CustomButton
+            text="Add organization"
             onClick={() => setVisible(!visible)}
-            style={{
-              border: "none",
-              borderRadius: "0",
-              color: theme.basic.bright,
-              background: theme.primary,
-            }}
-          >
-            Add organization
-          </Button>
+          />
           <AddOrganizationModal setVisible={setVisible} visible={visible} />
         </Container>
       </Col>

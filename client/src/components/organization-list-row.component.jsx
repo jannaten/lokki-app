@@ -1,11 +1,9 @@
-import { Button, Image } from "react-bootstrap";
+import { AddProductModal, AddButton, IconButton } from ".";
 import { useNavigate } from "react-router-dom";
 import { routes, endPoints } from "../config";
-import { Plus } from "react-bootstrap-icons";
 import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { DataContext } from "../contexts";
-import { AddProductModal } from ".";
 
 const OrganizationListRow = ({ organization }) => {
   const theme = useTheme();
@@ -21,30 +19,9 @@ const OrganizationListRow = ({ organization }) => {
   return (
     <tr key={id} style={{ borderBottom: `1px solid ${theme.basic.dark}` }}>
       <td onClick={() => navigate(`${organizationRoute}/${id}`)}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "row",
-            justifyContent: "flex-start",
-          }}
-        >
-          <Button
-            variant=""
-            style={{
-              display: "flex",
-              padding: "0.5rem",
-              borderRadius: "0",
-              background: "none",
-              marginRight: "1rem",
-              alignItems: "center",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-          >
-            {name}
-          </Button>
-        </div>
+        <p style={{ marginTop: "0.8rem", fontSize: "1rem", cursor: "pointer" }}>
+          {name}
+        </p>
       </td>
       <td>
         {organization_products.length > 0 && (
@@ -58,50 +35,23 @@ const OrganizationListRow = ({ organization }) => {
           >
             {organization_products
               .sort((a, b) => a.id - b.id)
-              .map((organization_product) => (
-                <Button
-                  style={{
-                    display: "flex",
-                    padding: "0.5rem",
-                    borderRadius: "0",
-                    marginRight: "1rem",
-                    alignItems: "center",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                  }}
+              .map(({ product }) => (
+                <IconButton
+                  key={product.id}
+                  text={product.name}
+                  src={getImage(product.image)}
                   onClick={() =>
                     navigate(
-                      `${organizationRoute}/${id}/${productRoute}/${organization_product.product.id}`
+                      `${organizationRoute}/${id}/${productRoute}/${product.id}`
                     )
                   }
-                  variant="outline-dark"
-                  key={organization_product.product.id}
-                >
-                  <Image
-                    width={30}
-                    height={30}
-                    className="me-1"
-                    src={getImage(organization_product.product.image)}
-                  />
-                  <p className="my-1">{organization_product.product.name}</p>
-                </Button>
+                />
               ))}
           </div>
         )}
       </td>
       <td>
-        <Button
-          style={{
-            border: "0",
-            borderRadius: "0",
-            color: theme.basic.bright,
-            backgroundColor: theme.primary,
-          }}
-          onClick={() => setVisible(!visible)}
-          variant=""
-        >
-          <Plus width={25} height={25} />
-        </Button>
+        <AddButton onClick={() => setVisible(!visible)} />
       </td>
       <AddProductModal
         setSelectedProduct={setSelectedProduct}

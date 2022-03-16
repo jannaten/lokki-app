@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
-import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../../contexts";
-import { Modal, Form, Button, Row, Col } from "react-bootstrap";
+import { FormControl, CustomButton, FormLabel } from "../";
+import { Modal, Form, Row, Col } from "react-bootstrap";
 
 function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
-  const theme = useTheme();
   const { orgId } = useParams();
   const [localeKey, setLocaleKey] = useState("");
   const [addLocaleValueChangeList, setAddLocaleValueChangeList] = useState([]);
@@ -46,13 +45,10 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Row>
               <Col sm={12} md={3} lg={2}>
-                <Form.Label style={{ marginLeft: "1rem" }} className="mt-2">
-                  key
-                </Form.Label>
+                <FormLabel text="key" />
               </Col>
               <Col sm={12} md={9} lg={10}>
-                <Form.Control
-                  type="text"
+                <FormControl
                   defaultValue={localeKey}
                   placeholder="insert locale key"
                   onChange={(e) => {
@@ -70,13 +66,10 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
             >
               <Row>
                 <Col sm={12} md={3} lg={2}>
-                  <Form.Label style={{ marginLeft: "1rem" }} className="mt-2">
-                    {localization.locale}
-                  </Form.Label>
+                  <FormLabel text={localization.locale} />
                 </Col>
                 <Col sm={12} md={9} lg={10}>
-                  <Form.Control
-                    type="text"
+                  <FormControl
                     defaultValue=""
                     disabled={localeKey.length < 1}
                     placeholder={`insert value for ${localization.name} language`}
@@ -91,13 +84,10 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
               </Row>
             </Form.Group>
           ))}
-          <Button
-            variant=""
-            style={{
-              borderRadius: "0",
-              color: theme.basic.bright,
-              backgroundColor: theme.primary,
-            }}
+        </Form>
+        <Modal.Footer>
+          <CustomButton
+            className="me-2"
             disabled={localeKey.length < 1}
             onClick={async () => {
               if (orgId === "1") {
@@ -110,10 +100,14 @@ function AddLocaleKeyValuesModal({ localizations, setVisible, visible }) {
               setVisible(!visible);
               setAddLocaleValueChangeList([]);
             }}
-          >
-            Add
-          </Button>
-        </Form>
+            text="Add"
+          />
+          <CustomButton
+            isOutline
+            text="Close"
+            onClick={() => setVisible(!visible)}
+          />
+        </Modal.Footer>
       </Modal.Body>
     </Modal>
   );

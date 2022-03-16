@@ -1,5 +1,5 @@
-import { Modal, Form, Button } from "react-bootstrap";
-import { useTheme } from "styled-components";
+import { CustomButton, FormSelect, FormLabel } from "../";
+import { Col, Form, Modal, Row } from "react-bootstrap";
 
 function AddProductModal({
   setSelectedProduct,
@@ -10,7 +10,6 @@ function AddProductModal({
   products,
   visible,
 }) {
-  const theme = useTheme();
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
       <Modal.Header closeButton>
@@ -18,28 +17,24 @@ function AddProductModal({
       </Modal.Header>
       {products && (
         <Modal.Body>
-          <p>Add a product</p>
-          <Form.Select
-            aria-label="Default select example"
-            onClick={(e) => setSelectedProduct(e.target.value)}
-          >
-            {products &&
-              products.map((product) => (
-                <option key={product.id} value={product.id}>
-                  {product.name}
-                </option>
-              ))}
-          </Form.Select>
+          <Form.Group controlId="formBasicText">
+            <Row>
+              <Col sm={12} md={3} lg={2}>
+                <FormLabel text="name" />
+              </Col>
+              <Col sm={12} md={9} lg={10}>
+                <FormSelect
+                  queries={products}
+                  onClick={(e) => setSelectedProduct(e.target.value)}
+                />
+              </Col>
+            </Row>
+          </Form.Group>
         </Modal.Body>
       )}
       <Modal.Footer>
-        <Button
-          variant=""
-          style={{
-            borderRadius: "0",
-            color: theme.basic.bright,
-            backgroundColor: theme.primary,
-          }}
+        <CustomButton
+          text="Add"
           onClick={() => {
             addProduct(
               organization,
@@ -48,16 +43,12 @@ function AddProductModal({
             setSelectedProduct(null);
             setVisible(!visible);
           }}
-        >
-          Add
-        </Button>
-        <Button
-          variant="outline-dark"
-          style={{ borderRadius: "0" }}
+        />
+        <CustomButton
+          isOutline
+          text="Close"
           onClick={() => setVisible(!visible)}
-        >
-          Close
-        </Button>
+        />
       </Modal.Footer>
     </Modal>
   );

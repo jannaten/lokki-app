@@ -1,8 +1,9 @@
+import { CartItem } from ".";
 import { useContext } from "react";
+import { Col, Row } from "react-bootstrap";
 import { routes, endPoints } from "../config";
 import { useNavigate } from "react-router-dom";
 import { DataChildContext } from "../contexts";
-import { Card, Col, Row } from "react-bootstrap";
 
 const OrganizationProducts = () => {
   const navigate = useNavigate();
@@ -17,28 +18,16 @@ const OrganizationProducts = () => {
         {organization_products && organization_products.length > 0 ? (
           <>
             {organization_products.map(({ product }) => (
-              <div className="container" key={product.id}>
-                <Card
-                  className="text-center"
-                  style={{ cursor: "pointer", padding: "5rem" }}
-                  onClick={() =>
-                    navigate(
-                      `/${organizationRoute}/${organization.id}/${productRoute}/${product.id}`
-                    )
-                  }
-                >
-                  <Card.Body>
-                    <Card.Img
-                      width={50}
-                      height={50}
-                      src={getImage(product.image)}
-                    />
-                    <Card.Title style={{ marginTop: "2.3vw" }}>
-                      {product.name}
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </div>
+              <CartItem
+                title={product.name}
+                key={product.id}
+                onClick={() =>
+                  navigate(
+                    `/${organizationRoute}/${organization.id}/${productRoute}/${product.id}`
+                  )
+                }
+                src={getImage(product.image)}
+              />
             ))}
           </>
         ) : (

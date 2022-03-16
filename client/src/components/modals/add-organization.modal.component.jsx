@@ -1,13 +1,11 @@
-import { DataContext } from "../../contexts";
-import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
-import { Modal, Form, Button } from "react-bootstrap";
+import { DataContext } from "../../contexts";
+import { Modal, Form, Row, Col } from "react-bootstrap";
+import { FormControl, CustomButton, FormLabel } from "../";
 
 function AddOrganizationModal({ setVisible, visible }) {
-  const theme = useTheme();
   const [name, setName] = useState("");
   const { addOrganization } = useContext(DataContext);
-
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
       <Modal.Header closeButton>
@@ -15,32 +13,38 @@ function AddOrganizationModal({ setVisible, visible }) {
       </Modal.Header>
       <Modal.Body>
         <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Organzation name</Form.Label>
-            <Form.Control
-              type="text"
-              value={name}
-              placeholder="Enter organization name"
-              onChange={(e) => setName(e.target.value)}
-            />
+          <Form.Group controlId="formBasicEmail">
+            <Row>
+              <Col sm={12} md={3} lg={2}>
+                <FormLabel text="name" />
+              </Col>
+              <Col sm={12} md={9} lg={10}>
+                <FormControl
+                  value={name}
+                  placeholder="Enter organization name"
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </Col>
+            </Row>
           </Form.Group>
-          <Button
-            variant=""
-            style={{
-              borderRadius: "0",
-              color: theme.basic.bright,
-              backgroundColor: theme.primary,
-            }}
-            onClick={async () => {
-              await addOrganization({ name });
-              setVisible(!visible);
-              setName("");
-            }}
-          >
-            Add
-          </Button>
         </Form>
       </Modal.Body>
+      <Modal.Footer>
+        <CustomButton
+          text="Add"
+          className="me-2"
+          onClick={async () => {
+            await addOrganization({ name });
+            setVisible(!visible);
+            setName("");
+          }}
+        />
+        <CustomButton
+          isOutline
+          text="Close"
+          onClick={() => setVisible(!visible)}
+        />
+      </Modal.Footer>
     </Modal>
   );
 }

@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { useTheme } from "styled-components";
 import { DataLocaleContext } from "../../contexts";
-import { Modal, Form, Button, Row, Col } from "react-bootstrap";
+import { Modal, Form, Row, Col } from "react-bootstrap";
+import { FormControl, CustomButton, FormLabel } from "../";
 
 function EditValuesModal({
   setEditedValueChangeList,
@@ -12,7 +12,6 @@ function EditValuesModal({
   setVisible,
   visible,
 }) {
-  const theme = useTheme();
   const { editLocalizeValues } = useContext(DataLocaleContext);
   return (
     <Modal show={visible} onHide={() => setVisible(!visible)}>
@@ -21,35 +20,24 @@ function EditValuesModal({
       </Modal.Header>
       <Modal.Body>
         <Form>
-          <Form.Group className="mb-3" controlId="formBasicText123">
-            <Row>
+          <Form.Group controlId="formBasicText">
+            <Row className="mb-3">
               <Col sm={12} md={3} lg={2}>
-                <Form.Label className="mt-2 me-4">Key</Form.Label>
+                <FormLabel text="Key" />
               </Col>
               <Col sm={12} md={9} lg={10}>
-                <Form.Control
-                  defaultValue={locale_keys.key}
-                  type="text"
-                  disabled
-                />
+                <FormControl defaultValue={locale_keys.key} disabled />
               </Col>
             </Row>
           </Form.Group>
           {localizations.map((localization) => (
-            <Form.Group
-              className="mb-3"
-              key={localization.id}
-              controlId="formBasicText"
-            >
-              <Row>
+            <Form.Group key={localization.id} controlId="formBasicText">
+              <Row className="mb-3">
                 <Col sm={12} md={3} lg={2}>
-                  <Form.Label className="mt-2 me-4">
-                    {localization.locale}
-                  </Form.Label>
+                  <FormLabel text={localization.locale} />
                 </Col>
                 <Col sm={12} md={9} lg={10}>
-                  <Form.Control
-                    type="text"
+                  <FormControl
                     defaultValue={
                       locale_keys.locale_values[localization.locale]
                         ? locale_keys.locale_values[localization.locale].value
@@ -71,24 +59,25 @@ function EditValuesModal({
               </Row>
             </Form.Group>
           ))}
-          <Button
-            variant=""
-            style={{
-              borderRadius: "0",
-              color: theme.basic.bright,
-              backgroundColor: theme.primary,
-            }}
-            onClick={async () => {
-              if (editedValueChangeList.length > 0)
-                await editLocalizeValues(editedValueChangeList);
-              setVisible(!visible);
-              setEditedValueChangeList([]);
-            }}
-          >
-            Save Changes
-          </Button>
         </Form>
       </Modal.Body>
+      <Modal.Footer>
+        <CustomButton
+          className="me-2"
+          text="Save Changes"
+          onClick={async () => {
+            if (editedValueChangeList.length > 0)
+              await editLocalizeValues(editedValueChangeList);
+            setVisible(!visible);
+            setEditedValueChangeList([]);
+          }}
+        />
+        <CustomButton
+          isOutline
+          text="Close"
+          onClick={() => setVisible(!visible)}
+        />
+      </Modal.Footer>
     </Modal>
   );
 }

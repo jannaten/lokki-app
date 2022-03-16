@@ -1,14 +1,12 @@
-import { Button } from "react-bootstrap";
+import { ToggleButton } from ".";
 import { useWindowSize } from "../hooks";
-import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
+import { Col, Row, Table } from "react-bootstrap";
 import React, { useContext, useState } from "react";
-import { OrganizationLocalizationSet, SideBar } from ".";
 import { DataLocaleContext, DataChildContext } from "../contexts";
-import { Col, FormControl, InputGroup, Row, Table } from "react-bootstrap";
+import { OrganizationLocalizationSet, SideBar, InputGroups } from ".";
 
 const OrganizationLocalization = () => {
-  const theme = useTheme();
   const size = useWindowSize();
   const { orgId } = useParams();
   const [searchQuery, setSearchQuery] = useState("");
@@ -117,79 +115,32 @@ const OrganizationLocalization = () => {
         }}
       >
         <h2>{name?.toUpperCase()} localization keys & values</h2>
-        <InputGroup size="lg" className="mt-4">
-          <FormControl
-            aria-label="Large"
-            style={{ borderRadius: "0" }}
-            aria-describedby="inputGroup-sizing-sm"
-            placeholder="Search by localization key or values"
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <InputGroup.Text
-            style={{
-              borderRadius: "0",
-              color: theme.basic.bright,
-              backgroundColor: theme.primary,
-            }}
-            id="inputGroup-sizing-lg"
-          >
-            Search
-          </InputGroup.Text>
-        </InputGroup>
+        <InputGroups
+          placeholder="Search by localization key or values"
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
         {orgId !== "1" && (
-          <Button
-            variant=""
-            className="mt-3 me-3"
-            style={
-              showEditedValue
-                ? {
-                    borderRadius: "0",
-                    bakgroundColor: "none",
-                    color: theme.secondary,
-                    border: `0.1rem solid ${theme.secondary}`,
-                  }
-                : {
-                    borderRadius: "0",
-                    color: theme.basic.bright,
-                    backgroundColor: theme.secondary,
-                  }
-            }
+          <ToggleButton
+            toggleOff={showEditedValue}
+            text={showEditedValue ? "Show All Values" : "Show Edited Values"}
             onClick={() => {
               onSortLocaleValue(!showEditedValue);
               setShowEditedValue(!showEditedValue);
             }}
-          >
-            {!showEditedValue ? "Show Edited Values" : "Show All Values"}
-          </Button>
+          />
         )}
-        <Button
-          className="mt-3"
-          style={
-            enableEditAllMode
-              ? {
-                  borderRadius: "0",
-                  bakgroundColor: "none",
-                  color: theme.secondary,
-                  border: `0.1rem solid ${theme.secondary}`,
-                }
-              : {
-                  borderRadius: "0",
-                  color: theme.basic.bright,
-                  backgroundColor: theme.secondary,
-                }
-          }
-          variant=""
+        <ToggleButton
+          toggleOff={enableEditAllMode}
           onClick={async () => {
             if (editedValueChangeList.length > 0)
               await editLocalizeValues(editedValueChangeList);
             setEnableEditAllMode(!enableEditAllMode);
             setEditedValueChangeList([]);
           }}
-        >
-          {!enableEditAllMode
-            ? "Enable Edit All Mode"
-            : "Disable Edit All Mode"}
-        </Button>
+          text={
+            enableEditAllMode ? "Disable Edit All Mode" : "Enable Edit All Mode"
+          }
+        />
         <p className="h5 mt-4">
           {filteredLocaleKeyValues.length} result has found
         </p>

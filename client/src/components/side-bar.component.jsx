@@ -1,12 +1,10 @@
-import { Button } from "react-bootstrap";
-import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
 import { DataLocaleContext } from "../contexts";
+import { ToggleButton, CustomButton } from "./";
 import { AddLocalizationModal, AddLocaleKeyValuesModal } from ".";
 
 function SideBar() {
-  const theme = useTheme();
   const { orgId } = useParams();
   const [addLocalizationModalVisible, setAddLocalizationModalVisible] =
     useState(false);
@@ -26,72 +24,47 @@ function SideBar() {
       }}
     >
       {sidebarLocalizations.map((localization) => (
-        <Button
-          variant=""
-          style={
+        <ToggleButton
+          className="m-1"
+          key={localization.id}
+          text={localization.locale}
+          onClick={() => onHideLanguage(localization)}
+          toggleOff={
             selectedLocale &&
             selectedLocale.some((el) => el === localization.locale)
-              ? {
-                  borderRadius: "0",
-                  bakgroundColor: "none",
-                  color: theme.secondary,
-                  border: `0.1rem solid ${theme.secondary}`,
-                }
-              : {
-                  borderRadius: "0",
-                  color: theme.basic.bright,
-                  backgroundColor: theme.secondary,
-                }
           }
-          onClick={() => onHideLanguage(localization)}
-          key={localization.id}
-          className="m-1"
-        >
-          {localization.locale}
-        </Button>
+        />
       ))}
-      <Button
-        variant=""
-        onClick={() =>
-          setAddLocalizationModalVisible(!addLocalizationModalVisible)
-        }
-        style={{
-          marginTop: "45vh",
-          borderRadius: "0",
-          color: theme.basic.bright,
-          backgroundColor: theme.secondary,
-        }}
-      >
-        Add Language
-      </Button>
-      <AddLocalizationModal
-        localizations={sidebarLocalizations}
-        visible={addLocalizationModalVisible}
-        setVisible={setAddLocalizationModalVisible}
-      />
-      {orgId === "1" && (
-        <>
-          <Button
-            variant=""
-            onClick={() =>
-              setAddLocaleKeyValueModalVisible(!addLocaleKeyValueModalVisible)
-            }
-            style={{
-              marginTop: "1vh",
-              borderRadius: "0",
-              color: theme.basic.bright,
-              backgroundColor: theme.secondary,
-            }}
-          >
-            Add Key values
-          </Button>
-          <AddLocaleKeyValuesModal
-            localizations={localizations}
-            visible={addLocaleKeyValueModalVisible}
-            setVisible={setAddLocaleKeyValueModalVisible}
-          />
-        </>
-      )}
+      <div style={{ marginTop: "45vh" }}>
+        <CustomButton
+          className="m-1"
+          text="Add Language"
+          onClick={() =>
+            setAddLocalizationModalVisible(!addLocalizationModalVisible)
+          }
+        />
+        <AddLocalizationModal
+          localizations={sidebarLocalizations}
+          visible={addLocalizationModalVisible}
+          setVisible={setAddLocalizationModalVisible}
+        />
+        {orgId === "1" && (
+          <>
+            <CustomButton
+              className="m-1"
+              text="Add Key values"
+              onClick={() =>
+                setAddLocaleKeyValueModalVisible(!addLocaleKeyValueModalVisible)
+              }
+            />
+            <AddLocaleKeyValuesModal
+              localizations={localizations}
+              visible={addLocaleKeyValueModalVisible}
+              setVisible={setAddLocaleKeyValueModalVisible}
+            />
+          </>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,12 +1,8 @@
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import { EditValuesModal, OverlayRestoreButton, EditButton } from ".";
 import React, { useState, useContext } from "react";
-import { PencilFill } from "react-bootstrap-icons";
 import { DataLocaleContext } from "../contexts";
-import { Button, Form } from "react-bootstrap";
-import Tooltip from "react-bootstrap/Tooltip";
-import { useTheme } from "styled-components";
 import { useParams } from "react-router-dom";
-import { EditValuesModal } from ".";
+import { FormControl } from ".";
 
 const OrganizationLocalizationSet = ({
   setEditedValueChangeList,
@@ -17,12 +13,9 @@ const OrganizationLocalizationSet = ({
   handleChange,
   locale_keys,
 }) => {
-  const theme = useTheme();
   const { orgId } = useParams();
   const [visible, setVisible] = useState(false);
-
   const { onRestoreLocaleValues } = useContext(DataLocaleContext);
-
   return (
     <tr>
       <td>{locale_keys.key}</td>
@@ -30,8 +23,7 @@ const OrganizationLocalizationSet = ({
         <React.Fragment key={localization.id}>
           <td>
             {enableEditAllMode ? (
-              <Form.Control
-                type="text"
+              <FormControl
                 defaultValue={
                   locale_keys.locale_values[localization.locale]
                     ? locale_keys.locale_values[localization.locale].value
@@ -60,44 +52,29 @@ const OrganizationLocalizationSet = ({
                     locale_keys.locale_values[localization.locale].id &&
                     !locale_keys.locale_values[localization.locale]
                       .fromDefault ? (
-                      <OverlayTrigger
-                        key="right"
-                        placement="right"
-                        delay={{ show: 250, hide: 400 }}
-                        overlay={
-                          <Tooltip id="button-tooltip">
+                      <OverlayRestoreButton
+                        text="Restore"
+                        toolkit={
+                          <>
                             Default value:{" "}
                             {typeof defaultLocaleKeys !== "undefined" &&
                               defaultLocaleKeys.locale_values[
                                 localization.locale
                               ]?.value}
-                          </Tooltip>
+                          </>
                         }
-                      >
-                        <Button
-                          variant=""
-                          style={{
-                            border: "0",
-                            borderRadius: "0",
-                            marginLeft: "0.5rem",
-                            color: theme.basic.bright,
-                            backgroundColor: theme.secondary,
-                          }}
-                          onClick={() => {
-                            onRestoreLocaleValues(
-                              locale_keys.locale_values[localization.locale],
-                              defaultLocaleKeys
-                                ? defaultLocaleKeys.locale_values[
-                                    localization.locale
-                                  ]
-                                : undefined,
-                              localization
-                            );
-                          }}
-                        >
-                          Restore
-                        </Button>
-                      </OverlayTrigger>
+                        onClick={() => {
+                          onRestoreLocaleValues(
+                            locale_keys.locale_values[localization.locale],
+                            defaultLocaleKeys
+                              ? defaultLocaleKeys.locale_values[
+                                  localization.locale
+                                ]
+                              : undefined,
+                            localization
+                          );
+                        }}
+                      />
                     ) : null}
                   </>
                 )}
@@ -109,27 +86,12 @@ const OrganizationLocalizationSet = ({
       <td
         style={{
           display: "flex",
-          flexDirection: "row",
           alignItems: "center",
+          flexDirection: "row",
           justifyContent: "flex-end",
         }}
       >
-        <Button
-          variant=""
-          style={{
-            border: "none",
-            display: "flex",
-            borderRadius: "0",
-            flexDirection: "row",
-            alignItems: "center",
-            color: theme.basic.bright,
-            justifyContent: "space-around",
-            backgroundColor: theme.secondary,
-          }}
-          onClick={() => setVisible(!visible)}
-        >
-          <PencilFill className="me-2 mb-1" /> Edit
-        </Button>
+        <EditButton text="Edit" onClick={() => setVisible(!visible)} />
       </td>
       <EditValuesModal
         visible={visible}
