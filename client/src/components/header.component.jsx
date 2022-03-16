@@ -146,7 +146,9 @@ function Header({ setTheme }) {
                       justifyContent: "flex-start",
                     }}
                     onClick={() => {
-                      setTheme(theme.themeIdentity);
+                      localStorage.setItem("name", theme.themeIdentity);
+                      // setTheme(theme.themeIdentity);
+                      setTheme(true);
                     }}
                   >
                     <div
