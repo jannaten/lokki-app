@@ -7,5 +7,4 @@ export { TableColHolderStyle } from "./organization-localization.styles";
 export { SideBarColHolderStyle } from "./organization-localization.styles";
 export { OrganizationContainerStyle } from "./organization-product.styles";
 export { OrganizationTableHeaderStyle } from "./organization-product.styles";
-export { OverLayTriggerButtonStyle, EditButtonStyle } from "./common.styles";
 export { OrganizationProductIconHolder } from "./organization-product.styles";

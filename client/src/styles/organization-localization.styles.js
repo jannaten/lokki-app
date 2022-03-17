@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { Col } from "react-bootstrap";
+import styled from "styled-components";
 
 export const SideBarColHolderStyle = styled(Col)`
   width: ${({ width }) => width > 575 && "13vw"};

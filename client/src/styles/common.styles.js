@@ -1,31 +1,5 @@
 import styled from "styled-components";
-import { Button, InputGroup } from "react-bootstrap";
-
-export const OverLayTriggerButtonStyle = styled(Button)`
-  border: 0;
-  border-radius: 0;
-  margin-left: 0.5rem;
-  color: ${({ theme }) => theme.basic.bright};
-  background-color: ${({ theme }) => theme.secondary};
-`;
-
-export const EditButtonStyle = styled(Button)`
-  border: none;
-  display: flex;
-  border-radius: 0;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  color: ${({ theme }) => theme.basic.bright};
-  background-color: ${({ theme }) => theme.secondary};
-`;
-
-export const AddButtonStyle = styled(Button)`
-    border: 0;
-    border-radius: 0;
-    color: ${({ theme }) => theme.basic.bright}
-    background-color: ${({ theme }) => theme.primary}
-`;
+import { InputGroup } from "react-bootstrap";
 
 export const InputGroupTextStyle = styled(InputGroup.Text)`
   color: ${({ theme }) => theme.basic.bright};
