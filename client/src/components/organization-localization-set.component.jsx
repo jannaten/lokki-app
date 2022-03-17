@@ -83,14 +83,7 @@ const OrganizationLocalizationSet = ({
           </td>
         </React.Fragment>
       ))}
-      <td
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "row",
-          justifyContent: "flex-end",
-        }}
-      >
+      <td className="float-end">
         <EditButton text="Edit" onClick={() => setVisible(!visible)} />
       </td>
       <EditValuesModal

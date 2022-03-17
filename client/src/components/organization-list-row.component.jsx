@@ -1,12 +1,11 @@
 import { AddProductModal, AddButton, IconButton } from ".";
+import { OrganizationProductIconHolder } from "../styles";
 import { useNavigate } from "react-router-dom";
 import { routes, endPoints } from "../config";
-import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
 import { DataContext } from "../contexts";
 
 const OrganizationListRow = ({ organization }) => {
-  const theme = useTheme();
   const navigate = useNavigate();
   const { getImage } = endPoints;
   const { organizationRoute, productRoute } = routes;
@@ -17,22 +16,15 @@ const OrganizationListRow = ({ organization }) => {
 
   const { id, name, organization_products } = organization;
   return (
-    <tr key={id} style={{ borderBottom: `1px solid ${theme.basic.dark}` }}>
+    <tr key={id} className="border-bottom">
       <td onClick={() => navigate(`${organizationRoute}/${id}`)}>
-        <p style={{ marginTop: "0.8rem", fontSize: "1rem", cursor: "pointer" }}>
+        <p className="mt-2 lead" role="button">
           {name}
         </p>
       </td>
       <td>
         {organization_products.length > 0 && (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "row",
-              justifyContent: "flex-start",
-            }}
-          >
+          <OrganizationProductIconHolder>
             {organization_products
               .sort((a, b) => a.id - b.id)
               .map(({ product }) => (
@@ -47,10 +39,10 @@ const OrganizationListRow = ({ organization }) => {
                   }
                 />
               ))}
-          </div>
+          </OrganizationProductIconHolder>
         )}
       </td>
-      <td>
+      <td className="float-end">
         <AddButton onClick={() => setVisible(!visible)} />
       </td>
       <AddProductModal

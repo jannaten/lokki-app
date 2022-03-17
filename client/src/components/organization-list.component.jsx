@@ -1,12 +1,12 @@
 import { InputGroups } from ".";
 import { DataContext } from "../contexts";
-import { useTheme } from "styled-components";
 import { useContext, useState } from "react";
-import { Container, Table, Row, Col } from "react-bootstrap";
+import { Table, Row, Col } from "react-bootstrap";
+import { OrganizationContainerStyle } from "../styles";
+import { OrganizationTableHeaderStyle } from "../styles";
 import { OrganizationListRow, AddOrganizationModal, CustomButton } from ".";
 
 function OrganizationsList() {
-  const theme = useTheme();
   const [visible, setVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const { organizations } = useContext(DataContext);
@@ -22,7 +22,7 @@ function OrganizationsList() {
   return (
     <Row className="w-100 p-0 m-0">
       <Col>
-        <Container style={{ marginTop: "8rem" }}>
+        <OrganizationContainerStyle>
           <h2>
             {filteredOrganizations.length > 1
               ? `${filteredOrganizations.length} organizations found`
@@ -34,10 +34,10 @@ function OrganizationsList() {
           />
           <Table responsive="sm" borderless>
             <thead>
-              <tr style={{ borderBottom: `1px solid ${theme.basic.dark}` }}>
+              <OrganizationTableHeaderStyle>
                 <th>no.</th>
                 <th>products</th>
-              </tr>
+              </OrganizationTableHeaderStyle>
             </thead>
             <tbody>
               {filteredOrganizations &&
@@ -54,7 +54,7 @@ function OrganizationsList() {
             onClick={() => setVisible(!visible)}
           />
           <AddOrganizationModal setVisible={setVisible} visible={visible} />
-        </Container>
+        </OrganizationContainerStyle>
       </Col>
     </Row>
   );

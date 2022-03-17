@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { DataLocaleContext } from "../contexts";
 import { ToggleButton, CustomButton } from "./";
 import { AddLocalizationModal, AddLocaleKeyValuesModal } from ".";
+import { SideBarHolderStyle, SideBarButtomButtonStyle } from "../styles";
 
 function SideBar() {
   const { orgId } = useParams();
@@ -13,16 +14,7 @@ function SideBar() {
   const { selectedLocale, onHideLanguage } = useContext(DataLocaleContext);
   const { sidebarLocalizations, localizations } = useContext(DataLocaleContext);
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "100vh",
-        flexDirection: "column",
-        backgroundColor: "#f8f9fa",
-        border: "0.1rem solid #e9ecef",
-        padding: "2rem 0.5rem 0rem 0.5rem",
-      }}
-    >
+    <SideBarHolderStyle>
       {sidebarLocalizations.map((localization) => (
         <ToggleButton
           className="m-1"
@@ -35,7 +27,7 @@ function SideBar() {
           }
         />
       ))}
-      <div style={{ marginTop: "45vh" }}>
+      <SideBarButtomButtonStyle>
         <CustomButton
           className="m-1"
           text="Add Language"
@@ -64,8 +56,8 @@ function SideBar() {
             />
           </>
         )}
-      </div>
-    </div>
+      </SideBarButtomButtonStyle>
+    </SideBarHolderStyle>
   );
 }
 

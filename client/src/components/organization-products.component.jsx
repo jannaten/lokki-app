@@ -14,7 +14,7 @@ const OrganizationProducts = () => {
   const { organization_products } = organization;
   return (
     <Row className="w-100 p-0 m-0">
-      <Col className="d-flex" style={{ marginTop: "5rem" }}>
+      <Col className="d-flex mt-5 py-5">
         {organization_products && organization_products.length > 0 ? (
           <>
             {organization_products.map(({ product }) => (

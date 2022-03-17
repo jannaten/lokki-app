@@ -1,10 +1,11 @@
 import { ToggleButton } from ".";
 import { useWindowSize } from "../hooks";
 import { useParams } from "react-router-dom";
-import { Col, Row, Table } from "react-bootstrap";
+import { Row, Table } from "react-bootstrap";
 import React, { useContext, useState } from "react";
 import { DataLocaleContext, DataChildContext } from "../contexts";
 import { OrganizationLocalizationSet, SideBar, InputGroups } from ".";
+import { SideBarColHolderStyle, TableColHolderStyle } from "../styles";
 
 const OrganizationLocalization = () => {
   const size = useWindowSize();
@@ -81,39 +82,13 @@ const OrganizationLocalization = () => {
 
   return (
     <Row className="w-100">
-      <Col
-        xs={12}
-        sm={6}
-        md={4}
-        lg={2}
-        style={
-          size.width > 575
-            ? {
-                width: "13vw",
-                position: "fixed",
-                marginTop: "3.5rem",
-                zIndex: 6,
-              }
-            : { zIndex: 6 }
-        }
-      >
+      <SideBarColHolderStyle xs={12} sm={6} md={4} lg={2} width={size.width}>
         <SideBar
           localizations={localizations}
           localeKeysValues={localeKeysValues}
         />
-      </Col>
-      <Col
-        xs={12}
-        sm={6}
-        md={8}
-        lg={10}
-        style={{
-          width: "87vw",
-          marginTop: "5.5rem",
-          marginLeft: "auto",
-          paddingLeft: "2rem",
-        }}
-      >
+      </SideBarColHolderStyle>
+      <TableColHolderStyle xs={12} sm={6} md={8} lg={10}>
         <h2>{name?.toUpperCase()} localization keys & values</h2>
         <InputGroups
           placeholder="Search by localization key or values"
@@ -144,7 +119,7 @@ const OrganizationLocalization = () => {
         <p className="h5 mt-4">
           {filteredLocaleKeyValues.length} result has found
         </p>
-        <Table hover style={{ marginTop: "1rem" }}>
+        <Table hover>
           <thead>
             <tr>
               <th>keys</th>
@@ -179,7 +154,7 @@ const OrganizationLocalization = () => {
             })}
           </tbody>
         </Table>
-      </Col>
+      </TableColHolderStyle>
     </Row>
   );
 };
