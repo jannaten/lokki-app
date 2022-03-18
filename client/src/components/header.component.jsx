@@ -83,8 +83,8 @@ function Header({ setTheme }) {
                 key={theme.id}
                 themeColor={theme.primary}
                 onClick={() => {
-                  localStorage.setItem("name", theme.themeIdentity);
-                  setTheme(true);
+                  // localStorage.setItem("name", theme.themeIdentity);
+                  setTheme(theme.themeIdentity);
                 }}
               />
             ))}

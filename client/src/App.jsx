@@ -2,17 +2,19 @@ import { Home, Organizations, OrganizationLocalization } from "./pages";
 import { ThemeProvider } from "styled-components";
 import { DataContextProvider } from "./contexts";
 import { Routes, Route } from "react-router-dom";
-import { useThemeStorage } from "./hooks";
+// import { useThemeStorage } from "./hooks";
 import { routes, themes } from "./config";
 import { Toaster } from "react-hot-toast";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const { themeValue, setTheme } = useThemeStorage();
+  // const { themeValue, setTheme } = useThemeStorage();
+  const [theme, setTheme] = useState("darkTheme");
   const { home, organizationByParamRoute } = routes;
   const { organizationLocalizationByParamRoute } = routes;
   return (
-    <ThemeProvider theme={themes[themeValue ? themeValue : "darkTheme"]}>
+    <ThemeProvider theme={themes[theme]}>
       <DataContextProvider>
         <Routes>
           <Route path={home} element={<Home setTheme={setTheme} />} />

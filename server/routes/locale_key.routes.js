@@ -6,7 +6,16 @@ const db = require("../models");
 
 const router = express.Router();
 
-// Getting all data
+// const data = require("../data/organizationproduct.json");
+
+// router.get("/add", async (req, res) => {
+//   for (let i = 0; i < data.length; i++) {
+//     await db.organization_product.create(data[i]);
+//   }
+//   res.send(data);
+// });
+
+// Get all data
 router.get("/", async (req, res) => {
   const locale_keys = await db.locale_key.findAll({
     include: [
@@ -221,4 +230,13 @@ module.exports = router;
 //   return nonDefaultLocalization.some((f) => {
 //     return f.locale !== el.locale;
 //   });
+// });
+
+// const data = require("../data/localizevalue.json");
+// Getting all data
+// router.get("/add", async (req, res) => {
+//   for (let i = 0; i < data.length; i++) {
+//     await db.locale_value.create(data[i]);
+//   }
+//   res.send(data);
 // });

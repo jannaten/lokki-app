@@ -1,19 +1,48 @@
-version: "2"
+version: "3.5"
+
 services:
-  localization-rest:
-    container_name: backend
-    image: registry.eduix.fi/library/localization-rest-api:0.0.4
-    ports:
-      - "28881:28881"
-    restart: always
+  client:
+    image: node:14.16.0
+    working_dir: /app
     volumes:
-      - "./localization-rest/application.properties:/opt/localization/application.properties"
-    working_dir: /opt/localization
-  frontend:
-    links:
-      - "localization-rest:restapi"
-    image: frontend:1.2
+      - ./client:/app
     ports:
-      - "3008:3000"
+      - ${CLIENT_PUBLIC_PORT}:${CLIENT_CONTAINER_PORT}
+    env_file: .env
+    command: npm start
+
+  server:
+    image: node:14.16.0
+    working_dir: /app
+    volumes:
+      - ./server:/app
+    ports:
+      - ${SERVER_PUBLIC_PORT}:${SERVER_CONTAINER_PORT}
+    depends_on:
+      - database
+    env_file: .env
+    command: npm run dev
+
+  database:
+    image: mariadb:10.5
+    volumes:
+      - ./database/mariadb:/var/lib/mysql
     restart: always
-    stdin_open: true
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+    env_file: .env
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+      PMA_HOST: ${DATABASE_HOST}
+    ports:
+      - ${PHPMYADMIN_PUBLIC_PORT}:${PHPMYADMIN_CONTAINER_PORT}
+    depends_on:
+      - database
+    links:
+      - database
+    env_file: .env
