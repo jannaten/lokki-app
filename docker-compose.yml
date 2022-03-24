@@ -2,18 +2,24 @@ version: "3.5"
 
 services:
   client:
-    image: node:14.16.0
-    working_dir: /app
+    container_name: dev-client
+    image: dev-client
+    build:
+      context: ./client
+      target: development
     volumes:
-      - ./client:/app
+      - ./client/src:/app/src
     ports:
       - ${CLIENT_PUBLIC_PORT}:${CLIENT_CONTAINER_PORT}
     env_file: .env
-    command: npm start
 
   server:
-    image: node:14.16.0
+    container_name: dev-server
+    image: dev-server
     working_dir: /app
+    build:
+      context: ./client
+      target: development
     volumes:
       - ./server:/app
     ports:
@@ -21,11 +27,11 @@ services:
     depends_on:
       - database
     env_file: .env
-    command: npm run dev
 
   database:
     image: mariadb:10.5
     volumes:
+      - ./real_lokki.sql:/docker-entrypoint-initdb.d/real_lokki.sql
       - ./database/mariadb:/var/lib/mysql
     restart: always
     environment:
@@ -33,16 +39,38 @@ services:
       MYSQL_DATABASE: ${DATABASE_NAME}
     env_file: .env
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:4.7
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
-      PMA_HOST: ${DATABASE_HOST}
-    ports:
-      - ${PHPMYADMIN_PUBLIC_PORT}:${PHPMYADMIN_CONTAINER_PORT}
-    depends_on:
-      - database
-    links:
-      - database
-    env_file: .env
+  # client:
+  #   image: node:14.16.0
+  #   working_dir: /app
+  #   volumes:
+  #     - ./client:/app
+  #   ports:
+  #     - ${CLIENT_PUBLIC_PORT}:${CLIENT_CONTAINER_PORT}
+  #   env_file: .env
+  #   command: npm start
+
+  # server:
+  #   image: node:14.16.0
+  #   working_dir: /app
+  #   volumes:
+  #     - ./server:/app
+  #   ports:
+  #     - ${SERVER_PUBLIC_PORT}:${SERVER_CONTAINER_PORT}
+  #   depends_on:
+  #     - database
+  #   env_file: .env
+  #   command: npm run dev
+
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin:4.7
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+  #     PMA_HOST: ${DATABASE_HOST}
+  #   ports:
+  #     - ${PHPMYADMIN_PUBLIC_PORT}:${PHPMYADMIN_CONTAINER_PORT}
+  #   depends_on:
+  #     - database
+  #   links:
+  #     - database
+  #   env_file: .env

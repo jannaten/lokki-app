@@ -39,3 +39,4 @@ therefore/
 .vscode
 
 node_modules/
+database/

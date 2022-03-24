@@ -1,4 +1,4 @@
-const ORIGIN = "http://localhost:5500";
+const ORIGIN = "http://localhost:4500";
 const BACKEND_URL = "api";
 
 export const endPoints = {
